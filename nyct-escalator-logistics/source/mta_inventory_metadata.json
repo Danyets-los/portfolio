@@ -1,0 +1,2724 @@
+{
+  "id" : "94fv-bak7",
+  "name" : "MTA Subway Elevator and Escalator Asset Inventory",
+  "assetType" : "dataset",
+  "attribution" : "Metropolitan Transportation Authority",
+  "attributionLink" : "https://www.mta.info/open-data",
+  "averageRating" : 0,
+  "category" : "Transportation",
+  "createdAt" : 1766516525,
+  "description" : "Subway Elevator and Escalator Asset Inventory represents active subway elevator and escalator assets in MTA’s subway stations (excluding withdrawn and pending machines).",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 3803,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 41849635,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1766581639,
+  "publicationGroup" : 20219350,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1791281512,
+  "rowsUpdatedBy" : "xzik-pf59",
+  "tableId" : 20221078,
+  "totalTimesRated" : 0,
+  "viewCount" : 13148,
+  "viewLastModified" : 1791281511,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1766776179,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 7289727,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1766776179,
+    "targetAudience" : "public",
+    "workflowId" : 2254,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1766776179,
+      "failureCount" : 0,
+      "startedAt" : 1766776179,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "28jg-4c4u",
+      "displayName" : "Open Data Administrator 1"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 623877929,
+    "name" : "Equipment Code",
+    "dataTypeName" : "text",
+    "description" : "Represents unique equipment code of each subway elevator or escalator asset made up of an abbreviation for elevator or escalator followed by unique digits and characters.",
+    "fieldName" : "equipment_code",
+    "position" : 1,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201500,
+    "cachedContents" : {
+      "non_null" : "759",
+      "largest" : "ES641X",
+      "null" : "0",
+      "top" : [ {
+        "item" : "ES242",
+        "count" : "1"
+      }, {
+        "item" : "EL608X",
+        "count" : "1"
+      }, {
+        "item" : "ES631",
+        "count" : "1"
+      }, {
+        "item" : "EL279",
+        "count" : "1"
+      }, {
+        "item" : "ES220",
+        "count" : "1"
+      }, {
+        "item" : "EL342",
+        "count" : "1"
+      }, {
+        "item" : "ES430",
+        "count" : "1"
+      }, {
+        "item" : "EL238",
+        "count" : "1"
+      }, {
+        "item" : "EL220",
+        "count" : "1"
+      }, {
+        "item" : "EL234",
+        "count" : "1"
+      }, {
+        "item" : "EL130",
+        "count" : "1"
+      }, {
+        "item" : "ES121",
+        "count" : "1"
+      }, {
+        "item" : "ES338",
+        "count" : "1"
+      }, {
+        "item" : "EL376",
+        "count" : "1"
+      }, {
+        "item" : "ES422",
+        "count" : "1"
+      }, {
+        "item" : "EL121",
+        "count" : "1"
+      }, {
+        "item" : "ES296",
+        "count" : "1"
+      }, {
+        "item" : "ES625",
+        "count" : "1"
+      }, {
+        "item" : "ES447",
+        "count" : "1"
+      }, {
+        "item" : "EL292",
+        "count" : "1"
+      } ],
+      "smallest" : "EL100",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877930,
+    "name" : "Elevator or Escalator",
+    "dataTypeName" : "text",
+    "description" : "Labels each subway elevator or escalator asset as “Elevator” or “Escalator”",
+    "fieldName" : "elevator_or_escalator",
+    "position" : 2,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201515,
+    "cachedContents" : {
+      "non_null" : "759",
+      "largest" : "Escalator",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Elevator",
+        "count" : "481"
+      }, {
+        "item" : "Escalator",
+        "count" : "278"
+      } ],
+      "smallest" : "Elevator",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877931,
+    "name" : "Asset Class",
+    "dataTypeName" : "text",
+    "description" : "Represents the general design of subway elevator or escalator assets (Escalator, Elevator Traction, or Elevator Hydraulic)",
+    "fieldName" : "asset_class",
+    "position" : 3,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201499,
+    "cachedContents" : {
+      "non_null" : "759",
+      "largest" : "Escalator",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Elevator Hydraulic",
+        "count" : "384"
+      }, {
+        "item" : "Escalator",
+        "count" : "278"
+      }, {
+        "item" : "Elevator Traction",
+        "count" : "97"
+      } ],
+      "smallest" : "Elevator Hydraulic",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877932,
+    "name" : "Station MRN",
+    "dataTypeName" : "text",
+    "description" : "Represents unique Station Master Reference Number (MRN) for each subway station.",
+    "fieldName" : "station_mrn",
+    "position" : 4,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201513,
+    "cachedContents" : {
+      "non_null" : "736",
+      "largest" : "477",
+      "null" : "23",
+      "top" : [ {
+        "item" : "471",
+        "count" : "20"
+      }, {
+        "item" : "223",
+        "count" : "19"
+      }, {
+        "item" : "477",
+        "count" : "17"
+      }, {
+        "item" : "402",
+        "count" : "16"
+      }, {
+        "item" : "476",
+        "count" : "15"
+      }, {
+        "item" : "412",
+        "count" : "14"
+      }, {
+        "item" : "227",
+        "count" : "14"
+      }, {
+        "item" : "222",
+        "count" : "12"
+      }, {
+        "item" : "278",
+        "count" : "12"
+      }, {
+        "item" : "172",
+        "count" : "12"
+      }, {
+        "item" : "414",
+        "count" : "11"
+      }, {
+        "item" : "279",
+        "count" : "11"
+      }, {
+        "item" : "475",
+        "count" : "11"
+      }, {
+        "item" : "275",
+        "count" : "10"
+      }, {
+        "item" : "198",
+        "count" : "10"
+      }, {
+        "item" : "317",
+        "count" : "9"
+      }, {
+        "item" : "221",
+        "count" : "9"
+      }, {
+        "item" : "330",
+        "count" : "9"
+      }, {
+        "item" : "161",
+        "count" : "8"
+      }, {
+        "item" : "146",
+        "count" : "8"
+      } ],
+      "smallest" : "002",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 623877933,
+    "name" : "Station Name",
+    "dataTypeName" : "text",
+    "description" : "Kebab-case names for each subway station that may include the street the station is located on and the trains servicing the station.",
+    "fieldName" : "station_name",
+    "position" : 5,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201504,
+    "cachedContents" : {
+      "non_null" : "736",
+      "largest" : "WORLDTRADECENTER-8AV-E",
+      "null" : "23",
+      "top" : [ {
+        "item" : "34ST-HUDSONYARDS-FLS-7",
+        "count" : "20"
+      }, {
+        "item" : "LEXINGTONAV/63ST-63S-F/Q",
+        "count" : "19"
+      }, {
+        "item" : "72ST-2AV-Q",
+        "count" : "17"
+      }, {
+        "item" : "GRANDCENTRAL-42ST-LEX-4/5/6",
+        "count" : "16"
+      }, {
+        "item" : "86ST-2AV-Q",
+        "count" : "15"
+      }, {
+        "item" : "FULTONST-LEX-4/5",
+        "count" : "14"
+      }, {
+        "item" : "34ST-HERALDSQ-6AV-B/D/F",
+        "count" : "14"
+      }, {
+        "item" : "ROOSEVELTISLAND-63S-F",
+        "count" : "12"
+      }, {
+        "item" : "FULTONST-8AV-A/C",
+        "count" : "12"
+      }, {
+        "item" : "JAMAICACENTER-PARSONS/ARCHER-QBL-E/J/Z",
+        "count" : "12"
+      }, {
+        "item" : "SUTPHINBLVD-ARCHERAV-JFKAIRPORT-QBL-E/J/Z",
+        "count" : "11"
+      }, {
+        "item" : "BOWLINGGREEN-LEX-4/5",
+        "count" : "11"
+      }, {
+        "item" : "96ST-2AV-Q",
+        "count" : "11"
+      }, {
+        "item" : "HOWARDBEACH-JFKAIRPORT-RKY-A",
+        "count" : "10"
+      }, {
+        "item" : "LEXINGTONAV/53ST-QBL-E/M",
+        "count" : "10"
+      }, {
+        "item" : "21ST-QUEENSBRIDGE-63S-F",
+        "count" : "9"
+      }, {
+        "item" : "SOUTHFERRY-7AV-1",
+        "count" : "9"
+      }, {
+        "item" : "TIMESSQ-42ST-7AV-1/2/3",
+        "count" : "9"
+      }, {
+        "item" : "CORTLANDTST-7AV-1",
+        "count" : "8"
+      }, {
+        "item" : "181ST-8AV-A",
+        "count" : "8"
+      } ],
+      "smallest" : "125ST-8AV-A/B/C/D",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877934,
+    "name" : "Station Description",
+    "dataTypeName" : "text",
+    "description" : "Common names for each subway station followed by the “- Station” label.",
+    "fieldName" : "station_description",
+    "position" : 6,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201497,
+    "cachedContents" : {
+      "non_null" : "736",
+      "largest" : "World Trade Center - Station",
+      "null" : "23",
+      "top" : [ {
+        "item" : "Fulton St - Station",
+        "count" : "29"
+      }, {
+        "item" : "Grand Central-42 St - Station",
+        "count" : "26"
+      }, {
+        "item" : "86 St - Station",
+        "count" : "23"
+      }, {
+        "item" : "34 St-Hudson Yards - Station",
+        "count" : "20"
+      }, {
+        "item" : "72 St - Station",
+        "count" : "19"
+      }, {
+        "item" : "Lexington Av/63 St - Station",
+        "count" : "19"
+      }, {
+        "item" : "34 St-Herald Sq - Station",
+        "count" : "18"
+      }, {
+        "item" : "Cortlandt St - Station",
+        "count" : "15"
+      }, {
+        "item" : "Atlantic Av-Barclays Ctr - Station",
+        "count" : "13"
+      }, {
+        "item" : "Times Sq-42 St - Station",
+        "count" : "13"
+      }, {
+        "item" : "96 St - Station",
+        "count" : "13"
+      }, {
+        "item" : "Jamaica Center-Parsons/Archer - Station",
+        "count" : "12"
+      }, {
+        "item" : "Roosevelt Island - Station",
+        "count" : "12"
+      }, {
+        "item" : "181 St - Station",
+        "count" : "12"
+      }, {
+        "item" : "Sutphin Blvd-Archer Av-JFK Airport - Station",
+        "count" : "11"
+      }, {
+        "item" : "Bowling Green - Station",
+        "count" : "11"
+      }, {
+        "item" : "Lexington Av/53 St - Station",
+        "count" : "10"
+      }, {
+        "item" : "Howard Beach-JFK Airport - Station",
+        "count" : "10"
+      }, {
+        "item" : "34 St-Penn Station - Station",
+        "count" : "9"
+      }, {
+        "item" : "South Ferry - Station",
+        "count" : "9"
+      } ],
+      "smallest" : "125 St - Station",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877935,
+    "name" : "Station Complex MRN",
+    "dataTypeName" : "number",
+    "description" : "Represents unique Station Complex MRN for each subway station.",
+    "fieldName" : "station_complex_mrn",
+    "position" : 7,
+    "renderTypeName" : "number",
+    "tableColumnId" : 164201552,
+    "cachedContents" : {
+      "non_null" : "736",
+      "largest" : "636",
+      "null" : "23",
+      "top" : [ {
+        "item" : "628",
+        "count" : "29"
+      }, {
+        "item" : "610",
+        "count" : "26"
+      }, {
+        "item" : "611",
+        "count" : "20"
+      }, {
+        "item" : "471",
+        "count" : "20"
+      }, {
+        "item" : "223",
+        "count" : "19"
+      }, {
+        "item" : "607",
+        "count" : "18"
+      }, {
+        "item" : "477",
+        "count" : "17"
+      }, {
+        "item" : "476",
+        "count" : "15"
+      }, {
+        "item" : "617",
+        "count" : "13"
+      }, {
+        "item" : "612",
+        "count" : "12"
+      }, {
+        "item" : "278",
+        "count" : "12"
+      }, {
+        "item" : "635",
+        "count" : "12"
+      }, {
+        "item" : "222",
+        "count" : "12"
+      }, {
+        "item" : "414",
+        "count" : "11"
+      }, {
+        "item" : "279",
+        "count" : "11"
+      }, {
+        "item" : "475",
+        "count" : "11"
+      }, {
+        "item" : "624",
+        "count" : "11"
+      }, {
+        "item" : "620",
+        "count" : "10"
+      }, {
+        "item" : "198",
+        "count" : "10"
+      }, {
+        "item" : "616",
+        "count" : "9"
+      } ],
+      "smallest" : "2",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 623877936,
+    "name" : "Station Complex Description",
+    "dataTypeName" : "text",
+    "description" : "Common names for each subway station including the trains servicing the station in parentheses. ",
+    "fieldName" : "station_complex_description",
+    "position" : 8,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201519,
+    "cachedContents" : {
+      "non_null" : "273",
+      "largest" : "Times Sq-42 St (N,Q,R,S,1,2,3,7)/42 St (A,C,E)",
+      "null" : "486",
+      "top" : [ {
+        "item" : "Fulton St (A,C,J,Z,2,3,4,5)",
+        "count" : "29"
+      }, {
+        "item" : "Grand Central-42 St (S,4,5,6,7)",
+        "count" : "26"
+      }, {
+        "item" : "Times Sq-42 St (N,Q,R,S,1,2,3,7)/42 St (A,C,E)",
+        "count" : "20"
+      }, {
+        "item" : "34 St-Herald Sq (B,D,F,M,N,Q,R)",
+        "count" : "18"
+      }, {
+        "item" : "Atlantic Av (B,Q,2,3,4,5)/Pacific St (D,N,R)",
+        "count" : "13"
+      }, {
+        "item" : "Lexington Av-53 St (E,M)/51 St (6)",
+        "count" : "12"
+      }, {
+        "item" : "South Ferry (1)/Whitehall St (R)",
+        "count" : "12"
+      }, {
+        "item" : "Chambers St (A,C)/WTC (E)/Park Place (2,3)/Cortlandt St (R, W)",
+        "count" : "11"
+      }, {
+        "item" : "Court St (R)/Borough Hall (2,3,4,5)",
+        "count" : "10"
+      }, {
+        "item" : "74-Broadway (7)/Jackson Hts-Roosevelt Av (E,F,M,R)",
+        "count" : "9"
+      }, {
+        "item" : "Jay St-MetroTech (A,C,F,R)",
+        "count" : "9"
+      }, {
+        "item" : "Court Sq (E,G,M,7)",
+        "count" : "9"
+      }, {
+        "item" : "14 St (F,M,1,2,3)/6 Av (L)",
+        "count" : "9"
+      }, {
+        "item" : "59 St-Columbus Circle (A,B,C,D,1)",
+        "count" : "8"
+      }, {
+        "item" : "14 St-Union Sq (L,N,Q,R,4,5,6)",
+        "count" : "7"
+      }, {
+        "item" : "168 St (A,C,1)",
+        "count" : "7"
+      }, {
+        "item" : "161 St-Yankee Stadium (B,D,4)",
+        "count" : "7"
+      }, {
+        "item" : "Lexington Av (N,Q,R)/59 St (4,5,6)",
+        "count" : "7"
+      }, {
+        "item" : "Metropolitan Av (G)/Lorimer St (L)",
+        "count" : "6"
+      }, {
+        "item" : "Broadway-Lafayette St (B,D,F,M)/Bleecker St (6)",
+        "count" : "6"
+      } ],
+      "smallest" : "149 St-Grand Concourse (2,4,5)",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877937,
+    "name" : "Subway Line",
+    "dataTypeName" : "text",
+    "description" : "The subway lines (physical tracks the subway trains run over) each station is located by.",
+    "fieldName" : "subway_line",
+    "position" : 9,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201523,
+    "cachedContents" : {
+      "non_null" : "736",
+      "largest" : "SIRTOA",
+      "null" : "23",
+      "top" : [ {
+        "item" : "IND-A-8AV/FULTONST",
+        "count" : "93"
+      }, {
+        "item" : "IND-B-6AV/CULVER",
+        "count" : "48"
+      }, {
+        "item" : "IND-S-2AV",
+        "count" : "43"
+      }, {
+        "item" : "IND-T-63ST",
+        "count" : "40"
+      }, {
+        "item" : "IRT-V-7AV",
+        "count" : "37"
+      }, {
+        "item" : "IND-D-QUEENSBLVD",
+        "count" : "36"
+      }, {
+        "item" : "IRT-C-FLUSHING",
+        "count" : "32"
+      }, {
+        "item" : "IND-D-QUEENS/ARCHERAV",
+        "count" : "30"
+      }, {
+        "item" : "IRT-M-LEXINGTONAV",
+        "count" : "28"
+      }, {
+        "item" : "BMT-A-BROADWAY/BRIGHTON",
+        "count" : "28"
+      }, {
+        "item" : "IRT-BB-BROADWAY/7AV",
+        "count" : "23"
+      }, {
+        "item" : "IRT-MM-LEXINGTONAV",
+        "count" : "23"
+      }, {
+        "item" : "IRT-L-LEXINGTONAV",
+        "count" : "23"
+      }, {
+        "item" : "IRT-CC-FLUSHING",
+        "count" : "20"
+      }, {
+        "item" : "BMT-B-BROADWAY",
+        "count" : "20"
+      }, {
+        "item" : "BMT-Q-14ST/CANARSIE",
+        "count" : "18"
+      }, {
+        "item" : "IND-C-CONCOURSE",
+        "count" : "17"
+      }, {
+        "item" : "IND-F-ROCKAWAY",
+        "count" : "16"
+      }, {
+        "item" : "IRT-P-PELHAM",
+        "count" : "15"
+      }, {
+        "item" : "IRT-W-WHITEPLAINSRD",
+        "count" : "14"
+      } ],
+      "smallest" : "BMT-38-38STYD",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877938,
+    "name" : "Borough",
+    "dataTypeName" : "text",
+    "description" : "Location of the subway asset in one of the five boroughs of New York City (Bronx, Brooklyn, Manhattan, Queens, Staten Island).",
+    "fieldName" : "borough",
+    "position" : 10,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201528,
+    "cachedContents" : {
+      "non_null" : "759",
+      "largest" : "Staten Island",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Manhattan",
+        "count" : "410"
+      }, {
+        "item" : "Brooklyn",
+        "count" : "153"
+      }, {
+        "item" : "Queens",
+        "count" : "120"
+      }, {
+        "item" : "Bronx",
+        "count" : "73"
+      }, {
+        "item" : "Staten Island",
+        "count" : "3"
+      } ],
+      "smallest" : "Bronx",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877939,
+    "name" : "X Coordinate",
+    "dataTypeName" : "number",
+    "description" : "Longitude coordinate for describing the location of each subway elevator or escalator asset",
+    "fieldName" : "x_coordinate",
+    "position" : 11,
+    "renderTypeName" : "number",
+    "tableColumnId" : 164201534,
+    "cachedContents" : {
+      "non_null" : "758",
+      "largest" : "40.90165",
+      "null" : "1",
+      "top" : [ {
+        "item" : "40.71406",
+        "count" : "6"
+      }, {
+        "item" : "40.710667",
+        "count" : "5"
+      }, {
+        "item" : "40.683334",
+        "count" : "5"
+      }, {
+        "item" : "40.757294",
+        "count" : "5"
+      }, {
+        "item" : "40.65449",
+        "count" : "4"
+      }, {
+        "item" : "40.70035",
+        "count" : "4"
+      }, {
+        "item" : "40.76391",
+        "count" : "4"
+      }, {
+        "item" : "40.759174",
+        "count" : "4"
+      }, {
+        "item" : "40.710484",
+        "count" : "4"
+      }, {
+        "item" : "40.748672",
+        "count" : "4"
+      }, {
+        "item" : "40.764763",
+        "count" : "4"
+      }, {
+        "item" : "40.711834",
+        "count" : "3"
+      }, {
+        "item" : "40.764385",
+        "count" : "3"
+      }, {
+        "item" : "40.819",
+        "count" : "3"
+      }, {
+        "item" : "40.712627",
+        "count" : "3"
+      }, {
+        "item" : "40.75276",
+        "count" : "3"
+      }, {
+        "item" : "40.755",
+        "count" : "3"
+      }, {
+        "item" : "40.758823",
+        "count" : "3"
+      }, {
+        "item" : "40.783028",
+        "count" : "3"
+      }, {
+        "item" : "40.777607",
+        "count" : "3"
+      } ],
+      "smallest" : "40.53102",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 623877940,
+    "name" : "Y Coordinate",
+    "dataTypeName" : "number",
+    "description" : "Latitude coordinate for describing the location of each subway elevator or escalator asset",
+    "fieldName" : "y_coordinate",
+    "position" : 12,
+    "renderTypeName" : "number",
+    "tableColumnId" : 164201510,
+    "cachedContents" : {
+      "non_null" : "758",
+      "largest" : "-73.754074",
+      "null" : "1",
+      "top" : [ {
+        "item" : "-73.942215",
+        "count" : "6"
+      }, {
+        "item" : "-73.95027",
+        "count" : "6"
+      }, {
+        "item" : "-73.976326",
+        "count" : "5"
+      }, {
+        "item" : "-73.96953",
+        "count" : "5"
+      }, {
+        "item" : "-74.01103",
+        "count" : "5"
+      }, {
+        "item" : "-73.96655",
+        "count" : "4"
+      }, {
+        "item" : "-73.80832",
+        "count" : "4"
+      }, {
+        "item" : "-73.98851",
+        "count" : "4"
+      }, {
+        "item" : "-73.96482",
+        "count" : "4"
+      }, {
+        "item" : "-73.906334",
+        "count" : "4"
+      }, {
+        "item" : "-74.00007",
+        "count" : "4"
+      }, {
+        "item" : "-73.95346",
+        "count" : "3"
+      }, {
+        "item" : "-73.9515",
+        "count" : "3"
+      }, {
+        "item" : "-74.00087",
+        "count" : "3"
+      }, {
+        "item" : "-74.0097",
+        "count" : "3"
+      }, {
+        "item" : "-73.99139",
+        "count" : "3"
+      }, {
+        "item" : "-73.98799",
+        "count" : "3"
+      }, {
+        "item" : "-73.97704",
+        "count" : "3"
+      }, {
+        "item" : "-73.957184",
+        "count" : "3"
+      }, {
+        "item" : "-74.01219",
+        "count" : "3"
+      } ],
+      "smallest" : "-74.23799",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 623877941,
+    "name" : "Original Installation Date",
+    "dataTypeName" : "calendar_date",
+    "description" : "Date when each subway elevator or escalator asset opened for public use (not when construction started).",
+    "fieldName" : "original_installation_date",
+    "position" : 13,
+    "renderTypeName" : "calendar_date",
+    "tableColumnId" : 164225790,
+    "cachedContents" : {
+      "non_null" : "709",
+      "largest" : "2026-08-14T00:00:00.000",
+      "null" : "50",
+      "top" : [ {
+        "item" : "2017-01-01T00:00:00.000",
+        "count" : "43"
+      }, {
+        "item" : "1989-10-01T00:00:00.000",
+        "count" : "26"
+      }, {
+        "item" : "1988-12-01T00:00:00.000",
+        "count" : "22"
+      }, {
+        "item" : "1900-01-01T00:00:00.000",
+        "count" : "17"
+      }, {
+        "item" : "2015-09-13T00:00:00.000",
+        "count" : "13"
+      }, {
+        "item" : "1940-12-15T00:00:00.000",
+        "count" : "11"
+      }, {
+        "item" : "2014-11-10T00:00:00.000",
+        "count" : "10"
+      }, {
+        "item" : "1989-11-01T00:00:00.000",
+        "count" : "10"
+      }, {
+        "item" : "1977-04-01T00:00:00.000",
+        "count" : "9"
+      }, {
+        "item" : "2016-12-30T00:00:00.000",
+        "count" : "9"
+      }, {
+        "item" : "2009-03-16T00:00:00.000",
+        "count" : "9"
+      }, {
+        "item" : "2020-12-09T00:00:00.000",
+        "count" : "8"
+      }, {
+        "item" : "1932-06-01T00:00:00.000",
+        "count" : "8"
+      }, {
+        "item" : "2018-09-11T00:00:00.000",
+        "count" : "7"
+      }, {
+        "item" : "2018-08-31T00:00:00.000",
+        "count" : "7"
+      }, {
+        "item" : "2012-09-25T00:00:00.000",
+        "count" : "6"
+      }, {
+        "item" : "2024-04-01T00:00:00.000",
+        "count" : "6"
+      }, {
+        "item" : "1900-01-02T00:00:00.000",
+        "count" : "5"
+      }, {
+        "item" : "2002-04-04T00:00:00.000",
+        "count" : "5"
+      }, {
+        "item" : "1962-11-15T00:00:00.000",
+        "count" : "4"
+      } ],
+      "smallest" : "1900-01-01T00:00:00.000",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "view" : "date",
+      "align" : "center"
+    }
+  }, {
+    "id" : 623877942,
+    "name" : "Latest Installation Date",
+    "dataTypeName" : "calendar_date",
+    "description" : "Date when each subway elevator or escalator asset was last maintained or upgraded.",
+    "fieldName" : "latest_installation_date",
+    "position" : 14,
+    "renderTypeName" : "calendar_date",
+    "tableColumnId" : 164225789,
+    "cachedContents" : {
+      "non_null" : "759",
+      "largest" : "2026-10-02T00:00:00.000",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2017-01-01T00:00:00.000",
+        "count" : "43"
+      }, {
+        "item" : "2014-11-10T00:00:00.000",
+        "count" : "21"
+      }, {
+        "item" : "2015-09-13T00:00:00.000",
+        "count" : "13"
+      }, {
+        "item" : "1900-01-02T00:00:00.000",
+        "count" : "10"
+      }, {
+        "item" : "2016-12-30T00:00:00.000",
+        "count" : "9"
+      }, {
+        "item" : "2017-06-27T00:00:00.000",
+        "count" : "9"
+      }, {
+        "item" : "2020-12-09T00:00:00.000",
+        "count" : "8"
+      }, {
+        "item" : "1989-10-01T00:00:00.000",
+        "count" : "7"
+      }, {
+        "item" : "2024-04-01T00:00:00.000",
+        "count" : "6"
+      }, {
+        "item" : "2012-09-25T00:00:00.000",
+        "count" : "6"
+      }, {
+        "item" : "2018-08-31T00:00:00.000",
+        "count" : "6"
+      }, {
+        "item" : "2011-06-03T00:00:00.000",
+        "count" : "6"
+      }, {
+        "item" : "2021-11-30T00:00:00.000",
+        "count" : "6"
+      }, {
+        "item" : "2006-11-25T00:00:00.000",
+        "count" : "4"
+      }, {
+        "item" : "2019-12-20T00:00:00.000",
+        "count" : "4"
+      }, {
+        "item" : "2006-11-23T00:00:00.000",
+        "count" : "4"
+      }, {
+        "item" : "2026-04-03T00:00:00.000",
+        "count" : "4"
+      }, {
+        "item" : "2019-07-19T00:00:00.000",
+        "count" : "4"
+      }, {
+        "item" : "2025-12-05T00:00:00.000",
+        "count" : "4"
+      }, {
+        "item" : "2011-11-01T00:00:00.000",
+        "count" : "4"
+      } ],
+      "smallest" : "1900-01-02T00:00:00.000",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "view" : "date",
+      "align" : "center"
+    }
+  }, {
+    "id" : 623877943,
+    "name" : "Service Status Code",
+    "dataTypeName" : "text",
+    "description" : "Represents standardized code for service status for each subway elevator or escalator asset.",
+    "fieldName" : "service_status_code",
+    "position" : 15,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201507,
+    "cachedContents" : {
+      "non_null" : "759",
+      "largest" : "RNOS",
+      "null" : "0",
+      "top" : [ {
+        "item" : "IFIS",
+        "count" : "723"
+      }, {
+        "item" : "RNOS",
+        "count" : "27"
+      }, {
+        "item" : "INOS",
+        "count" : "5"
+      }, {
+        "item" : "IFOS",
+        "count" : "4"
+      } ],
+      "smallest" : "IFIS",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877944,
+    "name" : "Service Status",
+    "dataTypeName" : "text",
+    "description" : "Represents standardized description of service status for each subway elevator or escalator asset.",
+    "fieldName" : "service_status",
+    "position" : 16,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201558,
+    "cachedContents" : {
+      "non_null" : "759",
+      "largest" : "Removed-Non Functioning-Out of Service",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Installed-Functioning-In Service",
+        "count" : "723"
+      }, {
+        "item" : "Removed-Non Functioning-Out of Service",
+        "count" : "27"
+      }, {
+        "item" : "Installed-Non Functioning-Out of Service",
+        "count" : "5"
+      }, {
+        "item" : "Installed-Functioning-Out of Service",
+        "count" : "4"
+      } ],
+      "smallest" : "Installed-Functioning-In Service",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877945,
+    "name" : "Service Life",
+    "dataTypeName" : "number",
+    "description" : "Operational lifespan (in years) for each subway elevator or escalator asset.",
+    "fieldName" : "service_life",
+    "position" : 17,
+    "renderTypeName" : "number",
+    "tableColumnId" : 164201539,
+    "cachedContents" : {
+      "non_null" : "749",
+      "largest" : "30.0",
+      "null" : "10",
+      "top" : [ {
+        "item" : "17.0",
+        "count" : "378"
+      }, {
+        "item" : "22.0",
+        "count" : "370"
+      }, {
+        "item" : "30.0",
+        "count" : "1"
+      } ],
+      "smallest" : "17.0",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 623877946,
+    "name" : "NYCT Owned",
+    "dataTypeName" : "text",
+    "description" : "\"YES” or “NO” value representing if each subway elevator or escalator asset is owned by NYCT",
+    "fieldName" : "nyct_owned",
+    "position" : 18,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201516,
+    "cachedContents" : {
+      "non_null" : "759",
+      "largest" : "YES",
+      "null" : "0",
+      "top" : [ {
+        "item" : "YES",
+        "count" : "638"
+      }, {
+        "item" : "NO",
+        "count" : "121"
+      } ],
+      "smallest" : "NO",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877947,
+    "name" : "Maintained By",
+    "dataTypeName" : "text",
+    "description" : "Represents if each subway elevator or escalator asset is maintained by NYCT, a private contractor, or a third-party contractor regardless of who owns it",
+    "fieldName" : "maintained_by",
+    "position" : 19,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201526,
+    "cachedContents" : {
+      "non_null" : "759",
+      "largest" : "Third-Party Contractor",
+      "null" : "0",
+      "top" : [ {
+        "item" : "NYCT",
+        "count" : "506"
+      }, {
+        "item" : "Third-Party Contractor",
+        "count" : "132"
+      }, {
+        "item" : "Private Contractor",
+        "count" : "113"
+      }, {
+        "item" : "LIRR",
+        "count" : "8"
+      } ],
+      "smallest" : "LIRR",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877948,
+    "name" : "Installer",
+    "dataTypeName" : "text",
+    "description" : "Contractor responsible for installing each subway elevator or escalator asset (not the same as the manufacturers or maintainers)",
+    "fieldName" : "installer",
+    "position" : 20,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201525,
+    "cachedContents" : {
+      "non_null" : "657",
+      "largest" : "WESTINGHOUSE",
+      "null" : "102",
+      "top" : [ {
+        "item" : "KONE",
+        "count" : "132"
+      }, {
+        "item" : "CANTON",
+        "count" : "74"
+      }, {
+        "item" : "MID-AMERICAN",
+        "count" : "69"
+      }, {
+        "item" : "AM",
+        "count" : "63"
+      }, {
+        "item" : "CEMCO",
+        "count" : "53"
+      }, {
+        "item" : "OTIS",
+        "count" : "36"
+      }, {
+        "item" : "OK",
+        "count" : "36"
+      }, {
+        "item" : "FUJITEC",
+        "count" : "34"
+      }, {
+        "item" : "SCHINDLER",
+        "count" : "26"
+      }, {
+        "item" : "HOLLISTER-WHITNEY",
+        "count" : "24"
+      }, {
+        "item" : "MCE",
+        "count" : "18"
+      }, {
+        "item" : "MONGRAIN VERTICAL TRANSPORT",
+        "count" : "13"
+      }, {
+        "item" : "MAE",
+        "count" : "10"
+      }, {
+        "item" : "EECO (ELEVATOR EQUIP. CO.)",
+        "count" : "8"
+      }, {
+        "item" : "THYSSEN-KRUPP",
+        "count" : "7"
+      }, {
+        "item" : "MODERN ELEVATOR",
+        "count" : "7"
+      }, {
+        "item" : "MINNESOTA ELEVATOR (MEI)",
+        "count" : "4"
+      }, {
+        "item" : "JRT",
+        "count" : "4"
+      }, {
+        "item" : "ESCO",
+        "count" : "4"
+      }, {
+        "item" : "OTIS GCS",
+        "count" : "4"
+      } ],
+      "smallest" : "ACTION ELEVATOR",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877949,
+    "name" : "Revenue Machine",
+    "dataTypeName" : "text",
+    "description" : "\"YES” or “NO” value representing if each subway asset is used to generate revenue as a machine used by the public rather than by employees",
+    "fieldName" : "revenue_machine",
+    "position" : 21,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164225890,
+    "cachedContents" : {
+      "non_null" : "759",
+      "largest" : "YES",
+      "null" : "0",
+      "top" : [ {
+        "item" : "YES",
+        "count" : "707"
+      }, {
+        "item" : "NO",
+        "count" : "52"
+      } ],
+      "smallest" : "NO",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877950,
+    "name" : "ADA Compliant",
+    "dataTypeName" : "text",
+    "description" : "\"YES” or “NO” value representing if the subway elevator can be used in a step-free/ADA path of travel within the station",
+    "fieldName" : "ada_compliant",
+    "position" : 22,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201511,
+    "cachedContents" : {
+      "non_null" : "481",
+      "largest" : "YES",
+      "null" : "278",
+      "top" : [ {
+        "item" : "YES",
+        "count" : "416"
+      }, {
+        "item" : "NO",
+        "count" : "65"
+      } ],
+      "smallest" : "NO",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877951,
+    "name" : "Street Access",
+    "dataTypeName" : "text",
+    "description" : "\"YES” or “NO” value representing if each subway elevator or escalator asset provides access to the street level (even indoors, such as a lobby)",
+    "fieldName" : "street_access",
+    "position" : 23,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201498,
+    "cachedContents" : {
+      "non_null" : "748",
+      "largest" : "YES",
+      "null" : "11",
+      "top" : [ {
+        "item" : "NO",
+        "count" : "503"
+      }, {
+        "item" : "YES",
+        "count" : "245"
+      } ],
+      "smallest" : "NO",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877952,
+    "name" : "Exposed to Weather",
+    "dataTypeName" : "text",
+    "description" : "\"YES” or “NO” value representing if each subway elevator or escalator asset is exposed to weather from the outdoors ",
+    "fieldName" : "exposed_to_weather",
+    "position" : 24,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201527,
+    "cachedContents" : {
+      "non_null" : "748",
+      "largest" : "YES",
+      "null" : "11",
+      "top" : [ {
+        "item" : "NO",
+        "count" : "495"
+      }, {
+        "item" : "YES",
+        "count" : "253"
+      } ],
+      "smallest" : "NO",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877953,
+    "name" : "Escalator Rise",
+    "dataTypeName" : "text",
+    "description" : "Rise of each subway escalator asset in feet (elevator travel is captured in a separate field)",
+    "fieldName" : "escalator_rise",
+    "position" : 25,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201521,
+    "cachedContents" : {
+      "non_null" : "228",
+      "largest" : "9950 mm (32 ' 7 3/4in)",
+      "null" : "531",
+      "top" : [ {
+        "item" : "30'",
+        "count" : "15"
+      }, {
+        "item" : "28'",
+        "count" : "12"
+      }, {
+        "item" : "29'",
+        "count" : "8"
+      }, {
+        "item" : "20'",
+        "count" : "7"
+      }, {
+        "item" : "26'",
+        "count" : "6"
+      }, {
+        "item" : "23'",
+        "count" : "6"
+      }, {
+        "item" : "24'",
+        "count" : "6"
+      }, {
+        "item" : "11'",
+        "count" : "6"
+      }, {
+        "item" : "24,892 mm (81' 8in)",
+        "count" : "5"
+      }, {
+        "item" : "37'",
+        "count" : "5"
+      }, {
+        "item" : "50'",
+        "count" : "5"
+      }, {
+        "item" : "14'",
+        "count" : "5"
+      }, {
+        "item" : "13'",
+        "count" : "4"
+      }, {
+        "item" : "38'",
+        "count" : "4"
+      }, {
+        "item" : "12'",
+        "count" : "4"
+      }, {
+        "item" : "27'",
+        "count" : "4"
+      }, {
+        "item" : "32'",
+        "count" : "4"
+      }, {
+        "item" : "18'",
+        "count" : "3"
+      }, {
+        "item" : "13719 mm (45' 0 1/8in)",
+        "count" : "3"
+      }, {
+        "item" : "20828 mm (68'4in)",
+        "count" : "3"
+      } ],
+      "smallest" : "10236 mm (33' 7in)",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877954,
+    "name" : "Elevator Rise",
+    "dataTypeName" : "text",
+    "description" : "Travel of each subway elevator asset in feet (escalator rise is captured in a separate field)",
+    "fieldName" : "elevator_rise",
+    "position" : 26,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201524,
+    "cachedContents" : {
+      "non_null" : "137",
+      "largest" : "9'-6in",
+      "null" : "622",
+      "top" : [ {
+        "item" : "78' 6 1/4in",
+        "count" : "4"
+      }, {
+        "item" : "15' - 8in",
+        "count" : "3"
+      }, {
+        "item" : "12'-5 1/2in",
+        "count" : "3"
+      }, {
+        "item" : "10'-3in",
+        "count" : "3"
+      }, {
+        "item" : "106' 10in",
+        "count" : "3"
+      }, {
+        "item" : "28' 2 3/4in",
+        "count" : "2"
+      }, {
+        "item" : "19' 7-3/4in",
+        "count" : "2"
+      }, {
+        "item" : "27’ 3”",
+        "count" : "2"
+      }, {
+        "item" : "162' - 4in",
+        "count" : "2"
+      }, {
+        "item" : "16' - 1in",
+        "count" : "2"
+      }, {
+        "item" : "172’9”",
+        "count" : "2"
+      }, {
+        "item" : "14' - 3in",
+        "count" : "2"
+      }, {
+        "item" : "10' 11-3/8in",
+        "count" : "2"
+      }, {
+        "item" : "51' 4in",
+        "count" : "2"
+      }, {
+        "item" : "103' 5in",
+        "count" : "2"
+      }, {
+        "item" : "12' 3/4in",
+        "count" : "2"
+      }, {
+        "item" : "103'-5in",
+        "count" : "2"
+      }, {
+        "item" : "19' 4in",
+        "count" : "2"
+      }, {
+        "item" : "10'-8 3/4in",
+        "count" : "1"
+      }, {
+        "item" : "10'-7 1/8in",
+        "count" : "1"
+      } ],
+      "smallest" : "10’-11”",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877955,
+    "name" : "Elevator Capacity",
+    "dataTypeName" : "text",
+    "description" : "Carrying capacity (in pounds) of each subway elevator asset.",
+    "fieldName" : "elevator_capacity",
+    "position" : 27,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201503,
+    "cachedContents" : {
+      "non_null" : "334",
+      "largest" : "9000",
+      "null" : "425",
+      "top" : [ {
+        "item" : "2500",
+        "count" : "94"
+      }, {
+        "item" : "2000",
+        "count" : "82"
+      }, {
+        "item" : "2100",
+        "count" : "50"
+      }, {
+        "item" : "10000",
+        "count" : "23"
+      }, {
+        "item" : "3000",
+        "count" : "16"
+      }, {
+        "item" : "4500",
+        "count" : "13"
+      }, {
+        "item" : "2700",
+        "count" : "7"
+      }, {
+        "item" : "5000",
+        "count" : "6"
+      }, {
+        "item" : "4000",
+        "count" : "5"
+      }, {
+        "item" : "2600",
+        "count" : "5"
+      }, {
+        "item" : "6000",
+        "count" : "5"
+      }, {
+        "item" : "9000",
+        "count" : "4"
+      }, {
+        "item" : "3500",
+        "count" : "3"
+      }, {
+        "item" : "2700 lbs",
+        "count" : "3"
+      }, {
+        "item" : "2500 lbs",
+        "count" : "2"
+      }, {
+        "item" : "2600 lbs",
+        "count" : "2"
+      }, {
+        "item" : "2200",
+        "count" : "2"
+      }, {
+        "item" : "11000",
+        "count" : "2"
+      }, {
+        "item" : "300",
+        "count" : "1"
+      }, {
+        "item" : "2300",
+        "count" : "1"
+      } ],
+      "smallest" : "10000",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 623877956,
+    "name" : "Elevator Loading Class",
+    "dataTypeName" : "text",
+    "description" : "Loading class based on carrying capacity and intended use of subway elevator assets (all escalator assets are “Passenger” class)",
+    "fieldName" : "elevator_loading_class",
+    "position" : 28,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201518,
+    "cachedContents" : {
+      "non_null" : "364",
+      "largest" : "Passenger Yard",
+      "null" : "395",
+      "top" : [ {
+        "item" : "Passenger",
+        "count" : "328"
+      }, {
+        "item" : "Freight",
+        "count" : "19"
+      }, {
+        "item" : "Passenger Yard",
+        "count" : "17"
+      } ],
+      "smallest" : "Freight",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877957,
+    "name" : "Elevator Number of Landings",
+    "dataTypeName" : "text",
+    "description" : "Number of landings or platforms serviced by each subway elevator asset ",
+    "fieldName" : "elevator_number_of_landings",
+    "position" : 29,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201561,
+    "cachedContents" : {
+      "non_null" : "159",
+      "largest" : "Platform",
+      "null" : "600",
+      "top" : [ {
+        "item" : "2",
+        "count" : "134"
+      }, {
+        "item" : "3",
+        "count" : "23"
+      }, {
+        "item" : "4",
+        "count" : "1"
+      }, {
+        "item" : "Platform",
+        "count" : "1"
+      } ],
+      "smallest" : "2",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 623877958,
+    "name" : "Escalator Number of Steps",
+    "dataTypeName" : "text",
+    "description" : "Number of steps in each subway escalator asset",
+    "fieldName" : "escalator_number_of_steps",
+    "position" : 30,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201509,
+    "cachedContents" : {
+      "non_null" : "238",
+      "largest" : "99",
+      "null" : "521",
+      "top" : [ {
+        "item" : "0",
+        "count" : "20"
+      }, {
+        "item" : "110",
+        "count" : "13"
+      }, {
+        "item" : "109",
+        "count" : "11"
+      }, {
+        "item" : "53",
+        "count" : "8"
+      }, {
+        "item" : "80",
+        "count" : "6"
+      }, {
+        "item" : "283",
+        "count" : "5"
+      }, {
+        "item" : "90",
+        "count" : "5"
+      }, {
+        "item" : "84",
+        "count" : "5"
+      }, {
+        "item" : "166",
+        "count" : "5"
+      }, {
+        "item" : "115",
+        "count" : "4"
+      }, {
+        "item" : "217",
+        "count" : "4"
+      }, {
+        "item" : "112",
+        "count" : "4"
+      }, {
+        "item" : "106",
+        "count" : "4"
+      }, {
+        "item" : "75",
+        "count" : "4"
+      }, {
+        "item" : "55",
+        "count" : "4"
+      }, {
+        "item" : "117",
+        "count" : "4"
+      }, {
+        "item" : "56",
+        "count" : "4"
+      }, {
+        "item" : "78",
+        "count" : "4"
+      }, {
+        "item" : "111",
+        "count" : "4"
+      }, {
+        "item" : "94",
+        "count" : "4"
+      } ],
+      "smallest" : "0",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 623877959,
+    "name" : "Escalator Step Width",
+    "dataTypeName" : "text",
+    "description" : "Width of steps (in millimeters) for subway escalator assets",
+    "fieldName" : "escalator_step_width",
+    "position" : 31,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201506,
+    "cachedContents" : {
+      "non_null" : "211",
+      "largest" : "Step Width 996 mm (39 3/8in)",
+      "null" : "548",
+      "top" : [ {
+        "item" : "40",
+        "count" : "70"
+      }, {
+        "item" : "40in",
+        "count" : "34"
+      }, {
+        "item" : "24",
+        "count" : "32"
+      }, {
+        "item" : "40in (NOMINAL), 996 mm",
+        "count" : "11"
+      }, {
+        "item" : "1000 mm (39 3/8in)",
+        "count" : "9"
+      }, {
+        "item" : "32in",
+        "count" : "6"
+      }, {
+        "item" : "600",
+        "count" : "6"
+      }, {
+        "item" : "1000 mm (40in)",
+        "count" : "5"
+      }, {
+        "item" : "32",
+        "count" : "5"
+      }, {
+        "item" : "24in",
+        "count" : "4"
+      }, {
+        "item" : "1000mm (40in NOMINAL)",
+        "count" : "3"
+      }, {
+        "item" : "1000 mm",
+        "count" : "3"
+      }, {
+        "item" : "800",
+        "count" : "3"
+      }, {
+        "item" : "40'",
+        "count" : "3"
+      }, {
+        "item" : "Step Width 996 mm (39 3/8in)",
+        "count" : "2"
+      }, {
+        "item" : "1000 mm (40in NOMINAL)",
+        "count" : "2"
+      }, {
+        "item" : "31.50in",
+        "count" : "1"
+      }, {
+        "item" : "10in",
+        "count" : "1"
+      }, {
+        "item" : "4'-4in",
+        "count" : "1"
+      }, {
+        "item" : "48in",
+        "count" : "1"
+      } ],
+      "smallest" : "100",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 623877960,
+    "name" : "Elevator Direction Serviced",
+    "dataTypeName" : "text",
+    "description" : "Travel direction of trains arriving at the subway station platform serviced by each subway elevator asset (i.e. northbound, southbound or both)",
+    "fieldName" : "elevator_direction_serviced",
+    "position" : 32,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201530,
+    "cachedContents" : {
+      "non_null" : "429",
+      "largest" : "Southbound",
+      "null" : "330",
+      "top" : [ {
+        "item" : "Both",
+        "count" : "213"
+      }, {
+        "item" : "Southbound",
+        "count" : "110"
+      }, {
+        "item" : "Northbound",
+        "count" : "106"
+      } ],
+      "smallest" : "Both",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877961,
+    "name" : "Elevator Order",
+    "dataTypeName" : "text",
+    "description" : "Numeric order of subway elevator assets from the street level downwards if there are multiple assets in one subway station",
+    "fieldName" : "elevator_order",
+    "position" : 33,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201495,
+    "cachedContents" : {
+      "non_null" : "429",
+      "largest" : "7",
+      "null" : "330",
+      "top" : [ {
+        "item" : "1",
+        "count" : "245"
+      }, {
+        "item" : "2",
+        "count" : "131"
+      }, {
+        "item" : "3",
+        "count" : "30"
+      }, {
+        "item" : "4",
+        "count" : "16"
+      }, {
+        "item" : "5",
+        "count" : "4"
+      }, {
+        "item" : "6",
+        "count" : "2"
+      }, {
+        "item" : "7",
+        "count" : "1"
+      } ],
+      "smallest" : "1",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 623877962,
+    "name" : "Elevator Mezzanine 1 Access",
+    "dataTypeName" : "text",
+    "description" : "“+” or “-” value representing if each subway elevator asset has access to the first mezzanine in the subway station",
+    "fieldName" : "elevator_mezzanine_1_access",
+    "position" : 34,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201520,
+    "cachedContents" : {
+      "non_null" : "429",
+      "largest" : "+",
+      "null" : "330",
+      "top" : [ {
+        "item" : "+",
+        "count" : "332"
+      }, {
+        "item" : "-",
+        "count" : "97"
+      } ],
+      "smallest" : "-",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877963,
+    "name" : "Elevator Mezzanine 2 Access",
+    "dataTypeName" : "text",
+    "description" : "“+” or “-” value representing if each subway elevator asset has access to the second mezzanine in the subway station",
+    "fieldName" : "elevator_mezzanine_2_access",
+    "position" : 35,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201508,
+    "cachedContents" : {
+      "non_null" : "429",
+      "largest" : "+",
+      "null" : "330",
+      "top" : [ {
+        "item" : "-",
+        "count" : "354"
+      }, {
+        "item" : "+",
+        "count" : "75"
+      } ],
+      "smallest" : "-",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877964,
+    "name" : "Elevator Platform Access",
+    "dataTypeName" : "text",
+    "description" : "“+” or “-” value representing if each subway elevator asset has access to a platform inside the subway station",
+    "fieldName" : "elevator_platform_access",
+    "position" : 36,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201496,
+    "cachedContents" : {
+      "non_null" : "429",
+      "largest" : "+",
+      "null" : "330",
+      "top" : [ {
+        "item" : "+",
+        "count" : "290"
+      }, {
+        "item" : "-",
+        "count" : "139"
+      } ],
+      "smallest" : "-",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877965,
+    "name" : "Notes",
+    "dataTypeName" : "text",
+    "description" : "General notes on each subway elevator or escalator asset that may include the asset location in a subway station",
+    "fieldName" : "notes",
+    "position" : 37,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201517,
+    "cachedContents" : {
+      "non_null" : "750",
+      "largest" : "Yard To Storage Room",
+      "null" : "9",
+      "top" : [ {
+        "item" : "mezzanine to Manhattan-bound platform",
+        "count" : "21"
+      }, {
+        "item" : "3 Landings",
+        "count" : "9"
+      }, {
+        "item" : "mezzanine to platform for service in both directions",
+        "count" : "7"
+      }, {
+        "item" : "2nd Ave & 72 St (SE corner) to mezzanine for service in both directions",
+        "count" : "5"
+      }, {
+        "item" : "mezzanine to bridge for service in both directions",
+        "count" : "4"
+      }, {
+        "item" : "63 St & 3 Av mezzanine to platforms for service in both directions.",
+        "count" : "4"
+      }, {
+        "item" : "191 St & St Nicholas Ave (SW corner) to mezzanine for service in both directions and access to passageway to Broadway & 191 St",
+        "count" : "4"
+      }, {
+        "item" : "Mezzanine to Manhattan-bound platform.",
+        "count" : "4"
+      }, {
+        "item" : "Passenger Yard Elevator At Coney Island Yard",
+        "count" : "4"
+      }, {
+        "item" : "platform to lower mezzanine",
+        "count" : "4"
+      }, {
+        "item" : "Freight Elevator At 207Th Street Yard",
+        "count" : "4"
+      }, {
+        "item" : "transfer mezzanine to overpass for 1 train service in both directions",
+        "count" : "4"
+      }, {
+        "item" : "street-level arcade at Clark St & Henry St to lower mezzanine for service in both directions",
+        "count" : "3"
+      }, {
+        "item" : "Transit Center",
+        "count" : "3"
+      }, {
+        "item" : "mezzanine to Manhattan-bound 7 platform",
+        "count" : "3"
+      }, {
+        "item" : "mezzanine to Parsons Blvd & Archer Ave (SW corner)",
+        "count" : "3"
+      }, {
+        "item" : "Sutphin Blvd & Archer Ave (SW intersection) to mezzanine for service in both directions",
+        "count" : "3"
+      }, {
+        "item" : "mezzanine to uptown N/Q/R/W platform",
+        "count" : "3"
+      }, {
+        "item" : "Upper mezzanine (184 St & Ft Washington Av) to lower mezzanine for service in both directions.",
+        "count" : "3"
+      }, {
+        "item" : "lower mezzanine to upper mezzanine for Hudson Blvd E exit (between 33 St & 34 St)",
+        "count" : "3"
+      } ],
+      "smallest" : "1/2/3 mezzanine to 42 St & 7th Ave (SW corner)",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877966,
+    "name" : "Redundant Elevator",
+    "dataTypeName" : "text",
+    "description" : "“+” or “-” value representing if there is a redundant subway elevator asset providing the same service for each elevator ",
+    "fieldName" : "redundant_elevator",
+    "position" : 38,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201547,
+    "cachedContents" : {
+      "non_null" : "429",
+      "largest" : "+",
+      "null" : "330",
+      "top" : [ {
+        "item" : "-",
+        "count" : "317"
+      }, {
+        "item" : "+",
+        "count" : "112"
+      } ],
+      "smallest" : "-",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877967,
+    "name" : "Redundant Elevator Street Access",
+    "dataTypeName" : "text",
+    "description" : "The redundant subway elevator assets in the subway station that access the street level represented by a list of the unique characters following the “EL” in the equipment code of each redundant elevator",
+    "fieldName" : "redundant_elevator_street",
+    "position" : 39,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201543,
+    "cachedContents" : {
+      "non_null" : "59",
+      "largest" : "EL791X",
+      "null" : "700",
+      "top" : [ {
+        "item" : "23X",
+        "count" : "3"
+      }, {
+        "item" : "717X",
+        "count" : "2"
+      }, {
+        "item" : "300X",
+        "count" : "2"
+      }, {
+        "item" : "310",
+        "count" : "2"
+      }, {
+        "item" : "288X",
+        "count" : "2"
+      }, {
+        "item" : "448X",
+        "count" : "2"
+      }, {
+        "item" : "34X",
+        "count" : "2"
+      }, {
+        "item" : "200X",
+        "count" : "1"
+      }, {
+        "item" : "18X",
+        "count" : "1"
+      }, {
+        "item" : "103, 105, 106",
+        "count" : "1"
+      }, {
+        "item" : "262, 264, 265, 267",
+        "count" : "1"
+      }, {
+        "item" : "262, 264, 266, 267",
+        "count" : "1"
+      }, {
+        "item" : "262, 265, 266, 267",
+        "count" : "1"
+      }, {
+        "item" : "264, 265, 266, 267",
+        "count" : "1"
+      }, {
+        "item" : "262, 264, 265, 266",
+        "count" : "1"
+      }, {
+        "item" : "296",
+        "count" : "1"
+      }, {
+        "item" : "14X",
+        "count" : "1"
+      }, {
+        "item" : "289X",
+        "count" : "1"
+      }, {
+        "item" : "213",
+        "count" : "1"
+      }, {
+        "item" : "280",
+        "count" : "1"
+      } ],
+      "smallest" : "103, 104, 105",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877968,
+    "name" : "Redundant Elevator Mezzanine Access",
+    "dataTypeName" : "text",
+    "description" : "The redundant subway elevator assets in the subway station that access the mezzanine represented by a list of the unique characters following the “EL” in the equipment code of each redundant elevator",
+    "fieldName" : "redundant_elevator_mezzanine",
+    "position" : 40,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201522,
+    "cachedContents" : {
+      "non_null" : "93",
+      "largest" : "EL791X",
+      "null" : "666",
+      "top" : [ {
+        "item" : "440",
+        "count" : "4"
+      }, {
+        "item" : "17X",
+        "count" : "3"
+      }, {
+        "item" : "12X",
+        "count" : "2"
+      }, {
+        "item" : "717X",
+        "count" : "2"
+      }, {
+        "item" : "116",
+        "count" : "2"
+      }, {
+        "item" : "288X",
+        "count" : "2"
+      }, {
+        "item" : "448X",
+        "count" : "2"
+      }, {
+        "item" : "310",
+        "count" : "2"
+      }, {
+        "item" : "23X",
+        "count" : "2"
+      }, {
+        "item" : "107, 109, 110",
+        "count" : "1"
+      }, {
+        "item" : "115",
+        "count" : "1"
+      }, {
+        "item" : "112, 113, 114",
+        "count" : "1"
+      }, {
+        "item" : "107, 108, 110",
+        "count" : "1"
+      }, {
+        "item" : "117, 118",
+        "count" : "1"
+      }, {
+        "item" : "103, 105, 106",
+        "count" : "1"
+      }, {
+        "item" : "111, 113, 114",
+        "count" : "1"
+      }, {
+        "item" : "16X",
+        "count" : "1"
+      }, {
+        "item" : "111, 112, 114",
+        "count" : "1"
+      }, {
+        "item" : "107, 108, 109",
+        "count" : "1"
+      }, {
+        "item" : "11X,13X",
+        "count" : "1"
+      } ],
+      "smallest" : "103, 104, 105",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877969,
+    "name" : "Redundant Elevator Access Between Mezzanines",
+    "dataTypeName" : "text",
+    "description" : "The redundant subway elevator assets in the subway station that allow access between the mezzanines represented by a list of the unique characters following the “EL” in the equipment code of each redundant elevator",
+    "fieldName" : "redundant_elevator_access",
+    "position" : 41,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201512,
+    "cachedContents" : {
+      "non_null" : "30",
+      "largest" : "720",
+      "null" : "729",
+      "top" : [ {
+        "item" : "17X",
+        "count" : "2"
+      }, {
+        "item" : "116",
+        "count" : "2"
+      }, {
+        "item" : "107, 109, 110",
+        "count" : "1"
+      }, {
+        "item" : "108, 109, 110",
+        "count" : "1"
+      }, {
+        "item" : "111, 112, 113",
+        "count" : "1"
+      }, {
+        "item" : "111, 112, 114",
+        "count" : "1"
+      }, {
+        "item" : "111, 113, 114",
+        "count" : "1"
+      }, {
+        "item" : "112, 113, 114",
+        "count" : "1"
+      }, {
+        "item" : "115",
+        "count" : "1"
+      }, {
+        "item" : "117, 118",
+        "count" : "1"
+      }, {
+        "item" : "117, 119",
+        "count" : "1"
+      }, {
+        "item" : "118, 119",
+        "count" : "1"
+      }, {
+        "item" : "11X",
+        "count" : "1"
+      }, {
+        "item" : "12X",
+        "count" : "1"
+      }, {
+        "item" : "16X",
+        "count" : "1"
+      }, {
+        "item" : "17X+",
+        "count" : "1"
+      }, {
+        "item" : "290X",
+        "count" : "1"
+      }, {
+        "item" : "291X",
+        "count" : "1"
+      }, {
+        "item" : "304",
+        "count" : "1"
+      }, {
+        "item" : "308",
+        "count" : "1"
+      } ],
+      "smallest" : "107, 108, 109",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877970,
+    "name" : "Redundant Elevator Platform Access",
+    "dataTypeName" : "text",
+    "description" : "The redundant subway elevator assets in the subway station that access the platform represented by a list of the unique characters following the “EL” in the equipment code of each redundant elevator",
+    "fieldName" : "redundant_elevator_platform",
+    "position" : 42,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201514,
+    "cachedContents" : {
+      "non_null" : "47",
+      "largest" : "EL205, EL206, EL244",
+      "null" : "712",
+      "top" : [ {
+        "item" : "23X",
+        "count" : "4"
+      }, {
+        "item" : "440",
+        "count" : "4"
+      }, {
+        "item" : "17X",
+        "count" : "2"
+      }, {
+        "item" : "279",
+        "count" : "2"
+      }, {
+        "item" : "300X",
+        "count" : "2"
+      }, {
+        "item" : "719",
+        "count" : "2"
+      }, {
+        "item" : "278",
+        "count" : "1"
+      }, {
+        "item" : "301",
+        "count" : "1"
+      }, {
+        "item" : "326, 17X",
+        "count" : "1"
+      }, {
+        "item" : "329",
+        "count" : "1"
+      }, {
+        "item" : "330",
+        "count" : "1"
+      }, {
+        "item" : "331",
+        "count" : "1"
+      }, {
+        "item" : "332",
+        "count" : "1"
+      }, {
+        "item" : "441",
+        "count" : "1"
+      }, {
+        "item" : "492X",
+        "count" : "1"
+      }, {
+        "item" : "493X",
+        "count" : "1"
+      }, {
+        "item" : "494X",
+        "count" : "1"
+      }, {
+        "item" : "495X",
+        "count" : "1"
+      }, {
+        "item" : "497",
+        "count" : "1"
+      }, {
+        "item" : "498",
+        "count" : "1"
+      } ],
+      "smallest" : "12X",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877971,
+    "name" : "Alternative Route",
+    "dataTypeName" : "text",
+    "description" : "Alternative routes for customers to take to navigate through the subway station if the subway elevator asset is out of service",
+    "fieldName" : "alternative_route",
+    "position" : 43,
+    "renderTypeName" : "text",
+    "tableColumnId" : 164201565,
+    "cachedContents" : {
+      "non_null" : "427",
+      "largest" : "Use another elevator on this level.",
+      "null" : "332",
+      "top" : [ {
+        "item" : "Use an adjacent elevator.",
+        "count" : "40"
+      }, {
+        "item" : "Use another elevator on this level.",
+        "count" : "19"
+      }, {
+        "item" : "Alt route not available for this elevator. Please use TripPlanner for latest information.",
+        "count" : "13"
+      }, {
+        "item" : "All elevators in this station are out of service for replacement.  Read on for travel alternatives: For easiest Manhattan-bound service, use nearby Metro-North station. Present Reduced-Fare MetroCard or OMNY card to conductors at Metro-North station Yankees-East 153 St for free out of system transfer. Travel south on River Av to 157 St, walk west on 157 St to the Metro North station. Travel to 125 St or Grand Central and continue your journey.  For Bedford Park Blvd-bound B/D, take a Hunts Pt-bound Bx6 Local bus (161 St and River Av) to Concourse Village E (Morris Av). Transfer to a Kingsbridge-bound Bx32 bus and take it to Jerome Av and Kingsbridge Rd for B or D. For Woodlawn-bound 4, elevators are also out of service at Fordham Rd 4 station. Instead, take a Riverdale-bound Bx1 or Bx1 LTD, or a Kingsbridge-bound Bx2 from Grand Concourse/E 170 St to your destination. You can also transfer to the Bx32, which runs on Jerome Av, at 175 St and Walton Av (just west of Grand Concourse).",
+        "count" : "2"
+      }, {
+        "item" : "If you are on the mezzanine: For downtown 1, proceed to the elevator at the other side of the mezzanine to reach the platform and use the elevator at the other end of platform. Take an uptown 1 to 72 St and use elevators to transfer to a downtown 1. For downtown A, B, C or D, proceed to the elevator at the side of the mezzanine and take an uptown A, C, B or D to 125 St. Use elevators to transfer to downtown service.  Or, take a southbound M104 bus (Columbus Circle and 8 Av) to 41 St and 8 Av and proceed to Times Sq-42 St for downtown 1 or to 42 St/Port Authority Bus Terminal for A, C. If you are on the downtown A/B/C/D platform: Take a downtown A or C to 42 St/Port Authority Bus Terminal and use ramps to transfer to an uptown A or C to 59 St-Columbus Circle. Or, take a downtown C to 50 St. Exit station and take a northbound M20 or M104 bus (49 St and 8 Av) to 59 St-Columbus Circle. If you are on the downtown 1 platform: Take a downtown 1 to Times Sq-42 St then either: Use elevators to transfer to an uptown 1 to 59 St-Columbus Circle. Or, take a northbound M20 or M104 bus (8 Av and 43 St) to 59 St-Columbus Circle.",
+        "count" : "2"
+      }, {
+        "item" : "If you’re on the platform:  Take a Downtown and Brooklyn-bound A to 175 St. Then, transfer across the platform to an Inwood-207 St-bound A.  If you’re on the mezzanine: Use EL517 to take an Inwood-207 St-bound A to Inwood-207 St. Then, stay on the train or transfer across the platform for the next Downtown and Brooklyn-bound A to 181st St.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the street: Take a Jamaica-bound Q54 or Q56 (Jamaica and Van Wyck Expwy) to Jamaica Av and 147 Pl.  Proceed two blocks south to Sutphin Blvd and Jamaica Av.  Use elevators to enter the Sutphin Blvd-Archer Av E/J/Z Station. If you are on the mezzanine: See a station agent to re-enter faregate and use elevator to take a Jamaica-bound E to Sutphin Blvd-Archer Av E/J/Z Station.  Use elevators to exit station and take a Lafayette Av-bound Q24 or a Williamsburg Bridge Plz-bound Q54 (Jamaica Av & Sutphin Blvd) to Jamaica-Van Wyck E Station.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the uptown 1 platform: Exit station and take a southbound M10 bus (Frederick Douglass Blvd) to 59 St-Columbus Circle. Or, take a southbound M10 bus to 97 St and transfer to a westbound M96 bus to Broadway (for 1 service). If you are on the uptown A/B/C/D platform: For uptown 1, proceed to elevator at the other end of this platform. Exit the station and re-enter at the northwest corner of Columbus Circle or take a downtown 1 to Times Sq-42 St. Use elevators to transfer to an uptown 1. Or, take an uptown A or D to 125 St. Exit the station and take a southbound M10 bus to 59 St.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the downtown 6 mezzanine: Use the elevator on the other side of the mezzanine to reach the uptown B/D/F/M platform. Proceed to the opposite end of the platform to reach the elevator to the uptown 6 platform. Use the elevator at the opposite end of the mezzanine to reach the downtown B/D/F/M platform. Or, take a downtown 6 to Brooklyn Bridge-City Hall. Then use the elevators to transfer to an uptown 6 B’way-Lafayette St, and use the elevator to transfer to the B/D/F/M. If you are on the downtown B/D/F/M platform: Use the elevator at the other end of this platform to reach the uptown 6 platform. Use the elevator at the other end of the mezzanine to reach the uptown B/D/F/M platform. Proceed to the other end of the uptown B/D/F/M platform for the elevator to transfer to a downtown 6 or to exit the station.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the mezzanine:  Weekdays from 6 AM to 9:30 PM: Take a Forest Hills-bound M to Northern Blvd and transfer to a Manhattan-bound M.  Nights and Weekends: Take a Jamaica-bound F to Jackson Hts-Roosevelt Av and transfer to a Manhattan-bound F. If you are on the platform:  Take a Manhattan-bound train to Roosevelt Island and transfer to a Forest Hills-bound M (Jamaica-bound F Nights, Weekends) to 21 St-Queensbridge.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the street: Use another elevator on this level for uptown 4 5.  If on the uptown 4/5 platform: Use another elevator on this level to street level.  If you are on the lower concourse: For uptown 4/5, take elevator at the opposite end of the corridor to Broadway and Dey St. Cross Broadway into Fulton Center and take another elevator down to uptown 4/5.",
+        "count" : "1"
+      }, {
+        "item" : "For Queens-bound E/F/M/R service from the mezzanine: Take a Manhattan-bound E, F or R to Queens Plaza and then transfer to a Queens-bound E, F, or R.  To exit: Take an E/F/M/R to Forest Hills-71 Av and transfer to a Manhattan-bound E/F/M/R to Jackson Hts-Roosevelt Av.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the mezzanine: Use elevator to take a Bay Ridge-bound R to 86 St and transfer across the platform to a Manhattan-bound R. Or, use elevator to take a Coney Island-bound N to 8 Av and use elevators to transfer to a Manhattan-bound N. If you are on the platform: Take a Manhattan-bound N or R to Atlantic Av-Barclays Ctr. Then, use elevators to transfer to a Coney Island-bound N or Bay Ridge-bound R to 59 St.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the uptown 4/5 platform: To transfer, exit through the faregates and take the elevator to street. For downtown 4/5, proceed to the elevator entrance on the southwest corner of Broadway and Dey St. For A/C/J/Z, use the elevator entrance at the northeast corner of Fulton St and Nassau St. For the 2/3, use the elevator entrance at the southwest corner of Fulton St and William St. If are on the upper concourse: Use the other elevator on this level to reach A/C. Proceed toward the downtown J/Z to use the elevator to street. For downtown 4 or 5, proceed to the elevator entrance on the southwest corner of Broadway and Dey St. For uptown 4 or 5, proceed to the elevator entrance in the Fulton Center at Broadway and Fulton St. If you are on the lower concourse: For uptown 4 5, exit through the faregates, take the elevator toward uptown 4/5, and re-enter through the faregates. For A/C or uptown J/Z, exit through the faregates and take the elevator to street level. Proceed to the corner of Nassau St and Fulton St and take the elevator to the downtown J/Z and follow signs. For 2/3, exit through the faregates and take the elevator up to street level. Proceed to the elevator entrance at the southwest corner of William St and Fulton St and follow signs.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the street:  Travel to the northeast corner of Court St and Joralemon St. Use elevator EL773 to enter the Borough Hall station for 2/3/4/5 service. If you are on the mezzanine:  Use the Manhattan-bound 2/3 platform to access the Manhattan-bound 4/5 platform. Use elevators to exit the station.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the mezzanine: Take an uptown C or E to 42 St/Port Authority Bus Terminal and transfer across the platform for an uptown A or use ramps to transfer to a downtown A. If you are on the A platform and Penn Station is your destination, take a downtown A train to 14 St and transfer to an uptown C/E train to 34 St – Penn Station, then use the elevators to exit the station.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the mezzanine: Use the elevator across the mezzanine to take an uptown B or D to 59 St-Columbus Circle. Then use elevators to transfer to a downtown B or D to 47-50 Sts-Rockefeller Ctr. If you are on the platform:  Take a downtown B, D, F or M to 34 St-Herald Sq, then either: Use elevators to transfer to an uptown B, D, F or M to 47-50 Sts-Rockefeller Ctr. Or, use elevators to exit the station and take an uptown M5 or M7 bus to 49 St and 6 Av.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the street: Take a downtown M20  (Chambers St/Hudson St) to State St/Bridge St and use elevators at South Ferry 1 Station to take a uptown 1 . If you are on the mezzanine: Use elevator to take a downtown 1 to WTC Cortlandt and use elevators to exit station. Transfer to an uptown M55 (Church and Vesey St.)",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the street:  Proceed to Grand Central-42 St for 6. Or, take a downtown M101 LTD, M102, or M103 to Grand Central-42 St and take an uptown 6 to 51 St. If you are on the mezzanine: Take a downtown 6 to Grand Central - 42 St. Exit the station and take a M101, M102, or M103 bus (3 Av between 42 St and 43 St) to 50 St. Proceed one block west to Lexington Av.",
+        "count" : "1"
+      }, {
+        "item" : "If you are on the platform:  Take a Manhattan-bound 4 or 5 to Fulton St and use elevators to transfer to a Brooklyn-bound 2 or 3 to Atlantic Av-Barclays Ctr.  If you are on the mezzanine:  For Manhattan-bound 4/5 service, use the elevator in this passageway to take a Manhattan-bound 2 or 3 to Borough Hall, and use the passageway to transfer to a Manhattan-bound 4 or 5.  For Utica Av-bound and Flatbush Av-bound service, use the elevator in this passageway to take a New Lots Av-bound 3 for service to Utica Av, or a Flatbush Av-bound 2 for service to Church Av and Flatbush Av.",
+        "count" : "1"
+      } ],
+      "smallest" : "All elevators at this station are out of service for replacement. For 4 train service: Take a Mott Haven-bound Bx32 to Morris Av and 170 St. Transfer to a George Washington Bridge-bound Bx11 to the 170 St (4) station for Manhattan-bound 4 service.   For access to Yankee Stadium-161 St: Proceed east to Grand Concourse and Fordham Rd. Take a Mott Haven-bound Bx1 or Bx2 to Grand Concourse / E 161 St. Note that elevators at this station are also out of service for replacement.  Reduced Fare Customers Only: Take a Bay Plaza-bound Bx12 SBS to East Fordham Rd / 3 Av to access the Fordham Metro-North station and board a Grand-Central bound train. Transfer at either 125 St or Grand Central for onward 4, 5, 6 service. You must present your Reduced Fare OMNY or MetroCard to use this service.",
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877972,
+    "name" : "Georeference",
+    "dataTypeName" : "point",
+    "description" : "",
+    "fieldName" : "georeference",
+    "position" : 44,
+    "renderTypeName" : "point",
+    "tableColumnId" : 164225791,
+    "cachedContents" : {
+      "non_null" : "758",
+      "null" : "1",
+      "top" : [ {
+        "item" : {
+          "coordinates" : [ -73.95027, 40.71406 ],
+          "type" : "Point"
+        },
+        "count" : "6"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.976326, 40.683334 ],
+          "type" : "Point"
+        },
+        "count" : "5"
+      }, {
+        "item" : {
+          "coordinates" : [ -74.01103, 40.710667 ],
+          "type" : "Point"
+        },
+        "count" : "5"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.96953, 40.757294 ],
+          "type" : "Point"
+        },
+        "count" : "5"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.96482, 40.76391 ],
+          "type" : "Point"
+        },
+        "count" : "4"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.98851, 40.748672 ],
+          "type" : "Point"
+        },
+        "count" : "4"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.906334, 40.65449 ],
+          "type" : "Point"
+        },
+        "count" : "4"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.80832, 40.70035 ],
+          "type" : "Point"
+        },
+        "count" : "4"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.96655, 40.764763 ],
+          "type" : "Point"
+        },
+        "count" : "3"
+      }, {
+        "item" : {
+          "coordinates" : [ -74.0097, 40.710484 ],
+          "type" : "Point"
+        },
+        "count" : "3"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.96544, 40.764385 ],
+          "type" : "Point"
+        },
+        "count" : "3"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.97097, 40.758823 ],
+          "type" : "Point"
+        },
+        "count" : "3"
+      }, {
+        "item" : {
+          "coordinates" : [ -74.01219, 40.711834 ],
+          "type" : "Point"
+        },
+        "count" : "3"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.97704, 40.751995 ],
+          "type" : "Point"
+        },
+        "count" : "3"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.9515, 40.777607 ],
+          "type" : "Point"
+        },
+        "count" : "3"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.99139, 40.699455 ],
+          "type" : "Point"
+        },
+        "count" : "3"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.957184, 40.819 ],
+          "type" : "Point"
+        },
+        "count" : "3"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.94794, 40.783028 ],
+          "type" : "Point"
+        },
+        "count" : "3"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.938286, 40.850834 ],
+          "type" : "Point"
+        },
+        "count" : "2"
+      }, {
+        "item" : {
+          "coordinates" : [ -73.97919, 40.75276 ],
+          "type" : "Point"
+        },
+        "count" : "2"
+      } ],
+      "count" : "759",
+      "cardinality" : "759"
+    },
+    "format" : { }
+  }, {
+    "id" : 623877974,
+    "name" : "NYS Municipal Boundaries",
+    "dataTypeName" : "number",
+    "description" : "This column was automatically created in order to record in what polygon from the dataset 'NYS Municipal Boundaries' (yamh-8v7k) the point in column 'georeference' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+    "fieldName" : ":@computed_region_yamh_8v7k",
+    "position" : 46,
+    "renderTypeName" : "number",
+    "tableColumnId" : 164225792,
+    "computationStrategy" : {
+      "source_columns" : [ "georeference" ],
+      "type" : "georegion_match_on_point",
+      "parameters" : {
+        "region" : "_yamh-8v7k",
+        "primary_key" : "_feature_id"
+      }
+    },
+    "format" : { }
+  }, {
+    "id" : 623877975,
+    "name" : "New York Zip Codes",
+    "dataTypeName" : "number",
+    "description" : "This column was automatically created in order to record in what polygon from the dataset 'New York Zip Codes' (wbg7-3whc) the point in column 'georeference' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+    "fieldName" : ":@computed_region_wbg7_3whc",
+    "position" : 47,
+    "renderTypeName" : "number",
+    "tableColumnId" : 164225793,
+    "computationStrategy" : {
+      "source_columns" : [ "georeference" ],
+      "type" : "georegion_match_on_point",
+      "parameters" : {
+        "region" : "_wbg7-3whc",
+        "primary_key" : "_feature_id"
+      }
+    },
+    "format" : { }
+  }, {
+    "id" : 623877976,
+    "name" : "Counties",
+    "dataTypeName" : "number",
+    "description" : "This column was automatically created in order to record in what polygon from the dataset 'Counties' (kjdx-g34t) the point in column 'georeference' is located.  This enables the creation of region maps (choropleths) in the visualization canvas and data lens.",
+    "fieldName" : ":@computed_region_kjdx_g34t",
+    "position" : 48,
+    "renderTypeName" : "number",
+    "tableColumnId" : 164225794,
+    "computationStrategy" : {
+      "source_columns" : [ "georeference" ],
+      "type" : "georegion_match_on_point",
+      "parameters" : {
+        "region" : "_kjdx-g34t",
+        "primary_key" : "_feature_id"
+      }
+    },
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "attachments" : [ {
+      "filename" : "MTA_SubwayElevatorEscalatorAssetInventory_Overview.pdf",
+      "assetId" : "7ee7b191-e6b3-47d6-ab34-398c47edbf3a",
+      "name" : "MTA_SubwayElevatorEscalatorAssetInventory_Overview.pdf"
+    }, {
+      "filename" : "MTA_SubwayElevatorEscalatorAssetInventory_DataDictionary.pdf",
+      "assetId" : "240c0bdd-9470-428b-b013-6a367b2f173f",
+      "name" : "MTA_SubwayElevatorEscalatorAssetInventory_DataDictionary.pdf"
+    } ],
+    "custom_fields" : {
+      "Dataset Summary" : {
+        "Posting Frequency" : "Daily",
+        "Organization" : "Metropolitan Transportation Authority",
+        "Contact Information" : "opendata@mtahq.org",
+        "Time Period" : "Current",
+        "Coverage" : "New York City",
+        "Granularity" : "One Subway Elevator or Escalator Asset",
+        "Dataset Owner" : "Metropolitan Transportation Authority"
+      },
+      "Additional Resources" : {
+        "See Also" : "https://metrics.mta.info/"
+      },
+      "Dataset Information" : {
+        "Agency" : "Metropolitan Transportation Authority"
+      }
+    },
+    "rowIdentifier" : 623877973,
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+  },
+  "owner" : {
+    "id" : "xzik-pf59",
+    "displayName" : "NY Open Data",
+    "profileImageUrlLarge" : "/api/users/xzik-pf59/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/xzik-pf59/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/xzik-pf59/profile_images/TINY",
+    "screenName" : "NY Open Data",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "xzik-pf59",
+    "displayName" : "NY Open Data",
+    "profileImageUrlLarge" : "/api/users/xzik-pf59/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/xzik-pf59/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/xzik-pf59/profile_images/TINY",
+    "screenName" : "NY Open Data",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "month", "borough", "subway station", "elevator/escalator asset" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

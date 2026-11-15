@@ -1,0 +1,1113 @@
+{
+  "schema_version": "1.0",
+  "id": {
+    "unit": "—",
+    "origin": "derived_or_model",
+    "rule": "ESC-<equipment_code>, ST-<station_mrn>, FAULT-*, MODEL-SKU-*, ENG-M*, WH-M*, OP-NYCT"
+  },
+  "field_provenance": {
+    "unit": "—",
+    "description": "Источник каждого поля вершины; official/derived/model/unknown"
+  },
+  "null_semantics": "unknown_or_not_calibrated_not_zero",
+  "fields": [
+    {
+      "node_type": "engineer",
+      "field": "assumption_ids",
+      "unit": "—",
+      "description": "Ключи допущений из config/vertices.json",
+      "origin": "derived",
+      "reference": "config:assumptions",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "available_hours_per_day",
+      "unit": "час / сутки",
+      "description": "Рабочий ресурс календаря",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "busy_hours",
+      "unit": "час",
+      "description": "Загрузка на будущем горизонте; сейчас не определена",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "data_origin",
+      "unit": "—",
+      "description": "real для наблюдаемых сущностей, model для проектных",
+      "origin": "derived",
+      "reference": "rule:origin_partition",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "employer_operator_id",
+      "unit": "—",
+      "description": "Модельный ресурс в проектируемом сервисе NYCT, не реальный сотрудник",
+      "origin": "model",
+      "reference": "assumption:A03",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "home_station_id",
+      "unit": "—",
+      "description": "Место начала поездки; ещё не назначено",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "hourly_cost_usd",
+      "unit": "USD / час",
+      "description": "Стоимость инженерного ресурса",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "label",
+      "unit": "—",
+      "description": "Человекочитаемое название",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "node_type",
+      "unit": "—",
+      "description": "Тип предметной сущности G",
+      "origin": "derived",
+      "reference": "assignment:2.1;3.1",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "qualification_role",
+      "unit": "—",
+      "description": "Пример различий квалификации для будущего выбора обучения",
+      "origin": "model",
+      "reference": "assumption:A03",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "skills",
+      "unit": "—",
+      "description": "Бинарный перечень модельных компетенций; не реальная сертификация",
+      "origin": "model",
+      "reference": "assumption:A03",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "source_urls",
+      "unit": "—",
+      "description": "Первичные источники; [] у чисто модельных ресурсов",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "training_cost_by_skill_usd",
+      "unit": "USD / обучение",
+      "description": "Стоимость приобретения компетенций",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "engineer",
+      "field": "training_duration_by_skill_hours",
+      "unit": "час / обучение",
+      "description": "Продолжительность приобретения компетенций",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "asset_class",
+      "unit": "—",
+      "description": "asset_class",
+      "origin": "official",
+      "reference": "94fv-bak7:asset_class",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "assumption_ids",
+      "unit": "—",
+      "description": "Ключи допущений из config/vertices.json",
+      "origin": "derived",
+      "reference": "config:assumptions",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "borough",
+      "unit": "—",
+      "description": "Район Нью-Йорка",
+      "origin": "official",
+      "reference": "94fv-bak7:borough",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "coordinate_role",
+      "unit": "—",
+      "description": "Точка из реестра; точный вход для маршрута не проверен",
+      "origin": "derived",
+      "reference": "rule:geojson_only",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "data_origin",
+      "unit": "—",
+      "description": "real для наблюдаемых сущностей, model для проектных",
+      "origin": "derived",
+      "reference": "rule:origin_partition",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "downtime_cost_usd_per_hour",
+      "unit": "USD / час",
+      "description": "Стоимость простоя для выбранной модели затрат",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "eligible_for_future_service_model",
+      "unit": "bool",
+      "description": "Условное правило будущей выборки: IFIS включается, RNOS исключается",
+      "origin": "model",
+      "reference": "assumption:A06",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "equipment_code",
+      "unit": "—",
+      "description": "Официальный код оборудования",
+      "origin": "official",
+      "reference": "94fv-bak7:equipment_code",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "equipment_priority_factor",
+      "unit": "безразмерный",
+      "description": "Коэффициент приоритета; диапазон будет в конфигурации будущей модели",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "exposed_to_weather",
+      "unit": "bool",
+      "description": "Погодная экспозиция",
+      "origin": "derived",
+      "reference": "94fv-bak7:exposed_to_weather",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "failure_rate_per_operating_hour",
+      "unit": "событие / час работы",
+      "description": "Интенсивность отказов; ещё не оценена по истории",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "fault_class_probabilities",
+      "unit": "доли, сумма 1",
+      "description": "Распределение видов отказов; нет эмпирических категорий в inventory",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "installer",
+      "unit": "—",
+      "description": "Установивший подрядчик; НЕ производитель",
+      "origin": "official",
+      "reference": "94fv-bak7:installer",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "label",
+      "unit": "—",
+      "description": "Человекочитаемое название",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "latest_installation_date",
+      "unit": "дата YYYY-MM-DD",
+      "description": "Нормализованное поле; 1900-* -> null",
+      "origin": "derived",
+      "reference": "rule:date_normalization",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "latest_installation_date_raw",
+      "unit": "ISO 8601, исходная строка",
+      "description": "По словарю: последнее обслуживание / модернизация; не возраст модели",
+      "origin": "official",
+      "reference": "94fv-bak7:latest_installation_date",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "latitude",
+      "unit": "градус WGS84",
+      "description": "Широта из GeoJSON, не поле X",
+      "origin": "official",
+      "reference": "94fv-bak7:georeference.coordinates[1]",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "longitude",
+      "unit": "градус WGS84",
+      "description": "Долгота из GeoJSON, не поле Y",
+      "origin": "official",
+      "reference": "94fv-bak7:georeference.coordinates[0]",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "maintained_by",
+      "unit": "—",
+      "description": "maintained_by",
+      "origin": "official",
+      "reference": "94fv-bak7:maintained_by",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "node_type",
+      "unit": "—",
+      "description": "Тип предметной сущности G",
+      "origin": "derived",
+      "reference": "assignment:2.1;3.1",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "notes",
+      "unit": "—",
+      "description": "notes",
+      "origin": "official",
+      "reference": "94fv-bak7:notes",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "number_of_steps",
+      "unit": "шт.",
+      "description": "Число ступеней при однозначном целочисленном поле",
+      "origin": "derived",
+      "reference": "94fv-bak7:escalator_number_of_steps",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "nyct_owned",
+      "unit": "bool",
+      "description": "Принадлежит NYCT",
+      "origin": "derived",
+      "reference": "94fv-bak7:nyct_owned YES/NO",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "observed_service_status",
+      "unit": "—",
+      "description": "service_status",
+      "origin": "official",
+      "reference": "94fv-bak7:service_status",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "observed_service_status_code",
+      "unit": "—",
+      "description": "Инвентарный статус снимка, не измеренный процесс H",
+      "origin": "official",
+      "reference": "94fv-bak7:service_status_code",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "original_installation_date",
+      "unit": "дата YYYY-MM-DD",
+      "description": "1900-* не используется как реальная дата; исходник сохранён",
+      "origin": "derived",
+      "reference": "rule:date_normalization",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "original_installation_date_raw",
+      "unit": "ISO 8601, исходная строка",
+      "description": "original_installation_date",
+      "origin": "official",
+      "reference": "94fv-bak7:original_installation_date",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "owner_operator_id",
+      "unit": "—",
+      "description": "Привязка владельца NYCT по nyct_owned; не назначение инженера",
+      "origin": "derived",
+      "reference": "94fv-bak7:nyct_owned",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "revenue_machine",
+      "unit": "bool",
+      "description": "Пассажирское оборудование",
+      "origin": "derived",
+      "reference": "94fv-bak7:revenue_machine",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "rise_raw",
+      "unit": "исходная строка; смешанные единицы",
+      "description": "Высота подъёма; не использовать в численном расчёте до нормализации",
+      "origin": "official",
+      "reference": "94fv-bak7:escalator_rise",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "source_snapshot_utc",
+      "unit": "UTC, ISO 8601",
+      "description": "Дата обновления строк реестра, не дата конкретного отказа",
+      "origin": "official",
+      "reference": "94fv-bak7:rowsUpdatedAt",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "source_urls",
+      "unit": "—",
+      "description": "Первичные источники; [] у чисто модельных ресурсов",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "station_complex_mrn",
+      "unit": "—",
+      "description": "station_complex_mrn",
+      "origin": "official",
+      "reference": "94fv-bak7:station_complex_mrn",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "station_description",
+      "unit": "—",
+      "description": "station_description",
+      "origin": "official",
+      "reference": "94fv-bak7:station_description",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "station_id",
+      "unit": "—",
+      "description": "Ссылка на вершину станции; это атрибут, не ребро",
+      "origin": "derived",
+      "reference": "rule:ST-prefix(station_mrn)",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "station_mrn",
+      "unit": "—",
+      "description": "ID станционной части; сохраняются ведущие нули",
+      "origin": "official",
+      "reference": "94fv-bak7:station_mrn",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "station_name",
+      "unit": "—",
+      "description": "station_name",
+      "origin": "official",
+      "reference": "94fv-bak7:station_name",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "step_width_raw",
+      "unit": "исходная строка; смешанные единицы",
+      "description": "Ширина ступени; словарь и выгрузка расходятся по единицам",
+      "origin": "official",
+      "reference": "94fv-bak7:escalator_step_width",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "street_access",
+      "unit": "bool",
+      "description": "Доступ с улицы",
+      "origin": "derived",
+      "reference": "94fv-bak7:street_access",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "escalator",
+      "field": "subway_line",
+      "unit": "—",
+      "description": "Строка линий метро как в источнике",
+      "origin": "official",
+      "reference": "94fv-bak7:subway_line",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "assumption_ids",
+      "unit": "—",
+      "description": "Ключи допущений из config/vertices.json",
+      "origin": "derived",
+      "reference": "config:assumptions",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "data_origin",
+      "unit": "—",
+      "description": "real для наблюдаемых сущностей, model для проектных",
+      "origin": "derived",
+      "reference": "rule:origin_partition",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "diagnostic_duration_hours",
+      "unit": "час",
+      "description": "Продолжительность диагностики",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "empirical_event_count",
+      "unit": "событие",
+      "description": "Наблюдаемые случаи данного класса не определены",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "label",
+      "unit": "—",
+      "description": "Человекочитаемое название",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "node_type",
+      "unit": "—",
+      "description": "Тип предметной сущности G",
+      "origin": "derived",
+      "reference": "assignment:2.1;3.1",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "part_id_candidate",
+      "unit": "—",
+      "description": "Условный комплект-кандидат; не подтверждённая потребность конкретного инцидента",
+      "origin": "model",
+      "reference": "assumption:A02",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "repair_duration_hours",
+      "unit": "час",
+      "description": "Продолжительность активного ремонта",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "required_quantity_kits",
+      "unit": "условный комплект / ремонт",
+      "description": "Потребность; не утверждается, что каждый отказ требует замены",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "required_skill",
+      "unit": "—",
+      "description": "Компетенция для данного класса ремонта",
+      "origin": "model",
+      "reference": "assumption:A03",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "source_urls",
+      "unit": "—",
+      "description": "Первичные источники; [] у чисто модельных ресурсов",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "subsystem",
+      "unit": "—",
+      "description": "Авторский класс технической подсистемы",
+      "origin": "model",
+      "reference": "assumption:A01",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "fault_class",
+      "field": "urgency_factor",
+      "unit": "безразмерный",
+      "description": "Коэффициент срочности для будущей зависимости в H",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "operator",
+      "field": "assumption_ids",
+      "unit": "—",
+      "description": "Ключи допущений из config/vertices.json",
+      "origin": "derived",
+      "reference": "config:assumptions",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "operator",
+      "field": "data_origin",
+      "unit": "—",
+      "description": "real для наблюдаемых сущностей, model для проектных",
+      "origin": "derived",
+      "reference": "rule:origin_partition",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "operator",
+      "field": "inventory_maintainer_token",
+      "unit": "—",
+      "description": "maintained_by выбранных эскалаторов",
+      "origin": "official",
+      "reference": "94fv-bak7:maintained_by",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "operator",
+      "field": "inventory_owner_token",
+      "unit": "—",
+      "description": "В выбранной inventory nyct_owned=YES",
+      "origin": "official",
+      "reference": "94fv-bak7:nyct_owned",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "operator",
+      "field": "label",
+      "unit": "—",
+      "description": "Человекочитаемое название",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "operator",
+      "field": "node_type",
+      "unit": "—",
+      "description": "Тип предметной сущности G",
+      "origin": "derived",
+      "reference": "assignment:2.1;3.1",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "operator",
+      "field": "organization_name",
+      "unit": "—",
+      "description": "Эксплуатант выбранного сервисного контура",
+      "origin": "official",
+      "reference": "NYCT:AgencySafetyPlan",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "operator",
+      "field": "service_scope",
+      "unit": "—",
+      "description": "Ограничение предметной области; частные подрядчики исключены",
+      "origin": "derived",
+      "reference": "config:scope",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "operator",
+      "field": "source_urls",
+      "unit": "—",
+      "description": "Первичные источники; [] у чисто модельных ресурсов",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "assumption_ids",
+      "unit": "—",
+      "description": "Ключи допущений из config/vertices.json",
+      "origin": "derived",
+      "reference": "config:assumptions",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "catalog_role",
+      "unit": "—",
+      "description": "Агрегированная единица каталога; реальный артикул не установлен",
+      "origin": "model",
+      "reference": "assumption:A02",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "compatible_equipment_ids",
+      "unit": "—",
+      "description": "Совместимость с реальными моделями НЕ подтверждена; null не означает все",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "criticality",
+      "unit": "категория high / medium",
+      "description": "Предварительная качественная критичность, не норматив",
+      "origin": "model",
+      "reference": "assumption:A09",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "data_origin",
+      "unit": "—",
+      "description": "real для наблюдаемых сущностей, model для проектных",
+      "origin": "derived",
+      "reference": "rule:origin_partition",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "label",
+      "unit": "—",
+      "description": "Человекочитаемое название",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "manufacturer_part_number",
+      "unit": "—",
+      "description": "Реальный артикул производителя",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "node_type",
+      "unit": "—",
+      "description": "Тип предметной сущности G",
+      "origin": "derived",
+      "reference": "assignment:2.1;3.1",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "procurement_lead_time_hours",
+      "unit": "час",
+      "description": "Срок пополнения запаса; не время поездки по графу",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "source_urls",
+      "unit": "—",
+      "description": "Первичные источники; [] у чисто модельных ресурсов",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "stock_unit",
+      "unit": "условный комплект",
+      "description": "Единица запасов склада",
+      "origin": "model",
+      "reference": "assumption:A08",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "subsystem",
+      "unit": "—",
+      "description": "Модельная подсистема условного комплекта",
+      "origin": "model",
+      "reference": "config:vertices.json",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "part_sku",
+      "field": "unit_cost_usd_per_kit",
+      "unit": "USD / условный комплект",
+      "description": "Цена закупки условного комплекта",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "assumption_ids",
+      "unit": "—",
+      "description": "Ключи допущений из config/vertices.json",
+      "origin": "derived",
+      "reference": "config:assumptions",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "borough",
+      "unit": "—",
+      "description": "borough",
+      "origin": "official",
+      "reference": "94fv-bak7:borough",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "coordinate_role",
+      "unit": "—",
+      "description": "Это не официальный адрес входа / склада",
+      "origin": "derived",
+      "reference": "rule:mean_geojson_by_station_mrn",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "data_origin",
+      "unit": "—",
+      "description": "real для наблюдаемых сущностей, model для проектных",
+      "origin": "derived",
+      "reference": "rule:origin_partition",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "equipment_ids",
+      "unit": "—",
+      "description": "Перечень эскалаторов как атрибут; рёбер нет",
+      "origin": "derived",
+      "reference": "rule:group_by_station_mrn",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "escalator_count_in_scope",
+      "unit": "шт.",
+      "description": "Количество выбранных эскалаторов данной станционной части",
+      "origin": "derived",
+      "reference": "rule:group_by_station_mrn",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "label",
+      "unit": "—",
+      "description": "Человекочитаемое название",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "latitude",
+      "unit": "градус WGS84",
+      "description": "Среднее координат выбранных эскалаторов станции; географический ориентир",
+      "origin": "derived",
+      "reference": "rule:mean_geojson_by_station_mrn",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "longitude",
+      "unit": "градус WGS84",
+      "description": "Среднее координат выбранных эскалаторов станции; географический ориентир",
+      "origin": "derived",
+      "reference": "rule:mean_geojson_by_station_mrn",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "node_type",
+      "unit": "—",
+      "description": "Тип предметной сущности G",
+      "origin": "derived",
+      "reference": "assignment:2.1;3.1",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "source_urls",
+      "unit": "—",
+      "description": "Первичные источники; [] у чисто модельных ресурсов",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "station_complex_mrn",
+      "unit": "—",
+      "description": "station_complex_mrn",
+      "origin": "official",
+      "reference": "94fv-bak7:station_complex_mrn",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "station_mrn",
+      "unit": "—",
+      "description": "station_mrn",
+      "origin": "official",
+      "reference": "94fv-bak7:station_mrn",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "station_name",
+      "unit": "—",
+      "description": "station_name",
+      "origin": "official",
+      "reference": "94fv-bak7:station_name",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "subway_lines_observed",
+      "unit": "—",
+      "description": "Уникальные строки линий выбранных эскалаторов; не полный каталог станции",
+      "origin": "derived",
+      "reference": "rule:group_by_station_mrn",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "station",
+      "field": "warehouse_location_candidate",
+      "unit": "bool",
+      "description": "Предварительный кандидат для будущего сравнения; помещения не проверены",
+      "origin": "model",
+      "reference": "assumption:A05",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "anchor_station_id",
+      "unit": "—",
+      "description": "Станция-ориентир, не адрес складского помещения",
+      "origin": "model",
+      "reference": "assumption:A04",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "assumption_ids",
+      "unit": "—",
+      "description": "Ключи допущений из config/vertices.json",
+      "origin": "derived",
+      "reference": "config:assumptions",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "borough",
+      "unit": "—",
+      "description": "Район станции-ориентира",
+      "origin": "derived",
+      "reference": "rule:warehouse_anchor",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "candidate",
+      "unit": "bool",
+      "description": "Проектный кандидат, не существующий склад MTA",
+      "origin": "model",
+      "reference": "assumption:A04",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "coordinate_role",
+      "unit": "—",
+      "description": "Географический ориентир; фактическое помещение не установлено",
+      "origin": "model",
+      "reference": "assumption:A04",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "data_origin",
+      "unit": "—",
+      "description": "real для наблюдаемых сущностей, model для проектных",
+      "origin": "derived",
+      "reference": "rule:origin_partition",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "dispatch_capacity_kits_per_hour",
+      "unit": "условный комплект / час",
+      "description": "Пропускная способность выдачи склада",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "label",
+      "unit": "—",
+      "description": "Человекочитаемое название",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "latitude",
+      "unit": "градус WGS84",
+      "description": "Координата станции-ориентира",
+      "origin": "derived",
+      "reference": "rule:warehouse_anchor",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "longitude",
+      "unit": "градус WGS84",
+      "description": "Координата станции-ориентира",
+      "origin": "derived",
+      "reference": "rule:warehouse_anchor",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "node_type",
+      "unit": "—",
+      "description": "Тип предметной сущности G",
+      "origin": "derived",
+      "reference": "assignment:2.1;3.1",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "opening_cost_usd",
+      "unit": "USD",
+      "description": "Стоимость открытия проектируемого склада",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "operating_cost_usd_per_day",
+      "unit": "USD / сутки",
+      "description": "Суточные эксплуатационные затраты",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "operator_id",
+      "unit": "—",
+      "description": "Модельный склад в проектируемом сервисе NYCT",
+      "origin": "model",
+      "reference": "assumption:A04",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "reserved_stock_by_sku",
+      "unit": "условный комплект, по SKU",
+      "description": "Зарезервированный запас на складе",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "source_urls",
+      "unit": "—",
+      "description": "Первичные источники; [] у чисто модельных ресурсов",
+      "origin": "per_node",
+      "reference": "source_or_config",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    },
+    {
+      "node_type": "warehouse",
+      "field": "stock_on_hand_by_sku",
+      "unit": "условный комплект, по SKU",
+      "description": "Запас на данном складе; null значит неизвестно",
+      "origin": "unknown",
+      "reference": "assumption:A07",
+      "null_meaning": "неизвестно / ещё не калибровано"
+    }
+  ]
+}

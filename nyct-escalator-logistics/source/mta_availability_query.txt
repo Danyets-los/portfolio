@@ -1,0 +1,1 @@
+https://data.ny.gov/resource/rc78-7x78.json?%24where=equipment_type%3D%27Escalator%27+AND+managed_by%3D%27NYCT%27+AND+month+%3E%3D+%272025-01-01T00%3A00%3A00%27+AND+month+%3C+%272026-01-01T00%3A00%3A00%27&%24limit=10000&%24order=equipment_code%2Cmonth

@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "stage": "vertices_only",
+  "scope": {
+    "elevator_or_escalator": "Escalator",
+    "nyct_owned": "YES",
+    "maintained_by": "NYCT",
+    "revenue_machine": "YES",
+    "service_status_codes_in_scope": ["IFIS", "RNOS"],
+    "future_simulation_eligible_status_codes": ["IFIS"]
+  },
+  "coordinate_crs": "EPSG:4326",
+  "assumptions": {
+    "A01": "Пять классов неисправностей — авторская агрегация подсистем по официальным материалам NYCT и Otis; это не наблюдаемые инциденты.",
+    "A02": "Пять MODEL-SKU — условные ремонтные комплекты по подсистемам, не реальные артикулы и не подтверждённая OEM-совместимость.",
+    "A03": "Четыре инженера — анонимные модельные ресурсы с различными компетенциями; их количество не является оценкой штата MTA или откалиброванным baseline.",
+    "A04": "Две складские вершины — проектные кандидаты около станций, не существующие объекты MTA; координаты являются географическими ориентирами.",
+    "A05": "Все выбранные станции считаются кандидатами для дальнейшего сравнения размещения склада; доступность помещений и транспорта пока не установлена.",
+    "A06": "Для будущего эксперимента условно допускаются только IFIS; RNOS сохраняются в инвентарном графе, но не считаются работающими.",
+    "A07": "Количественные параметры обслуживания не калиброваны: null означает неизвестно, а не нулевое значение. Граф не задаёт готовый baseline.",
+    "A08": "Тип stock единицы — один условный ремонтный комплект; состав комплекта и совместимость требуют отдельного согласования.",
+    "A09": "Высокая/средняя критичность MODEL-SKU — экспертная качественная разметка для будущей проверки чувствительности, не норматив MTA."
+  },
+  "fault_classes": [
+    {"id": "FAULT-CTRL", "label": "Отказ электроуправления", "subsystem": "control", "skill": "electrical_control", "part_id": "MODEL-SKU-CTRL", "criticality": "high"},
+    {"id": "FAULT-DRIVE", "label": "Неисправность главного привода или тормоза", "subsystem": "main_drive_brake", "skill": "mechanical_drive", "part_id": "MODEL-SKU-DRIVE", "criticality": "high"},
+    {"id": "FAULT-STEP", "label": "Неисправность ступеней, цепи или роликов", "subsystem": "steps_chain_rollers", "skill": "step_chain", "part_id": "MODEL-SKU-STEP", "criticality": "high"},
+    {"id": "FAULT-HAND", "label": "Неисправность поручня или его привода", "subsystem": "handrail_drive", "skill": "handrail", "part_id": "MODEL-SKU-HAND", "criticality": "medium"},
+    {"id": "FAULT-SAFE", "label": "Неисправность посадочной зоны или защиты", "subsystem": "landing_safety", "skill": "safety_devices", "part_id": "MODEL-SKU-SAFE", "criticality": "high"}
+  ],
+  "part_labels": {
+    "MODEL-SKU-CTRL": "Условный комплект электроуправления",
+    "MODEL-SKU-DRIVE": "Условный комплект главного привода / тормоза",
+    "MODEL-SKU-STEP": "Условный комплект ступеней / цепи / роликов",
+    "MODEL-SKU-HAND": "Условный комплект поручня / его привода",
+    "MODEL-SKU-SAFE": "Условный комплект посадочной зоны / защиты"
+  },
+  "engineers": [
+    {"id": "ENG-M01", "label": "Модельный инженер 01", "skills": ["electrical_control", "safety_devices"]},
+    {"id": "ENG-M02", "label": "Модельный инженер 02", "skills": ["mechanical_drive", "step_chain"]},
+    {"id": "ENG-M03", "label": "Модельный инженер 03", "skills": ["handrail", "safety_devices"]},
+    {"id": "ENG-M04", "label": "Модельный инженер 04", "skills": ["mechanical_drive", "handrail"]}
+  ],
+  "warehouse_candidates": [
+    {"id": "WH-M01", "label": "Кандидат склада: Times Sq–42 St", "anchor_station_mrn": "317"},
+    {"id": "WH-M02", "label": "Кандидат склада: Jackson Hts–Roosevelt Av", "anchor_station_mrn": "267"}
+  ],
+  "visualization": {
+    "type_order": ["escalator", "station", "fault_class", "part_sku", "engineer", "warehouse", "operator"],
+    "type_colors": {"escalator": "#21618c", "station": "#167d71", "fault_class": "#b44e40", "part_sku": "#996b26", "engineer": "#7551a8", "warehouse": "#c86827", "operator": "#475569"},
+    "out_of_service_color": "#b45309",
+    "overview_columns": {"escalator": 14, "station": 7},
+    "png_dpi": 180
+  }
+}

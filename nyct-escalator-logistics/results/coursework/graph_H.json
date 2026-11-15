@@ -1,0 +1,144 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "U"
+    },
+    {
+      "id": "QD"
+    },
+    {
+      "id": "TD"
+    },
+    {
+      "id": "D"
+    },
+    {
+      "id": "W"
+    },
+    {
+      "id": "L"
+    },
+    {
+      "id": "QR"
+    },
+    {
+      "id": "TR"
+    },
+    {
+      "id": "R"
+    },
+    {
+      "id": "C"
+    }
+  ],
+  "edges": [
+    {
+      "reference_probability": 0.026658846289075788,
+      "source": "U",
+      "target": "QD"
+    },
+    {
+      "reference_probability": 0.9733411537109242,
+      "source": "U",
+      "target": "U"
+    },
+    {
+      "reference_probability": 0.8347011117784134,
+      "source": "QD",
+      "target": "TD"
+    },
+    {
+      "reference_probability": 0.16529888822158656,
+      "source": "QD",
+      "target": "QD"
+    },
+    {
+      "reference_probability": 0.7692307692307692,
+      "source": "TD",
+      "target": "D"
+    },
+    {
+      "reference_probability": 0.23076923076923084,
+      "source": "TD",
+      "target": "TD"
+    },
+    {
+      "reference_probability": 0.3555972855613256,
+      "source": "D",
+      "target": "W"
+    },
+    {
+      "reference_probability": 0.23263800855632152,
+      "source": "D",
+      "target": "L"
+    },
+    {
+      "reference_probability": 0.4117647058823529,
+      "source": "D",
+      "target": "D"
+    },
+    {
+      "reference_probability": 0.125,
+      "source": "W",
+      "target": "L"
+    },
+    {
+      "reference_probability": 0.875,
+      "source": "W",
+      "target": "W"
+    },
+    {
+      "reference_probability": 0.4,
+      "source": "L",
+      "target": "QR"
+    },
+    {
+      "reference_probability": 0.6,
+      "source": "L",
+      "target": "L"
+    },
+    {
+      "reference_probability": 0.8347011117784134,
+      "source": "QR",
+      "target": "TR"
+    },
+    {
+      "reference_probability": 0.16529888822158656,
+      "source": "QR",
+      "target": "QR"
+    },
+    {
+      "reference_probability": 0.7692307692307692,
+      "source": "TR",
+      "target": "R"
+    },
+    {
+      "reference_probability": 0.23076923076923084,
+      "source": "TR",
+      "target": "TR"
+    },
+    {
+      "reference_probability": 0.3333333333333333,
+      "source": "R",
+      "target": "C"
+    },
+    {
+      "reference_probability": 0.6666666666666667,
+      "source": "R",
+      "target": "R"
+    },
+    {
+      "reference_probability": 0.625,
+      "source": "C",
+      "target": "U"
+    },
+    {
+      "reference_probability": 0.375,
+      "source": "C",
+      "target": "C"
+    }
+  ]
+}

@@ -1,0 +1,5169 @@
+{
+  "input_rows": 759,
+  "selected_escalators": 230,
+  "excluded_rows": [
+    {
+      "equipment_code": "EL12X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL790X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL405",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL151",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES363X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL200X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL610",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL419X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "LIRR",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL108",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL350",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "ES640X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL150",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL316",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL792",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES609X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL757",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL251",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL441",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES362X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL147",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL111",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL606X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL122",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL231X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL301",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL708",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL299",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL522",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL265",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL227",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL294X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL311",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL318",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL230",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL402",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL442",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL208X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL415X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "LIRR",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL404",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL365",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL212",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL131",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL449X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL774",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL406",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL112",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL341",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL395",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL312",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL795",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL285",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL488",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL396",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL373",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL523",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL398",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL779",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL267",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL378",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL617",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL205",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL619",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL519",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL34X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "LIRR",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL753",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL423",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL403",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL183",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL763",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL510",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL372",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL612",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL416X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "LIRR",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL486",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL489X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL118",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL140",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL494X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES498X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL213",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL421",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL438",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL222",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL380",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL198",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL156",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL179",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL355",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES360X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL412",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL417X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "LIRR",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL237X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL741",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL166X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine",
+        "service_status_code"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFOS"
+    },
+    {
+      "equipment_code": "EL138",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL392",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL451",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL602",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL221",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL487",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL524",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL756",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL199",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL426",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL761",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES258X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL755",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL382",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL273",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL334",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL764",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL228",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL742",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL725X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine",
+        "service_status_code"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "INOS"
+    },
+    {
+      "equipment_code": "EL433",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL391",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL239",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL302",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL601",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL435",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL621",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL463",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL733X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL100",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL155",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL724X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL512",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL234",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL780",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL267X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine",
+        "service_status_code"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFOS"
+    },
+    {
+      "equipment_code": "EL249",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL613",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL482X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL298",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL186",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL513",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL269",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL325",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL120",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL104",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL233",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "ES376X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL16X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL326",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL317",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES496X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL293",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL289X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL248",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL604",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL752",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES263X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL777",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL203X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL744X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL196",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL481",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL394",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL788",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES264X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL174",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL266",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL319",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL337",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL119",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL277",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL345",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL129",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL787",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES358X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL280",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL430",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL713",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL307",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "EL747X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL701",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "EL159",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL324",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL491X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL180",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL727X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL478",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL700X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL600",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL422",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL434",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL103",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL771",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL518",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES600X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL11X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL731",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL223",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL107",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL148",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL467",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL207X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL723",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL401",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL18X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL220",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES268X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL134",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL188",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL399",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL247",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL115",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES251X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES377X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL786",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES639X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL720",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL282",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL309",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL290X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL371",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL288X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL366",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL130",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL162",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL329",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL418X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "LIRR",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL137",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL360",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL722",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL204",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL240",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL276X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL440",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL367",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL153",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL252",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL167X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine",
+        "service_status_code"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFOS"
+    },
+    {
+      "equipment_code": "EL195",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL459",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL136",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL616",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL436",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL420",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "EL340",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL354",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL300X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "LIRR",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL336",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL182",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL283",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL515",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL469",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL211",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL377",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL292",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL139",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL117",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL342",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES641X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL245",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL202",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL338",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL191",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL13X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL146",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL352",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL184",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL414",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "EL745",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL791",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL719",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL315",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL314",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL163",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL407",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL497",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL110",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES250X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL101",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL304",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL197",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL514",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL445X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES267X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES253X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL413",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL286",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL178",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL492X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL225",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL358",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL778",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL344",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL181",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL232",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "EL320",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL160",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL327X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL712",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL359",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL308",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL411",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES637X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL791X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL165",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL516",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL145",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL141",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL738",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES254X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL508",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL730",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL732",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL444",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL359X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL603",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL726X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL106",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL480",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES638X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL133",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL244",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES497X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL746",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL22X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL447",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL287X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL428",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL113",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL620",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL216",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL611",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL339",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL521",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL123",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL717X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL702",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES461X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL376",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL370",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL424",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL765",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL743",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL335",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES607X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL715X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine",
+        "service_status_code"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "INOS"
+    },
+    {
+      "equipment_code": "EL185",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL157X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine",
+        "service_status_code"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "INOS"
+    },
+    {
+      "equipment_code": "EL772",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL484",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL250",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL714X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine",
+        "service_status_code"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "INOS"
+    },
+    {
+      "equipment_code": "EL437",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL187",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL291X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL785",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL219",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL190",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL500",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL773",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL760",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL125",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL431",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES276X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL721",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL361",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL408",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL142",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL102",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL718X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL389",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES383X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES433X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL506",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL305",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL193",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL502",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL748",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL737X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "LIRR",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL109",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL259",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL509",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL126",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL210",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL128",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL332",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "ES432X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL152",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL409",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL479",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL511",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL483",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES266X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL215",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL501",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL264",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL143",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL14X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL446",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL485",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES380X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES257X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL387",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL393",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL328",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL734X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL796",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL121",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES365X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES361X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES379X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL238",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL716",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL709",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "EL493X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL192",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL374",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL781",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL201",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL454",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL427",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL739",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL135",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL706",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL609",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL462",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL782",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL507",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL295X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL235",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL322",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL381",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL132",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL443",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL279X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL364",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL278",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL17X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL173",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL388",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL206",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL618",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL209",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL498",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES608X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL23X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL707",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES499X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL490X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL448X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL397",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL356",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL615",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL499",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL262",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL784",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL310",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL323",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL465",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL306",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "EL224",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL321",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL429",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES610X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL736",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES359X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL284",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL495X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL517",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES366X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL226",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL783",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES262X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL281",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL450X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL116",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL375",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL236",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL466",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL607X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL105",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL793",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL362",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL169X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine",
+        "service_status_code"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFOS"
+    },
+    {
+      "equipment_code": "EL608X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL383",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES265X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL189",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL144",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL124",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL256X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by",
+        "revenue_machine",
+        "service_status_code"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "INOS"
+    },
+    {
+      "equipment_code": "EL432",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL331",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "EL268X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES606X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL164",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL343",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL218",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL425",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL710",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES378X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL214",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL464",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL458",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL303",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL149",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL622",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL614",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES462X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "ES261X",
+      "reason_fields": [
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Escalator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL400",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL194",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL346",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL330",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL296",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL775",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL794",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL1106",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL114",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL740",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL776",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL439",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL353",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL797",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL363",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "revenue_machine"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL127",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL333",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL729X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL237",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL711",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL217",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "EL728X",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "nyct_owned",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Private Contractor",
+      "service_status_code": "IFIS"
+    },
+    {
+      "equipment_code": "EL229",
+      "reason_fields": [
+        "elevator_or_escalator",
+        "maintained_by"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "Third-Party Contractor",
+      "service_status_code": "RNOS"
+    },
+    {
+      "equipment_code": "EL279",
+      "reason_fields": [
+        "elevator_or_escalator"
+      ],
+      "elevator_or_escalator": "Elevator",
+      "maintained_by": "NYCT",
+      "service_status_code": "IFIS"
+    }
+  ],
+  "selection_rule": {
+    "elevator_or_escalator": "Escalator",
+    "nyct_owned": "YES",
+    "maintained_by": "NYCT",
+    "revenue_machine": "YES",
+    "service_status_codes_in_scope": [
+      "IFIS",
+      "RNOS"
+    ],
+    "future_simulation_eligible_status_codes": [
+      "IFIS"
+    ]
+  },
+  "source_updated_utc": "2026-10-06T10:11:52+00:00",
+  "source_sha256": "dac2064922f76ca8a102b3724560a123ef03ecfe6604950bd855ed3faec80d60"
+}

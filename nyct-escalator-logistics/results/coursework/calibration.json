@@ -1,0 +1,14 @@
+{
+  "source_rows": 2766,
+  "asset_matched_rows": 2592,
+  "station_matched_rows": 2592,
+  "valid_rows": 2359,
+  "assets_with_data": 211,
+  "assets_no_history": 5,
+  "pool_rate_per_up_hour": 0.009572170714600087,
+  "history_events": 15706,
+  "history_up_hours": 1640798.15,
+  "historical_observed_availability": 0.962457054504442,
+  "prior_hours": 1500,
+  "sha256": "a674e13bcfdc64ef9ce018e0f60f042e0d7aac3a7d8f820977104922e30b37a8"
+}

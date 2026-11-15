@@ -1,0 +1,4399 @@
+{
+  "node_count": 332,
+  "edge_count": 2052,
+  "road_sites": 62,
+  "road_edges": 204,
+  "edge_types": {
+    "located_at": 230,
+    "may_fail_as": 1080,
+    "travel": 408,
+    "requires_catalog": 5,
+    "starts_at": 25,
+    "qualified_for": 50,
+    "dispatch_from": 4,
+    "catalog_stock": 20,
+    "oversees": 230
+  },
+  "route": {
+    "origin": "ST-317",
+    "destination": "ST-057",
+    "dijkstra": [
+      "ST-317",
+      "ST-227",
+      "ST-117",
+      "ST-233",
+      "ST-234",
+      "ST-173",
+      "ST-024",
+      "ST-238",
+      "ST-057"
+    ],
+    "bellman_ford": [
+      "ST-317",
+      "ST-227",
+      "ST-117",
+      "ST-233",
+      "ST-234",
+      "ST-173",
+      "ST-024",
+      "ST-238",
+      "ST-057"
+    ],
+    "hours": 1.8520378890925802,
+    "distance_km": 27.876871449129347
+  },
+  "flow": {
+    "value_kits_week": 489,
+    "cut_kits_week": 489,
+    "demand_kits_week": 638,
+    "cost_kit_minutes": 20678,
+    "fixed_value_cost_check": 20678,
+    "balances": {
+      "SUPPLY": -489,
+      "ST-317": 0,
+      "ST-007": 0,
+      "ST-400": 0,
+      "ST-223": 0,
+      "ST-275": 0,
+      "ST-276": 0,
+      "ST-477": 0,
+      "ST-221": 0,
+      "ST-222": 0,
+      "ST-475": 0,
+      "ST-476": 0,
+      "ST-023": 0,
+      "ST-330": 0,
+      "ST-414": 0,
+      "ST-412": 0,
+      "ST-172": 0,
+      "ST-328": 0,
+      "ST-331": 0,
+      "ST-024": 0,
+      "ST-335": 0,
+      "ST-173": 0,
+      "ST-174": 0,
+      "ST-025": 0,
+      "ST-026": 0,
+      "ST-040": 0,
+      "ST-238": 0,
+      "ST-139": 0,
+      "ST-353": 0,
+      "ST-112": 0,
+      "ST-184": 0,
+      "ST-055": 0,
+      "ST-057": 0,
+      "ST-103": 0,
+      "ST-233": 0,
+      "ST-230": 0,
+      "ST-234": 0,
+      "ST-167": 0,
+      "ST-117": 0,
+      "ST-456": 0,
+      "ST-227": 0,
+      "ST-146": 0,
+      "ST-151": 0,
+      "ST-219": 0,
+      "ST-306": 0,
+      "ST-431": 0,
+      "ST-427": 0,
+      "ST-210": 0,
+      "ST-421": 0,
+      "ST-424": 0,
+      "ST-366": 0,
+      "ST-360": 0,
+      "ST-267": 0,
+      "ST-454": 0,
+      "ST-467": 0,
+      "ST-402": 0,
+      "ST-465": 0,
+      "ST-471": 0,
+      "ST-447": 0,
+      "ST-278": 0,
+      "ST-279": 0,
+      "ST-280": 0,
+      "ST-277": 0,
+      "DEMAND": 489
+    },
+    "requested_by_site": {
+      "ST-306": 12,
+      "ST-421": 9,
+      "ST-427": 4,
+      "ST-431": 2,
+      "ST-366": 3,
+      "ST-210": 2,
+      "ST-219": 5,
+      "ST-151": 5,
+      "ST-146": 7,
+      "ST-360": 4,
+      "ST-424": 4,
+      "ST-475": 20,
+      "ST-465": 14,
+      "ST-402": 27,
+      "ST-400": 10,
+      "ST-007": 14,
+      "ST-317": 9,
+      "ST-467": 5,
+      "ST-117": 3,
+      "ST-227": 46,
+      "ST-277": 3,
+      "ST-276": 15,
+      "ST-275": 21,
+      "ST-476": 30,
+      "ST-477": 27,
+      "ST-230": 3,
+      "ST-331": 5,
+      "ST-335": 2,
+      "ST-353": 3,
+      "ST-024": 6,
+      "ST-026": 4,
+      "ST-040": 3,
+      "ST-023": 9,
+      "ST-174": 7,
+      "ST-173": 15,
+      "ST-167": 6,
+      "ST-233": 6,
+      "ST-234": 2,
+      "ST-184": 12,
+      "ST-112": 10,
+      "ST-057": 8,
+      "ST-414": 24,
+      "ST-055": 8,
+      "ST-238": 10,
+      "ST-139": 4,
+      "ST-328": 2,
+      "ST-025": 5,
+      "ST-412": 3,
+      "ST-172": 6,
+      "ST-330": 19,
+      "ST-223": 18,
+      "ST-222": 22,
+      "ST-221": 9,
+      "ST-280": 8,
+      "ST-279": 10,
+      "ST-278": 25,
+      "ST-454": 7,
+      "ST-267": 6,
+      "ST-447": 8,
+      "ST-471": 42
+    },
+    "served_by_site": {
+      "ST-306": 12,
+      "ST-421": 0,
+      "ST-427": 4,
+      "ST-431": 2,
+      "ST-366": 0,
+      "ST-210": 0,
+      "ST-219": 5,
+      "ST-151": 5,
+      "ST-146": 7,
+      "ST-360": 0,
+      "ST-424": 0,
+      "ST-475": 18,
+      "ST-465": 14,
+      "ST-402": 18,
+      "ST-400": 10,
+      "ST-007": 14,
+      "ST-317": 9,
+      "ST-467": 5,
+      "ST-117": 3,
+      "ST-227": 18,
+      "ST-277": 3,
+      "ST-276": 15,
+      "ST-275": 18,
+      "ST-476": 18,
+      "ST-477": 18,
+      "ST-230": 3,
+      "ST-331": 5,
+      "ST-335": 2,
+      "ST-353": 3,
+      "ST-024": 6,
+      "ST-026": 4,
+      "ST-040": 3,
+      "ST-023": 9,
+      "ST-174": 7,
+      "ST-173": 15,
+      "ST-167": 6,
+      "ST-233": 6,
+      "ST-234": 2,
+      "ST-184": 12,
+      "ST-112": 10,
+      "ST-057": 0,
+      "ST-414": 18,
+      "ST-055": 0,
+      "ST-238": 10,
+      "ST-139": 4,
+      "ST-328": 2,
+      "ST-025": 5,
+      "ST-412": 3,
+      "ST-172": 6,
+      "ST-330": 18,
+      "ST-223": 18,
+      "ST-222": 18,
+      "ST-221": 9,
+      "ST-280": 8,
+      "ST-279": 10,
+      "ST-278": 12,
+      "ST-454": 7,
+      "ST-267": 6,
+      "ST-447": 8,
+      "ST-471": 18
+    },
+    "edges": [
+      {
+        "from": "SUPPLY",
+        "to": "ST-317",
+        "capacity_kits_week": 500,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 489
+      },
+      {
+        "from": "ST-317",
+        "to": "ST-227",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 80
+      },
+      {
+        "from": "ST-317",
+        "to": "ST-277",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 80
+      },
+      {
+        "from": "ST-317",
+        "to": "ST-467",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 80
+      },
+      {
+        "from": "ST-317",
+        "to": "ST-471",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 80
+      },
+      {
+        "from": "ST-317",
+        "to": "ST-402",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 80
+      },
+      {
+        "from": "ST-317",
+        "to": "ST-465",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 80
+      },
+      {
+        "from": "ST-317",
+        "to": "DEMAND",
+        "capacity_kits_week": 9,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 9
+      },
+      {
+        "from": "ST-007",
+        "to": "ST-400",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-007",
+        "to": "ST-223",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-007",
+        "to": "ST-275",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-007",
+        "to": "ST-276",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-007",
+        "to": "ST-477",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-007",
+        "to": "ST-221",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 36
+      },
+      {
+        "from": "ST-007",
+        "to": "ST-222",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-007",
+        "to": "ST-475",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-007",
+        "to": "ST-476",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-007",
+        "to": "DEMAND",
+        "capacity_kits_week": 14,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 14
+      },
+      {
+        "from": "ST-400",
+        "to": "ST-007",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-400",
+        "to": "ST-221",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 34
+      },
+      {
+        "from": "ST-400",
+        "to": "ST-222",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-400",
+        "to": "ST-223",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-400",
+        "to": "ST-275",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-400",
+        "to": "ST-276",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-400",
+        "to": "ST-277",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-400",
+        "to": "ST-477",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-400",
+        "to": "DEMAND",
+        "capacity_kits_week": 10,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 10
+      },
+      {
+        "from": "ST-223",
+        "to": "ST-007",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-223",
+        "to": "ST-221",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-223",
+        "to": "ST-222",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-223",
+        "to": "ST-477",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-223",
+        "to": "ST-400",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-223",
+        "to": "ST-275",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-223",
+        "to": "ST-276",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-223",
+        "to": "ST-475",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 41
+      },
+      {
+        "from": "ST-223",
+        "to": "ST-476",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 30
+      },
+      {
+        "from": "ST-223",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-275",
+        "to": "ST-007",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 39
+      },
+      {
+        "from": "ST-275",
+        "to": "ST-223",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 9
+      },
+      {
+        "from": "ST-275",
+        "to": "ST-276",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-275",
+        "to": "ST-400",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-275",
+        "to": "ST-402",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-275",
+        "to": "ST-277",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-275",
+        "to": "ST-465",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-275",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-276",
+        "to": "ST-007",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 11
+      },
+      {
+        "from": "ST-276",
+        "to": "ST-223",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 80
+      },
+      {
+        "from": "ST-276",
+        "to": "ST-275",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-276",
+        "to": "ST-277",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-276",
+        "to": "ST-400",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-276",
+        "to": "ST-402",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-276",
+        "to": "ST-465",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-276",
+        "to": "DEMAND",
+        "capacity_kits_week": 15,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 15
+      },
+      {
+        "from": "ST-477",
+        "to": "ST-007",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-477",
+        "to": "ST-221",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-477",
+        "to": "ST-222",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-477",
+        "to": "ST-223",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-477",
+        "to": "ST-400",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-477",
+        "to": "ST-475",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-477",
+        "to": "ST-476",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-477",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-221",
+        "to": "ST-007",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-221",
+        "to": "ST-222",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-221",
+        "to": "ST-456",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 17,
+        "flow_kits_week": 10
+      },
+      {
+        "from": "ST-221",
+        "to": "ST-477",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-221",
+        "to": "ST-223",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-221",
+        "to": "ST-400",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-221",
+        "to": "ST-267",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 44
+      },
+      {
+        "from": "ST-221",
+        "to": "ST-454",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 7
+      },
+      {
+        "from": "ST-221",
+        "to": "DEMAND",
+        "capacity_kits_week": 9,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 9
+      },
+      {
+        "from": "ST-222",
+        "to": "ST-007",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-222",
+        "to": "ST-221",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-222",
+        "to": "ST-477",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-222",
+        "to": "ST-223",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-222",
+        "to": "ST-400",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-222",
+        "to": "ST-267",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 29,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-222",
+        "to": "ST-454",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 28,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-222",
+        "to": "ST-456",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 25,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-222",
+        "to": "ST-475",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-222",
+        "to": "ST-476",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-222",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-475",
+        "to": "ST-007",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-475",
+        "to": "ST-151",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 21,
+        "flow_kits_week": 23
+      },
+      {
+        "from": "ST-475",
+        "to": "ST-222",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-475",
+        "to": "ST-223",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-475",
+        "to": "ST-306",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 18,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-475",
+        "to": "ST-476",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-475",
+        "to": "ST-477",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-475",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-476",
+        "to": "ST-007",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-476",
+        "to": "ST-222",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-476",
+        "to": "ST-223",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-476",
+        "to": "ST-306",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 12
+      },
+      {
+        "from": "ST-476",
+        "to": "ST-475",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-476",
+        "to": "ST-477",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-476",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-023",
+        "to": "ST-330",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-023",
+        "to": "ST-414",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-023",
+        "to": "ST-412",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-023",
+        "to": "ST-172",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-023",
+        "to": "ST-328",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-023",
+        "to": "ST-331",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-023",
+        "to": "DEMAND",
+        "capacity_kits_week": 9,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 9
+      },
+      {
+        "from": "ST-330",
+        "to": "ST-023",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-330",
+        "to": "ST-172",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-330",
+        "to": "ST-328",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-330",
+        "to": "ST-414",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-330",
+        "to": "ST-412",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-330",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-414",
+        "to": "ST-023",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-414",
+        "to": "ST-172",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-414",
+        "to": "ST-328",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-414",
+        "to": "ST-330",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-414",
+        "to": "ST-331",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-414",
+        "to": "ST-412",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-414",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-412",
+        "to": "ST-023",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-412",
+        "to": "ST-172",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-412",
+        "to": "ST-328",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-412",
+        "to": "ST-330",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-412",
+        "to": "ST-331",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-412",
+        "to": "ST-414",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-412",
+        "to": "DEMAND",
+        "capacity_kits_week": 3,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 3
+      },
+      {
+        "from": "ST-172",
+        "to": "ST-023",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-172",
+        "to": "ST-412",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-172",
+        "to": "ST-331",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-172",
+        "to": "ST-328",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-172",
+        "to": "ST-414",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-172",
+        "to": "ST-234",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-172",
+        "to": "ST-330",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-172",
+        "to": "DEMAND",
+        "capacity_kits_week": 6,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 6
+      },
+      {
+        "from": "ST-328",
+        "to": "ST-023",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-328",
+        "to": "ST-172",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-328",
+        "to": "ST-412",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-328",
+        "to": "ST-331",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-328",
+        "to": "ST-414",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-328",
+        "to": "ST-330",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-328",
+        "to": "DEMAND",
+        "capacity_kits_week": 2,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 2
+      },
+      {
+        "from": "ST-331",
+        "to": "ST-023",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 9
+      },
+      {
+        "from": "ST-331",
+        "to": "ST-103",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-331",
+        "to": "ST-172",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 6
+      },
+      {
+        "from": "ST-331",
+        "to": "ST-233",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-331",
+        "to": "ST-234",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-331",
+        "to": "ST-328",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 2
+      },
+      {
+        "from": "ST-331",
+        "to": "ST-412",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 3
+      },
+      {
+        "from": "ST-331",
+        "to": "ST-414",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 36
+      },
+      {
+        "from": "ST-331",
+        "to": "DEMAND",
+        "capacity_kits_week": 5,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 5
+      },
+      {
+        "from": "ST-024",
+        "to": "ST-335",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-024",
+        "to": "ST-173",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-024",
+        "to": "ST-174",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-024",
+        "to": "ST-025",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-024",
+        "to": "ST-026",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-024",
+        "to": "ST-040",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-024",
+        "to": "ST-238",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 10
+      },
+      {
+        "from": "ST-024",
+        "to": "DEMAND",
+        "capacity_kits_week": 6,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 6
+      },
+      {
+        "from": "ST-335",
+        "to": "ST-024",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-335",
+        "to": "ST-025",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-335",
+        "to": "ST-026",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-335",
+        "to": "ST-040",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-335",
+        "to": "ST-173",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-335",
+        "to": "ST-174",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-335",
+        "to": "ST-238",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-335",
+        "to": "DEMAND",
+        "capacity_kits_week": 2,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 2
+      },
+      {
+        "from": "ST-173",
+        "to": "ST-024",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 16
+      },
+      {
+        "from": "ST-173",
+        "to": "ST-025",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 11
+      },
+      {
+        "from": "ST-173",
+        "to": "ST-026",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 16
+      },
+      {
+        "from": "ST-173",
+        "to": "ST-234",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-173",
+        "to": "ST-335",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 2
+      },
+      {
+        "from": "ST-173",
+        "to": "ST-174",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 11
+      },
+      {
+        "from": "ST-173",
+        "to": "DEMAND",
+        "capacity_kits_week": 15,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 15
+      },
+      {
+        "from": "ST-174",
+        "to": "ST-024",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-174",
+        "to": "ST-025",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-174",
+        "to": "ST-026",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-174",
+        "to": "ST-040",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-174",
+        "to": "ST-139",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 4
+      },
+      {
+        "from": "ST-174",
+        "to": "ST-173",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-174",
+        "to": "ST-335",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-174",
+        "to": "ST-238",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-174",
+        "to": "ST-353",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 19,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-174",
+        "to": "DEMAND",
+        "capacity_kits_week": 7,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 7
+      },
+      {
+        "from": "ST-025",
+        "to": "ST-024",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-025",
+        "to": "ST-174",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-025",
+        "to": "ST-335",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-025",
+        "to": "ST-026",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-025",
+        "to": "ST-173",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-025",
+        "to": "ST-040",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 3
+      },
+      {
+        "from": "ST-025",
+        "to": "ST-139",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-025",
+        "to": "ST-238",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-025",
+        "to": "ST-353",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 19,
+        "flow_kits_week": 3
+      },
+      {
+        "from": "ST-025",
+        "to": "DEMAND",
+        "capacity_kits_week": 5,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 5
+      },
+      {
+        "from": "ST-026",
+        "to": "ST-024",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-026",
+        "to": "ST-025",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-026",
+        "to": "ST-174",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 6,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-026",
+        "to": "ST-040",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-026",
+        "to": "ST-335",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-026",
+        "to": "ST-112",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 26,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-026",
+        "to": "ST-139",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-026",
+        "to": "ST-173",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-026",
+        "to": "ST-184",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 29,
+        "flow_kits_week": 12
+      },
+      {
+        "from": "ST-026",
+        "to": "ST-238",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-026",
+        "to": "ST-353",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 18,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-026",
+        "to": "DEMAND",
+        "capacity_kits_week": 4,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 4
+      },
+      {
+        "from": "ST-040",
+        "to": "ST-024",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-040",
+        "to": "ST-025",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-040",
+        "to": "ST-026",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-040",
+        "to": "ST-139",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-040",
+        "to": "ST-174",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-040",
+        "to": "ST-335",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-040",
+        "to": "ST-055",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 47,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-040",
+        "to": "ST-057",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 47,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-040",
+        "to": "ST-112",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 25,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-040",
+        "to": "ST-184",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 27,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-040",
+        "to": "ST-353",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-040",
+        "to": "DEMAND",
+        "capacity_kits_week": 3,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 3
+      },
+      {
+        "from": "ST-238",
+        "to": "ST-024",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-238",
+        "to": "ST-025",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-238",
+        "to": "ST-026",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-238",
+        "to": "ST-057",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 47,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-238",
+        "to": "ST-174",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-238",
+        "to": "ST-335",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-238",
+        "to": "DEMAND",
+        "capacity_kits_week": 10,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 10
+      },
+      {
+        "from": "ST-139",
+        "to": "ST-025",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-139",
+        "to": "ST-026",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-139",
+        "to": "ST-040",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-139",
+        "to": "ST-055",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 45,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-139",
+        "to": "ST-057",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 46,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-139",
+        "to": "ST-112",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-139",
+        "to": "ST-353",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-139",
+        "to": "ST-174",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-139",
+        "to": "ST-184",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-139",
+        "to": "DEMAND",
+        "capacity_kits_week": 4,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 4
+      },
+      {
+        "from": "ST-353",
+        "to": "ST-025",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 19,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-353",
+        "to": "ST-026",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 18,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-353",
+        "to": "ST-040",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-353",
+        "to": "ST-055",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 40,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-353",
+        "to": "ST-057",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 42,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-353",
+        "to": "ST-112",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 22,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-353",
+        "to": "ST-139",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-353",
+        "to": "ST-174",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 19,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-353",
+        "to": "ST-184",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 19,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-353",
+        "to": "DEMAND",
+        "capacity_kits_week": 3,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 3
+      },
+      {
+        "from": "ST-112",
+        "to": "ST-026",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 26,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-112",
+        "to": "ST-040",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 25,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-112",
+        "to": "ST-184",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 13,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-112",
+        "to": "ST-139",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-112",
+        "to": "ST-353",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 22,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-112",
+        "to": "ST-456",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 27,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-112",
+        "to": "DEMAND",
+        "capacity_kits_week": 10,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 10
+      },
+      {
+        "from": "ST-184",
+        "to": "ST-026",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 29,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-184",
+        "to": "ST-040",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 27,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-184",
+        "to": "ST-055",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 48,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-184",
+        "to": "ST-112",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 13,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-184",
+        "to": "ST-139",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-184",
+        "to": "ST-353",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 19,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-184",
+        "to": "DEMAND",
+        "capacity_kits_week": 12,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 12
+      },
+      {
+        "from": "ST-055",
+        "to": "ST-040",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 47,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-055",
+        "to": "ST-057",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-055",
+        "to": "ST-353",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 40,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-055",
+        "to": "ST-139",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 45,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-055",
+        "to": "ST-184",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 48,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-055",
+        "to": "DEMAND",
+        "capacity_kits_week": 8,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-057",
+        "to": "ST-040",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 47,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-057",
+        "to": "ST-055",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-057",
+        "to": "ST-353",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 42,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-057",
+        "to": "ST-139",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 46,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-057",
+        "to": "ST-238",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 47,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-057",
+        "to": "DEMAND",
+        "capacity_kits_week": 8,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-103",
+        "to": "ST-233",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-103",
+        "to": "ST-230",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-103",
+        "to": "ST-331",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 61
+      },
+      {
+        "from": "ST-103",
+        "to": "ST-234",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 2
+      },
+      {
+        "from": "ST-103",
+        "to": "ST-167",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-103",
+        "to": "ST-117",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-233",
+        "to": "ST-103",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-233",
+        "to": "ST-117",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-233",
+        "to": "ST-167",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-233",
+        "to": "ST-230",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-233",
+        "to": "ST-234",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-233",
+        "to": "ST-331",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-233",
+        "to": "DEMAND",
+        "capacity_kits_week": 6,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 6
+      },
+      {
+        "from": "ST-230",
+        "to": "ST-103",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-230",
+        "to": "ST-117",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-230",
+        "to": "ST-167",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-230",
+        "to": "ST-233",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-230",
+        "to": "ST-234",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 71
+      },
+      {
+        "from": "ST-230",
+        "to": "DEMAND",
+        "capacity_kits_week": 3,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 3
+      },
+      {
+        "from": "ST-234",
+        "to": "ST-103",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-234",
+        "to": "ST-172",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-234",
+        "to": "ST-173",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 71
+      },
+      {
+        "from": "ST-234",
+        "to": "ST-230",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-234",
+        "to": "ST-233",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-234",
+        "to": "ST-331",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-234",
+        "to": "DEMAND",
+        "capacity_kits_week": 2,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 2
+      },
+      {
+        "from": "ST-167",
+        "to": "ST-103",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-167",
+        "to": "ST-117",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-167",
+        "to": "ST-230",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 74
+      },
+      {
+        "from": "ST-167",
+        "to": "ST-233",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-167",
+        "to": "ST-227",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-167",
+        "to": "DEMAND",
+        "capacity_kits_week": 6,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 6
+      },
+      {
+        "from": "ST-117",
+        "to": "ST-103",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 63
+      },
+      {
+        "from": "ST-117",
+        "to": "ST-167",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-117",
+        "to": "ST-227",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-117",
+        "to": "ST-230",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-117",
+        "to": "ST-233",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 6
+      },
+      {
+        "from": "ST-117",
+        "to": "DEMAND",
+        "capacity_kits_week": 3,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 3
+      },
+      {
+        "from": "ST-456",
+        "to": "ST-112",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 27,
+        "flow_kits_week": 10
+      },
+      {
+        "from": "ST-456",
+        "to": "ST-221",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 17,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-456",
+        "to": "ST-222",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 25,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-456",
+        "to": "ST-267",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-456",
+        "to": "ST-447",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 28,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-456",
+        "to": "ST-454",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-227",
+        "to": "ST-117",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 72
+      },
+      {
+        "from": "ST-227",
+        "to": "ST-167",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 80
+      },
+      {
+        "from": "ST-227",
+        "to": "ST-467",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-227",
+        "to": "ST-317",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-227",
+        "to": "ST-402",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-227",
+        "to": "ST-465",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-227",
+        "to": "ST-471",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-227",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-146",
+        "to": "ST-151",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-146",
+        "to": "ST-219",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 17,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-146",
+        "to": "ST-306",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-146",
+        "to": "ST-431",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 26,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-146",
+        "to": "ST-427",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 27,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-146",
+        "to": "DEMAND",
+        "capacity_kits_week": 7,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 7
+      },
+      {
+        "from": "ST-151",
+        "to": "ST-146",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 15,
+        "flow_kits_week": 7
+      },
+      {
+        "from": "ST-151",
+        "to": "ST-306",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-151",
+        "to": "ST-219",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 9
+      },
+      {
+        "from": "ST-151",
+        "to": "ST-475",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 21,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-151",
+        "to": "ST-431",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 22,
+        "flow_kits_week": 2
+      },
+      {
+        "from": "ST-151",
+        "to": "DEMAND",
+        "capacity_kits_week": 5,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 5
+      },
+      {
+        "from": "ST-219",
+        "to": "ST-146",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 17,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-219",
+        "to": "ST-151",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-219",
+        "to": "ST-431",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-219",
+        "to": "ST-306",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 18,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-219",
+        "to": "ST-427",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 19,
+        "flow_kits_week": 4
+      },
+      {
+        "from": "ST-219",
+        "to": "DEMAND",
+        "capacity_kits_week": 5,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 5
+      },
+      {
+        "from": "ST-306",
+        "to": "ST-146",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-306",
+        "to": "ST-151",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 10,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-306",
+        "to": "ST-219",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 18,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-306",
+        "to": "ST-475",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 18,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-306",
+        "to": "ST-476",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-306",
+        "to": "DEMAND",
+        "capacity_kits_week": 12,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 12
+      },
+      {
+        "from": "ST-431",
+        "to": "ST-146",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 26,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-431",
+        "to": "ST-151",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 22,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-431",
+        "to": "ST-219",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-431",
+        "to": "ST-366",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 16,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-431",
+        "to": "ST-424",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 21,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-431",
+        "to": "ST-427",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-431",
+        "to": "DEMAND",
+        "capacity_kits_week": 2,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 2
+      },
+      {
+        "from": "ST-427",
+        "to": "ST-146",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 27,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-427",
+        "to": "ST-210",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 18,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-427",
+        "to": "ST-219",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 19,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-427",
+        "to": "ST-360",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 21,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-427",
+        "to": "ST-366",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-427",
+        "to": "ST-421",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-427",
+        "to": "ST-424",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-427",
+        "to": "ST-431",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-427",
+        "to": "DEMAND",
+        "capacity_kits_week": 4,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 4
+      },
+      {
+        "from": "ST-210",
+        "to": "ST-421",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-210",
+        "to": "ST-424",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 13,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-210",
+        "to": "ST-427",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 18,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-210",
+        "to": "ST-366",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 22,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-210",
+        "to": "ST-360",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 23,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-210",
+        "to": "DEMAND",
+        "capacity_kits_week": 2,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-421",
+        "to": "ST-210",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-421",
+        "to": "ST-360",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-421",
+        "to": "ST-366",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 22,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-421",
+        "to": "ST-424",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 13,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-421",
+        "to": "ST-427",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-421",
+        "to": "DEMAND",
+        "capacity_kits_week": 9,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-424",
+        "to": "ST-210",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 13,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-424",
+        "to": "ST-360",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 17,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-424",
+        "to": "ST-366",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-424",
+        "to": "ST-421",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 13,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-424",
+        "to": "ST-427",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-424",
+        "to": "ST-431",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 21,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-424",
+        "to": "DEMAND",
+        "capacity_kits_week": 4,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-366",
+        "to": "ST-210",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 22,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-366",
+        "to": "ST-360",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 17,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-366",
+        "to": "ST-427",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-366",
+        "to": "ST-424",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 14,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-366",
+        "to": "ST-431",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 16,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-366",
+        "to": "ST-421",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 22,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-366",
+        "to": "DEMAND",
+        "capacity_kits_week": 3,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-360",
+        "to": "ST-210",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 23,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-360",
+        "to": "ST-424",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 17,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-360",
+        "to": "ST-366",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 17,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-360",
+        "to": "ST-421",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-360",
+        "to": "ST-427",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 21,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-360",
+        "to": "DEMAND",
+        "capacity_kits_week": 4,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-267",
+        "to": "ST-221",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-267",
+        "to": "ST-222",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 29,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-267",
+        "to": "ST-454",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-267",
+        "to": "ST-447",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 24,
+        "flow_kits_week": 8
+      },
+      {
+        "from": "ST-267",
+        "to": "ST-456",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-267",
+        "to": "ST-278",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 37,
+        "flow_kits_week": 12
+      },
+      {
+        "from": "ST-267",
+        "to": "ST-279",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 35,
+        "flow_kits_week": 10
+      },
+      {
+        "from": "ST-267",
+        "to": "ST-280",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 33,
+        "flow_kits_week": 8
+      },
+      {
+        "from": "ST-267",
+        "to": "DEMAND",
+        "capacity_kits_week": 6,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 6
+      },
+      {
+        "from": "ST-454",
+        "to": "ST-221",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 20,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-454",
+        "to": "ST-222",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 28,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-454",
+        "to": "ST-267",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-454",
+        "to": "ST-278",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 37,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-454",
+        "to": "ST-279",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 36,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-454",
+        "to": "ST-280",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 33,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-454",
+        "to": "ST-447",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 24,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-454",
+        "to": "ST-456",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-454",
+        "to": "DEMAND",
+        "capacity_kits_week": 7,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 7
+      },
+      {
+        "from": "ST-467",
+        "to": "ST-227",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 28
+      },
+      {
+        "from": "ST-467",
+        "to": "ST-277",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 47
+      },
+      {
+        "from": "ST-467",
+        "to": "ST-317",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-467",
+        "to": "ST-402",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-467",
+        "to": "ST-465",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-467",
+        "to": "ST-471",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-467",
+        "to": "DEMAND",
+        "capacity_kits_week": 5,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 5
+      },
+      {
+        "from": "ST-402",
+        "to": "ST-227",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-402",
+        "to": "ST-275",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-402",
+        "to": "ST-276",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 62
+      },
+      {
+        "from": "ST-402",
+        "to": "ST-317",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-402",
+        "to": "ST-465",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-402",
+        "to": "ST-467",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-402",
+        "to": "ST-471",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-402",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-465",
+        "to": "ST-227",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-465",
+        "to": "ST-275",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 66
+      },
+      {
+        "from": "ST-465",
+        "to": "ST-276",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-465",
+        "to": "ST-317",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-465",
+        "to": "ST-402",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 5,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-465",
+        "to": "ST-467",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-465",
+        "to": "DEMAND",
+        "capacity_kits_week": 14,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 14
+      },
+      {
+        "from": "ST-471",
+        "to": "ST-227",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 62
+      },
+      {
+        "from": "ST-471",
+        "to": "ST-277",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-471",
+        "to": "ST-317",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-471",
+        "to": "ST-402",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 12,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-471",
+        "to": "ST-467",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-471",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 18
+      },
+      {
+        "from": "ST-447",
+        "to": "ST-267",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 24,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-447",
+        "to": "ST-278",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 29,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-447",
+        "to": "ST-279",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 29,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-447",
+        "to": "ST-280",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 28,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-447",
+        "to": "ST-454",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 24,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-447",
+        "to": "ST-456",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 28,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-447",
+        "to": "DEMAND",
+        "capacity_kits_week": 8,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 8
+      },
+      {
+        "from": "ST-278",
+        "to": "ST-267",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 37,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-278",
+        "to": "ST-279",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-278",
+        "to": "ST-280",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-278",
+        "to": "ST-447",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 29,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-278",
+        "to": "ST-454",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 37,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-278",
+        "to": "DEMAND",
+        "capacity_kits_week": 18,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 12
+      },
+      {
+        "from": "ST-279",
+        "to": "ST-267",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 35,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-279",
+        "to": "ST-278",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-279",
+        "to": "ST-280",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-279",
+        "to": "ST-447",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 29,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-279",
+        "to": "ST-454",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 36,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-279",
+        "to": "DEMAND",
+        "capacity_kits_week": 10,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 10
+      },
+      {
+        "from": "ST-280",
+        "to": "ST-267",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 33,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-280",
+        "to": "ST-278",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-280",
+        "to": "ST-279",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-280",
+        "to": "ST-447",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 28,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-280",
+        "to": "ST-454",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 33,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-280",
+        "to": "DEMAND",
+        "capacity_kits_week": 8,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 8
+      },
+      {
+        "from": "ST-277",
+        "to": "ST-275",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-277",
+        "to": "ST-276",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 7,
+        "flow_kits_week": 44
+      },
+      {
+        "from": "ST-277",
+        "to": "ST-317",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-277",
+        "to": "ST-467",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 8,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-277",
+        "to": "ST-400",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 9,
+        "flow_kits_week": 80
+      },
+      {
+        "from": "ST-277",
+        "to": "ST-471",
+        "capacity_kits_week": 80,
+        "cost_minutes_per_kit": 11,
+        "flow_kits_week": 0
+      },
+      {
+        "from": "ST-277",
+        "to": "DEMAND",
+        "capacity_kits_week": 3,
+        "cost_minutes_per_kit": 0,
+        "flow_kits_week": 3
+      }
+    ]
+  },
+  "metrics": {
+    "density": 0.10787942887361185,
+    "components": 1,
+    "mean_degree": 6.580645161290323,
+    "mean_shortest_travel_h": 1.1524027079099781,
+    "average_clustering": 0.7074291300097751,
+    "articulation_points": [],
+    "bridges": [],
+    "modularity": 0.7230309976026896
+  },
+  "critical_sites": [
+    {
+      "id": "ST-227",
+      "label": "34 St-Herald Sq",
+      "betweenness": 0.34972677595628415,
+      "closeness_per_hour": 1.186940485558211,
+      "degree": 7
+    },
+    {
+      "id": "ST-117",
+      "label": "14 St-Union Sq",
+      "betweenness": 0.3262295081967213,
+      "closeness_per_hour": 1.1525269043672302,
+      "degree": 5
+    },
+    {
+      "id": "ST-402",
+      "label": "Grand Central-42 St",
+      "betweenness": 0.2825136612021858,
+      "closeness_per_hour": 1.1931709304425901,
+      "degree": 7
+    },
+    {
+      "id": "ST-275",
+      "label": "Lexington Av/53 St",
+      "betweenness": 0.2814207650273224,
+      "closeness_per_hour": 1.191799273839169,
+      "degree": 7
+    },
+    {
+      "id": "ST-475",
+      "label": "96 St",
+      "betweenness": 0.26939890710382514,
+      "closeness_per_hour": 1.0461709738002782,
+      "degree": 7
+    },
+    {
+      "id": "ST-007",
+      "label": "Lexington Av/59 St",
+      "betweenness": 0.2617486338797814,
+      "closeness_per_hour": 1.1865704375921728,
+      "degree": 9
+    },
+    {
+      "id": "ST-151",
+      "label": "145 St",
+      "betweenness": 0.24699453551912567,
+      "closeness_per_hour": 0.840750924583463,
+      "degree": 5
+    },
+    {
+      "id": "ST-234",
+      "label": "East Broadway",
+      "betweenness": 0.23989071038251367,
+      "closeness_per_hour": 1.067303191000207,
+      "degree": 6
+    },
+    {
+      "id": "ST-173",
+      "label": "High St",
+      "betweenness": 0.226775956284153,
+      "closeness_per_hour": 0.9979946376170319,
+      "degree": 6
+    },
+    {
+      "id": "ST-233",
+      "label": "Delancey St-Essex St",
+      "betweenness": 0.15628415300546447,
+      "closeness_per_hour": 1.0990327855310014,
+      "degree": 6
+    },
+    {
+      "id": "ST-456",
+      "label": "61 St-Woodside",
+      "betweenness": 0.14754098360655737,
+      "closeness_per_hour": 0.9954157771694855,
+      "degree": 6
+    },
+    {
+      "id": "ST-219",
+      "label": "161 St-Yankee Stadium",
+      "betweenness": 0.14590163934426228,
+      "closeness_per_hour": 0.7490778355860533,
+      "degree": 5
+    },
+    {
+      "id": "ST-103",
+      "label": "Bowery",
+      "betweenness": 0.13934426229508196,
+      "closeness_per_hour": 1.1054232596673335,
+      "degree": 6
+    },
+    {
+      "id": "ST-112",
+      "label": "Myrtle-Wyckoff Avs",
+      "betweenness": 0.13333333333333333,
+      "closeness_per_hour": 0.924070958305797,
+      "degree": 6
+    },
+    {
+      "id": "ST-331",
+      "label": "Park Place",
+      "betweenness": 0.12622950819672132,
+      "closeness_per_hour": 0.998229960264048,
+      "degree": 8
+    },
+    {
+      "id": "ST-427",
+      "label": "West Farms Sq-E Tremont Av",
+      "betweenness": 0.12185792349726776,
+      "closeness_per_hour": 0.628589489043787,
+      "degree": 8
+    },
+    {
+      "id": "ST-026",
+      "label": "DeKalb Av",
+      "betweenness": 0.12131147540983607,
+      "closeness_per_hour": 0.9443618904890125,
+      "degree": 11
+    },
+    {
+      "id": "ST-222",
+      "label": "Roosevelt Island",
+      "betweenness": 0.10655737704918032,
+      "closeness_per_hour": 1.1333791621875633,
+      "degree": 10
+    },
+    {
+      "id": "ST-221",
+      "label": "21 St-Queensbridge",
+      "betweenness": 0.10218579234972677,
+      "closeness_per_hour": 1.0846217479034128,
+      "degree": 8
+    },
+    {
+      "id": "ST-454",
+      "label": "74 St-Broadway",
+      "betweenness": 0.0726775956284153,
+      "closeness_per_hour": 0.9343155945524165,
+      "degree": 8
+    },
+    {
+      "id": "ST-400",
+      "label": "59 St",
+      "betweenness": 0.05737704918032787,
+      "closeness_per_hour": 1.168084800929022,
+      "degree": 8
+    },
+    {
+      "id": "ST-277",
+      "label": "7 Av",
+      "betweenness": 0.04590163934426229,
+      "closeness_per_hour": 1.1506184866005196,
+      "degree": 6
+    },
+    {
+      "id": "ST-223",
+      "label": "Lexington Av/63 St",
+      "betweenness": 0.04316939890710383,
+      "closeness_per_hour": 1.1803605196147444,
+      "degree": 9
+    },
+    {
+      "id": "ST-172",
+      "label": "Fulton St",
+      "betweenness": 0.040983606557377046,
+      "closeness_per_hour": 0.9455673144556606,
+      "degree": 7
+    },
+    {
+      "id": "ST-024",
+      "label": "Court St",
+      "betweenness": 0.03442622950819672,
+      "closeness_per_hour": 0.9386226103462111,
+      "degree": 7
+    },
+    {
+      "id": "ST-267",
+      "label": "Jackson Hts-Roosevelt Av",
+      "betweenness": 0.029508196721311476,
+      "closeness_per_hour": 0.9303185853124522,
+      "degree": 8
+    },
+    {
+      "id": "ST-431",
+      "label": "Intervale Av",
+      "betweenness": 0.029508196721311476,
+      "closeness_per_hour": 0.6757529662517349,
+      "degree": 6
+    },
+    {
+      "id": "ST-476",
+      "label": "86 St",
+      "betweenness": 0.026775956284153007,
+      "closeness_per_hour": 1.0673159097000422,
+      "degree": 6
+    },
+    {
+      "id": "ST-040",
+      "label": "Atlantic Av-Barclays Ctr",
+      "betweenness": 0.018032786885245903,
+      "closeness_per_hour": 0.8869036043696008,
+      "degree": 11
+    },
+    {
+      "id": "ST-023",
+      "label": "Whitehall St-South Ferry",
+      "betweenness": 0.017486338797814208,
+      "closeness_per_hour": 0.8837446466837074,
+      "degree": 6
+    },
+    {
+      "id": "ST-184",
+      "label": "Broadway Junction",
+      "betweenness": 0.014754098360655738,
+      "closeness_per_hour": 0.8254083184172643,
+      "degree": 6
+    },
+    {
+      "id": "ST-353",
+      "label": "President St-Medgar Evers College",
+      "betweenness": 0.014754098360655738,
+      "closeness_per_hour": 0.8448417074660677,
+      "degree": 9
+    },
+    {
+      "id": "ST-467",
+      "label": "Times Sq-42 St",
+      "betweenness": 0.014207650273224043,
+      "closeness_per_hour": 1.1482098674177663,
+      "degree": 6
+    },
+    {
+      "id": "ST-238",
+      "label": "Smith-9 Sts",
+      "betweenness": 0.01366120218579235,
+      "closeness_per_hour": 0.8484344773712297,
+      "degree": 6
+    },
+    {
+      "id": "ST-306",
+      "label": "125 St",
+      "betweenness": 0.003825136612021858,
+      "closeness_per_hour": 0.8672988509501196,
+      "degree": 5
+    },
+    {
+      "id": "ST-174",
+      "label": "Jay St-Metro Tech",
+      "betweenness": 0.001092896174863388,
+      "closeness_per_hour": 0.9391193695914359,
+      "degree": 9
+    },
+    {
+      "id": "ST-276",
+      "label": "5 Av/53 St",
+      "betweenness": 0.001092896174863388,
+      "closeness_per_hour": 1.1865947989427734,
+      "degree": 7
+    },
+    {
+      "id": "ST-055",
+      "label": "Brighton Beach",
+      "betweenness": 0.000546448087431694,
+      "closeness_per_hour": 0.5624073475123843,
+      "degree": 5
+    },
+    {
+      "id": "ST-057",
+      "label": "West 8 St-NY Aquarium",
+      "betweenness": 0.000546448087431694,
+      "closeness_per_hour": 0.5568418205447854,
+      "degree": 5
+    },
+    {
+      "id": "ST-366",
+      "label": "Parkchester",
+      "betweenness": 0.000546448087431694,
+      "closeness_per_hour": 0.585431491342762,
+      "degree": 6
+    },
+    {
+      "id": "ST-025",
+      "label": "Jay St-MetroTech",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.9376382183252261,
+      "degree": 9
+    },
+    {
+      "id": "ST-139",
+      "label": "Franklin Av",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.878796872402154,
+      "degree": 9
+    },
+    {
+      "id": "ST-146",
+      "label": "181 St",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.715005994855675,
+      "degree": 5
+    },
+    {
+      "id": "ST-167",
+      "label": "W 4 St-Wash Sq",
+      "betweenness": 0.0,
+      "closeness_per_hour": 1.1360958733289257,
+      "degree": 5
+    },
+    {
+      "id": "ST-210",
+      "label": "Norwood-205 St",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.5346684689952472,
+      "degree": 5
+    },
+    {
+      "id": "ST-230",
+      "label": "B'way-Lafayette St",
+      "betweenness": 0.0,
+      "closeness_per_hour": 1.1024728756125228,
+      "degree": 5
+    },
+    {
+      "id": "ST-278",
+      "label": "Jamaica Center-Parsons/Archer",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.61244947811781,
+      "degree": 5
+    },
+    {
+      "id": "ST-279",
+      "label": "Sutphin Blvd-Archer Av-JFK Airport",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.6208042309761287,
+      "degree": 5
+    },
+    {
+      "id": "ST-280",
+      "label": "Jamaica Van Wyck",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.6355045606465493,
+      "degree": 5
+    },
+    {
+      "id": "ST-317",
+      "label": "Times Sq-42 St",
+      "betweenness": 0.0,
+      "closeness_per_hour": 1.1478778168443988,
+      "degree": 6
+    },
+    {
+      "id": "ST-328",
+      "label": "Cortlandt St",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.9165471720792417,
+      "degree": 6
+    },
+    {
+      "id": "ST-330",
+      "label": "South Ferry",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.8456506856736621,
+      "degree": 5
+    },
+    {
+      "id": "ST-335",
+      "label": "Borough Hall",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.9386032923572117,
+      "degree": 7
+    },
+    {
+      "id": "ST-360",
+      "label": "Pelham Bay Park",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.5212933212320647,
+      "degree": 5
+    },
+    {
+      "id": "ST-412",
+      "label": "Fulton St",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.9213465938785763,
+      "degree": 6
+    },
+    {
+      "id": "ST-414",
+      "label": "Bowling Green",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.8902679578930418,
+      "degree": 6
+    },
+    {
+      "id": "ST-421",
+      "label": "Gun Hill Rd",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.5278913395566945,
+      "degree": 5
+    },
+    {
+      "id": "ST-424",
+      "label": "Pelham Pkwy",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.5651702697903509,
+      "degree": 6
+    },
+    {
+      "id": "ST-447",
+      "label": "Flushing-Main St",
+      "betweenness": 0.0,
+      "closeness_per_hour": 0.7063504537438707,
+      "degree": 6
+    },
+    {
+      "id": "ST-465",
+      "label": "Grand Central-42 St",
+      "betweenness": 0.0,
+      "closeness_per_hour": 1.1880868521550627,
+      "degree": 6
+    },
+    {
+      "id": "ST-471",
+      "label": "34 St-Hudson Yards",
+      "betweenness": 0.0,
+      "closeness_per_hour": 1.0944091679435053,
+      "degree": 5
+    },
+    {
+      "id": "ST-477",
+      "label": "72 St",
+      "betweenness": 0.0,
+      "closeness_per_hour": 1.1247780298338448,
+      "degree": 7
+    }
+  ],
+  "clusters": [
+    {
+      "cluster": 1,
+      "stations": [
+        "ST-007",
+        "ST-221",
+        "ST-222",
+        "ST-223",
+        "ST-267",
+        "ST-278",
+        "ST-279",
+        "ST-280",
+        "ST-400",
+        "ST-447",
+        "ST-454",
+        "ST-456",
+        "ST-475",
+        "ST-476",
+        "ST-477"
+      ],
+      "medoid": "ST-222",
+      "medoid_label": "Roosevelt Island",
+      "size": 15,
+      "rate_per_up_hour": 0.7077174804652211
+    },
+    {
+      "cluster": 2,
+      "stations": [
+        "ST-024",
+        "ST-025",
+        "ST-026",
+        "ST-040",
+        "ST-055",
+        "ST-057",
+        "ST-112",
+        "ST-139",
+        "ST-173",
+        "ST-174",
+        "ST-184",
+        "ST-238",
+        "ST-335",
+        "ST-353"
+      ],
+      "medoid": "ST-026",
+      "medoid_label": "DeKalb Av",
+      "size": 14,
+      "rate_per_up_hour": 0.31432620223569746
+    },
+    {
+      "cluster": 3,
+      "stations": [
+        "ST-146",
+        "ST-151",
+        "ST-210",
+        "ST-219",
+        "ST-306",
+        "ST-360",
+        "ST-366",
+        "ST-421",
+        "ST-424",
+        "ST-427",
+        "ST-431"
+      ],
+      "medoid": "ST-219",
+      "medoid_label": "161 St-Yankee Stadium",
+      "size": 11,
+      "rate_per_up_hour": 0.18150021244032555
+    },
+    {
+      "cluster": 4,
+      "stations": [
+        "ST-227",
+        "ST-275",
+        "ST-276",
+        "ST-277",
+        "ST-317",
+        "ST-402",
+        "ST-465",
+        "ST-467",
+        "ST-471"
+      ],
+      "medoid": "ST-402",
+      "medoid_label": "Grand Central-42 St",
+      "size": 9,
+      "rate_per_up_hour": 0.6070960013416963
+    },
+    {
+      "cluster": 5,
+      "stations": [
+        "ST-023",
+        "ST-172",
+        "ST-328",
+        "ST-330",
+        "ST-331",
+        "ST-412",
+        "ST-414"
+      ],
+      "medoid": "ST-414",
+      "medoid_label": "Bowling Green",
+      "size": 7,
+      "rate_per_up_hour": 0.21997520256352282
+    },
+    {
+      "cluster": 6,
+      "stations": [
+        "ST-103",
+        "ST-117",
+        "ST-167",
+        "ST-230",
+        "ST-233",
+        "ST-234"
+      ],
+      "medoid": "ST-233",
+      "medoid_label": "Delancey St-Essex St",
+      "size": 6,
+      "rate_per_up_hour": 0.06459947586756165
+    }
+  ],
+  "warehouse_geographic_ranking": [
+    {
+      "site": "ST-222",
+      "label": "Roosevelt Island",
+      "weighted_travel_h": 0.5176368994771791
+    },
+    {
+      "site": "ST-477",
+      "label": "72 St",
+      "weighted_travel_h": 0.5206329301974872
+    },
+    {
+      "site": "ST-223",
+      "label": "Lexington Av/63 St",
+      "weighted_travel_h": 0.5228921748739949
+    },
+    {
+      "site": "ST-007",
+      "label": "Lexington Av/59 St",
+      "weighted_travel_h": 0.5247723904909931
+    },
+    {
+      "site": "ST-173",
+      "label": "High St",
+      "weighted_travel_h": 0.5255108088994008
+    },
+    {
+      "site": "ST-234",
+      "label": "East Broadway",
+      "weighted_travel_h": 0.5307268491188049
+    },
+    {
+      "site": "ST-476",
+      "label": "86 St",
+      "weighted_travel_h": 0.5320095454237868
+    },
+    {
+      "site": "ST-026",
+      "label": "DeKalb Av",
+      "weighted_travel_h": 0.5331753073905574
+    },
+    {
+      "site": "ST-174",
+      "label": "Jay St-Metro Tech",
+      "weighted_travel_h": 0.5338017274006897
+    },
+    {
+      "site": "ST-025",
+      "label": "Jay St-MetroTech",
+      "weighted_travel_h": 0.53435643841663
+    },
+    {
+      "site": "ST-024",
+      "label": "Court St",
+      "weighted_travel_h": 0.5344981799494929
+    },
+    {
+      "site": "ST-335",
+      "label": "Borough Hall",
+      "weighted_travel_h": 0.53500036536565
+    },
+    {
+      "site": "ST-221",
+      "label": "21 St-Queensbridge",
+      "weighted_travel_h": 0.5371402476773296
+    },
+    {
+      "site": "ST-475",
+      "label": "96 St",
+      "weighted_travel_h": 0.5392506247456031
+    },
+    {
+      "site": "ST-400",
+      "label": "59 St",
+      "weighted_travel_h": 0.5401459226807981
+    },
+    {
+      "site": "ST-172",
+      "label": "Fulton St",
+      "weighted_travel_h": 0.5420956628468964
+    },
+    {
+      "site": "ST-331",
+      "label": "Park Place",
+      "weighted_travel_h": 0.5447985609927685
+    },
+    {
+      "site": "ST-040",
+      "label": "Atlantic Av-Barclays Ctr",
+      "weighted_travel_h": 0.5492694360491744
+    },
+    {
+      "site": "ST-112",
+      "label": "Myrtle-Wyckoff Avs",
+      "weighted_travel_h": 0.5494190607015876
+    },
+    {
+      "site": "ST-233",
+      "label": "Delancey St-Essex St",
+      "weighted_travel_h": 0.5516031730312599
+    },
+    {
+      "site": "ST-103",
+      "label": "Bowery",
+      "weighted_travel_h": 0.5522392167722194
+    },
+    {
+      "site": "ST-238",
+      "label": "Smith-9 Sts",
+      "weighted_travel_h": 0.5559403493339049
+    },
+    {
+      "site": "ST-412",
+      "label": "Fulton St",
+      "weighted_travel_h": 0.5569615910786587
+    },
+    {
+      "site": "ST-414",
+      "label": "Bowling Green",
+      "weighted_travel_h": 0.5574431298068331
+    },
+    {
+      "site": "ST-139",
+      "label": "Franklin Av",
+      "weighted_travel_h": 0.5575709800168172
+    },
+    {
+      "site": "ST-328",
+      "label": "Cortlandt St",
+      "weighted_travel_h": 0.5590772195567174
+    },
+    {
+      "site": "ST-456",
+      "label": "61 St-Woodside",
+      "weighted_travel_h": 0.5595496432840684
+    },
+    {
+      "site": "ST-454",
+      "label": "74 St-Broadway",
+      "weighted_travel_h": 0.5601383696476316
+    },
+    {
+      "site": "ST-267",
+      "label": "Jackson Hts-Roosevelt Av",
+      "weighted_travel_h": 0.5602340616583401
+    },
+    {
+      "site": "ST-023",
+      "label": "Whitehall St-South Ferry",
+      "weighted_travel_h": 0.5607346171699845
+    },
+    {
+      "site": "ST-330",
+      "label": "South Ferry",
+      "weighted_travel_h": 0.5615521062383463
+    },
+    {
+      "site": "ST-353",
+      "label": "President St-Medgar Evers College",
+      "weighted_travel_h": 0.561947472686761
+    },
+    {
+      "site": "ST-230",
+      "label": "B'way-Lafayette St",
+      "weighted_travel_h": 0.5661339526359324
+    },
+    {
+      "site": "ST-278",
+      "label": "Jamaica Center-Parsons/Archer",
+      "weighted_travel_h": 0.5682747047591701
+    },
+    {
+      "site": "ST-275",
+      "label": "Lexington Av/53 St",
+      "weighted_travel_h": 0.5683385182425639
+    },
+    {
+      "site": "ST-280",
+      "label": "Jamaica Van Wyck",
+      "weighted_travel_h": 0.569284479066964
+    },
+    {
+      "site": "ST-279",
+      "label": "Sutphin Blvd-Archer Av-JFK Airport",
+      "weighted_travel_h": 0.5697981842418917
+    },
+    {
+      "site": "ST-184",
+      "label": "Broadway Junction",
+      "weighted_travel_h": 0.5698724738761135
+    },
+    {
+      "site": "ST-276",
+      "label": "5 Av/53 St",
+      "weighted_travel_h": 0.5730222503207001
+    },
+    {
+      "site": "ST-447",
+      "label": "Flushing-Main St",
+      "weighted_travel_h": 0.5767118783686276
+    },
+    {
+      "site": "ST-306",
+      "label": "125 St",
+      "weighted_travel_h": 0.5831505973449324
+    },
+    {
+      "site": "ST-151",
+      "label": "145 St",
+      "weighted_travel_h": 0.5873219123118313
+    },
+    {
+      "site": "ST-219",
+      "label": "161 St-Yankee Stadium",
+      "weighted_travel_h": 0.5931859842584437
+    },
+    {
+      "site": "ST-167",
+      "label": "W 4 St-Wash Sq",
+      "weighted_travel_h": 0.5945704559166435
+    },
+    {
+      "site": "ST-427",
+      "label": "West Farms Sq-E Tremont Av",
+      "weighted_travel_h": 0.5954858546901562
+    },
+    {
+      "site": "ST-117",
+      "label": "14 St-Union Sq",
+      "weighted_travel_h": 0.5965564238391327
+    },
+    {
+      "site": "ST-431",
+      "label": "Intervale Av",
+      "weighted_travel_h": 0.5987722129875743
+    },
+    {
+      "site": "ST-146",
+      "label": "181 St",
+      "weighted_travel_h": 0.6001221855149131
+    },
+    {
+      "site": "ST-424",
+      "label": "Pelham Pkwy",
+      "weighted_travel_h": 0.6026727170990258
+    },
+    {
+      "site": "ST-366",
+      "label": "Parkchester",
+      "weighted_travel_h": 0.6040180264964248
+    },
+    {
+      "site": "ST-421",
+      "label": "Gun Hill Rd",
+      "weighted_travel_h": 0.6076495847462396
+    },
+    {
+      "site": "ST-210",
+      "label": "Norwood-205 St",
+      "weighted_travel_h": 0.6088874579630938
+    },
+    {
+      "site": "ST-277",
+      "label": "7 Av",
+      "weighted_travel_h": 0.6099781704196844
+    },
+    {
+      "site": "ST-055",
+      "label": "Brighton Beach",
+      "weighted_travel_h": 0.6104236746622804
+    },
+    {
+      "site": "ST-057",
+      "label": "West 8 St-NY Aquarium",
+      "weighted_travel_h": 0.6117261989148399
+    },
+    {
+      "site": "ST-360",
+      "label": "Pelham Bay Park",
+      "weighted_travel_h": 0.6117431345905121
+    },
+    {
+      "site": "ST-402",
+      "label": "Grand Central-42 St",
+      "weighted_travel_h": 0.6263376944679658
+    },
+    {
+      "site": "ST-465",
+      "label": "Grand Central-42 St",
+      "weighted_travel_h": 0.6291599398087893
+    },
+    {
+      "site": "ST-227",
+      "label": "34 St-Herald Sq",
+      "weighted_travel_h": 0.6379500178476689
+    },
+    {
+      "site": "ST-471",
+      "label": "34 St-Hudson Yards",
+      "weighted_travel_h": 0.6693453794391075
+    },
+    {
+      "site": "ST-467",
+      "label": "Times Sq-42 St",
+      "weighted_travel_h": 0.6780546956946906
+    }
+  ],
+  "baseline_weighted_travel_h": 0.6790264206228148
+}

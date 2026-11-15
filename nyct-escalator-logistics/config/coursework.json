@@ -1,0 +1,212 @@
+{
+  "calibration": {
+    "prior_hours": 1500,
+    "source_year": 2025
+  },
+  "network": {
+    "nearest": 5,
+    "road_factor": 1.35,
+    "cross_borough_factor": 1.25,
+    "km_per_hour": 23,
+    "leg_overhead_hours": 0.08,
+    "community_resolution": 1,
+    "community_seed": 321,
+    "corridor_kits_week": 80,
+    "site_kits_week": 18,
+    "supplier_kits_week": 500
+  },
+  "simulation": {
+    "step_hours": 1,
+    "horizon_hours": 4536,
+    "warmup_hours": 336,
+    "replications": 24,
+    "seed": 421809,
+    "dispatch_intensity": 1.8,
+    "urgency_beta": 0.8,
+    "priority_beta": 0.6,
+    "critical_urgency": 1,
+    "ordinary_urgency": 0.6,
+    "priority_base": 1,
+    "priority_busy": 1.2,
+    "priority_site_escalators": 6,
+    "priority_age_per_hour": 0.03,
+    "control_hours": 1.6,
+    "minimum_transition_steps": 1.05,
+    "confidence": 0.95,
+    "max_relative_cycle_ci": 0.1
+  },
+  "inventory": {
+    "base_stock": [51, 42, 51, 32, 38],
+    "reorder": [33, 26, 33, 19, 25],
+    "lead_hours": 42,
+    "slots": 3,
+    "handling_hours": 0.65,
+    "split_share": 0.6
+  },
+  "economics": {
+    "downtime_usd_h": 550,
+    "wage_usd_h": 70,
+    "kit_usd": [
+      480,
+      650,
+      430,
+      320,
+      280
+    ],
+    "holding_usd_kit_h": 0.09,
+    "warehouse_usd_day": 245,
+    "training_usd": 3400,
+    "training_amortization_hours": 8760,
+    "delivery_usd_per_hour": 48
+  },
+  "baseline": {
+    "warehouse": "WH-M01",
+    "posts_per_profile": 6,
+    "first_replica_post_index": 6,
+    "engineers": [
+      "ENG-M01",
+      "ENG-M02",
+      "ENG-M03",
+      "ENG-M04"
+    ],
+    "homes": {
+      "ENG-M01": "ST-317",
+      "ENG-M02": "ST-317",
+      "ENG-M03": "ST-267",
+      "ENG-M04": "ST-238"
+    }
+  },
+  "faults": [
+    {
+      "weight": 0.27,
+      "diagnosis_h": 1.5,
+      "repair_h": 2.2,
+      "max_kits": 2
+    },
+    {
+      "weight": 0.19,
+      "diagnosis_h": 1.8,
+      "repair_h": 3.5,
+      "max_kits": 2
+    },
+    {
+      "weight": 0.21,
+      "diagnosis_h": 1.7,
+      "repair_h": 3,
+      "max_kits": 3
+    },
+    {
+      "weight": 0.17,
+      "diagnosis_h": 1.4,
+      "repair_h": 2.1,
+      "max_kits": 2
+    },
+    {
+      "weight": 0.16,
+      "diagnosis_h": 1.5,
+      "repair_h": 2.3,
+      "max_kits": 2
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "baseline",
+      "label": "Базовый"
+    },
+    {
+      "id": "hire",
+      "label": "Дополнительный инженер",
+      "hire": {
+        "id": "ENG-M05",
+        "skills": [
+          "step_chain",
+          "electrical_control"
+        ],
+        "home": "ST-317"
+      }
+    },
+    {
+      "id": "stock",
+      "label": "Страховой запас +40%",
+      "stock_multiplier": 1.4
+    },
+    {
+      "id": "warehouse_queens",
+      "label": "Склад Queens",
+      "warehouse": {
+        "id": "WH-M02",
+        "site": "ST-267"
+      }
+    },
+    {
+      "id": "warehouse_brooklyn",
+      "label": "Склад Brooklyn",
+      "warehouse": {
+        "id": "WH-M03",
+        "site": "ST-173"
+      }
+    },
+    {
+      "id": "warehouse_bronx",
+      "label": "Склад Bronx",
+      "warehouse": {
+        "id": "WH-M04",
+        "site": "ST-421"
+      }
+    },
+    {
+      "id": "train_01",
+      "label": "Обучить ENG-M01",
+      "train": "ENG-M01"
+    },
+    {
+      "id": "train_03",
+      "label": "Обучить ENG-M03",
+      "train": "ENG-M03"
+    },
+    {
+      "id": "train_04",
+      "label": "Обучить ENG-M04",
+      "train": "ENG-M04"
+    },
+    {
+      "id": "stress",
+      "label": "Отказы +50% у 30% машин",
+      "stress_fraction": 0.3,
+      "stress_multiplier": 1.5
+    },
+    {
+      "id": "disruption",
+      "label": "Задержка поставки STEP",
+      "disruption_sku": 2,
+      "lead_multiplier": 3
+    }
+  ],
+  "training_skill": "step_chain",
+  "comparison_sku_index": 2,
+  "reference": {
+    "cycles": 24000,
+    "fault_index": 2,
+    "seed": 9157,
+    "availability": 0.5,
+    "free_fraction": 1,
+    "stock_wait_h": 8,
+    "travel_h": 1.3,
+    "delivery_h": 2.5,
+    "transient_hours": [
+      0,
+      4,
+      12,
+      24,
+      72,
+      168
+    ]
+  },
+  "figures": {
+    "dpi": 170
+  },
+  "decision": {
+    "cost_tolerance_usd": 0,
+    "minimum_availability": 0.85
+  }
+}
