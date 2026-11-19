@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trapcount"
+version = "0.1.0"
+description = "Count wildlife across camera-trap clips and measure the cost of sampling fewer frames."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "Pillow>=10.3,<13"]
+
+[project.optional-dependencies]
+real = [
+  "megadetector>=10,<11",
+  "huggingface-hub>=0.27,<2",
+  "opencv-python>=4.8,<5",
+  "ijson>=3.3,<4",
+]
+
+[project.scripts]
+trapcount = "trapcount.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+trapcount = ["*.css", "*.js"]
