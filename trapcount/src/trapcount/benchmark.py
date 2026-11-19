@@ -1,11 +1,14 @@
 from collections import Counter, defaultdict
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
+from functools import partial
 from pathlib import Path
 from time import perf_counter
 
 import numpy as np
 
 from .core import Clip, Detection, Object, assign, iou, sample_indices
+from .dataset import UNKNOWN_LOCATION
 from .detectors import Detector, read_image, with_appearance
 from .tracking import METHODS, Result, TrackerConfig, count
 
@@ -128,6 +131,7 @@ def evaluate(
     config: TrackerConfig,
     example_count: int,
     progress,
+    jobs: int = 1,
 ) -> tuple[list[dict], list[Example]]:
     if not clips:
         raise ValueError("Evaluation received no clips.")
@@ -137,58 +141,80 @@ def evaluate(
     examples: list[Example] = []
     first_path = clips[0].images[0]
     detector.detect(read_image(first_path), first_path)
-    for position, clip in enumerate(clips, start=1):
-        requested_frames = {rate: sample_indices(len(clip.images), clip.fps, rate) for rate in rates}
-        prepared = {
-            index: _prepare_frame(clip, index, detector)
-            for index in sorted(set().union(*requested_frames.values()))
-        }
-        tags = list(clip.slices)
-        if sum(frame.gray for frame in prepared.values()) > len(prepared) / 2:
-            tags.append("low-color")
-        for fps, indices in requested_frames.items():
-            batch = [prepared[index] for index in indices]
-            timestamps = [index / clip.fps for index in indices]
-            decode_ms = sum(frame.decode_ms for frame in batch)
-            baseline = 0
-            for source in ("detector", "oracle"):
-                detector_ms = sum(frame.detector_ms for frame in batch) if source == "detector" else 0
-                for method in METHODS:
-                    frames = [frame.detections if source == "detector" else frame.reference for frame in batch]
-                    feature_ms = 0.0
-                    if method == "appearance":
-                        feature_ms = sum(
-                            frame.feature_ms if source == "detector" else frame.reference_feature_ms
-                            for frame in batch
-                        )
-                    start = perf_counter()
-                    result = count(frames, timestamps, method, config)
-                    tracking_ms = 1000 * (perf_counter() - start)
-                    metrics = {
-                        "clip": clip.id,
-                        "site": clip.site,
-                        "split": clip.split,
-                        "slices": "|".join(tags),
-                        "source": source,
-                        "method": method,
-                        "fps": fps,
-                        "sampled_frames": len(indices),
-                        "decode_ms": decode_ms,
-                        "detector_ms": detector_ms,
-                        "feature_ms": feature_ms,
-                        "tracking_ms": tracking_ms,
-                        "work_ms": decode_ms + detector_ms + feature_ms + tracking_ms,
-                        **clip_metrics(clip, indices, result),
-                    }
-                    rows.append(metrics)
-                    if source == "detector" and method == "max-frame":
-                        baseline = result.count
-                    if source == "detector" and result.track_ids and example_count:
-                        candidate = Example(clip, fps, indices, result, metrics, baseline)
-                        examples.append(candidate)
-        progress(position, len(clips), clip.id)
+    evaluate_clip = partial(
+        _evaluate_clip, detector=detector, rates=rates, config=config, keep_examples=bool(example_count),
+    )
+
+    def collect(results) -> None:
+        for position, (clip, result) in enumerate(zip(clips, results), 1):
+            clip_rows, clip_examples = result
+            rows.extend(clip_rows)
+            examples.extend(clip_examples)
+            progress(position, len(clips), clip.id)
+
+    if jobs == 1:
+        collect(map(evaluate_clip, clips))
+    else:
+        with ThreadPoolExecutor(max_workers=jobs) as pool:
+            collect(pool.map(evaluate_clip, clips))
     examples.sort(key=_example_rank, reverse=True)
     return rows, _select_examples(examples, example_count)
+
+
+def _evaluate_clip(
+    clip: Clip, detector: Detector, rates: tuple[float, ...], config: TrackerConfig, keep_examples: bool,
+) -> tuple[list[dict], list[Example]]:
+    rows: list[dict] = []
+    examples: list[Example] = []
+    requested_frames = {rate: sample_indices(len(clip.images), clip.fps, rate) for rate in rates}
+    prepared = {
+        index: _prepare_frame(clip, index, detector)
+        for index in sorted(set().union(*requested_frames.values()))
+    }
+    tags = list(clip.slices)
+    if sum(frame.gray for frame in prepared.values()) > len(prepared) / 2:
+        tags.append("low-color")
+    for fps, indices in requested_frames.items():
+        batch = [prepared[index] for index in indices]
+        timestamps = [index / clip.fps for index in indices]
+        decode_ms = sum(frame.decode_ms for frame in batch)
+        baseline = 0
+        for source in ("detector", "oracle"):
+            detector_ms = sum(frame.detector_ms for frame in batch) if source == "detector" else 0
+            for method in METHODS:
+                frames = [frame.detections if source == "detector" else frame.reference for frame in batch]
+                feature_ms = 0.0
+                if method == "appearance":
+                    feature_ms = sum(
+                        frame.feature_ms if source == "detector" else frame.reference_feature_ms
+                        for frame in batch
+                    )
+                start = perf_counter()
+                result = count(frames, timestamps, method, config)
+                tracking_ms = 1000 * (perf_counter() - start)
+                metrics = {
+                    "clip": clip.id,
+                    "site": clip.site,
+                    "split": clip.split,
+                    "slices": "|".join(tags),
+                    "source": source,
+                    "method": method,
+                    "fps": fps,
+                    "sampled_frames": len(indices),
+                    "decode_ms": decode_ms,
+                    "detector_ms": detector_ms,
+                    "feature_ms": feature_ms,
+                    "tracking_ms": tracking_ms,
+                    "work_ms": decode_ms + detector_ms + feature_ms + tracking_ms,
+                    **clip_metrics(clip, indices, result),
+                }
+                rows.append(metrics)
+                if source == "detector" and method == "max-frame":
+                    baseline = result.count
+                if source == "detector" and result.track_ids and keep_examples:
+                    candidate = Example(clip, fps, indices, result, metrics, baseline)
+                    examples.append(candidate)
+    return rows, examples
 
 
 def _example_rank(example: Example) -> tuple:
@@ -232,7 +258,7 @@ def _summarize(rows: list[dict]) -> dict:
     id_total = sum(row["visible_boxes"] + row["predicted_boxes"] for row in count_with_ids)
     return {
         "clips": len(rows),
-        "sites": len({row["site"] for row in rows}),
+        "sites": len({row["site"] for row in rows} - {UNKNOWN_LOCATION}),
         "mae": _mean(rows, "absolute_error"),
         "bias": _mean(rows, "signed_error"),
         "under_rate": sum(row["signed_error"] < 0 for row in rows) / len(rows),
@@ -250,8 +276,9 @@ def _paired_interval(pairs: list[tuple[str, int]], seed: int, repeats: int) -> d
     for site, delta in pairs:
         by_site[site].append(delta)
     point = float(np.mean([delta for _, delta in pairs]))
-    result = {"delta_mae": point, "low": None, "high": None, "sites": len(by_site)}
-    if len(by_site) >= 5 and repeats:
+    known_sites = len(by_site) - int(UNKNOWN_LOCATION in by_site)
+    result = {"delta_mae": point, "low": None, "high": None, "sites": known_sites}
+    if known_sites >= 5 and repeats:
         groups = list(by_site.values())
         sums = np.asarray([sum(group) for group in groups])
         sizes = np.asarray([len(group) for group in groups])

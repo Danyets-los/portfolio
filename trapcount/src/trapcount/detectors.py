@@ -78,6 +78,63 @@ class MegaDetector:
         return _from_md(result["detections"], image.size, self.threshold)
 
 
+class OnnxMegaDetector:
+    """Run the fixed-size MegaDetector V6 YOLOv10 export from Sparrow Model Zoo."""
+
+    device = "cpu"
+
+    def __init__(self, weights: str, threshold: float) -> None:
+        try:
+            import cv2
+            import onnxruntime as ort
+        except ImportError as error:
+            raise RuntimeError("Install trapcount[onnx] to run the ONNX detector.") from error
+        options = ort.SessionOptions()
+        options.intra_op_num_threads = 3
+        self.model = ort.InferenceSession(weights, options, providers=["CPUExecutionProvider"])
+        inputs, = self.model.get_inputs()
+        outputs, = self.model.get_outputs()
+        batch, channels, height, width = inputs.shape
+        if (batch, channels) != (1, 3) or not all(isinstance(n, int) and n > 0 for n in (width, height)):
+            raise ValueError("Expected a fixed-size batch-one RGB NCHW ONNX model.")
+        if inputs.type != "tensor(float)" or outputs.type != "tensor(float)" or outputs.shape != [1, 300, 6]:
+            raise ValueError("Expected float32 input and YOLOv10 output of shape (1, 300, 6).")
+        self.cv2 = cv2
+        self.input = inputs.name
+        self.output = outputs.name
+        self.size = int(width), int(height)
+        self.threshold = threshold
+        self.name = f"MegaDetector ONNX / {Path(weights).name}"
+
+    def detect(self, image: Image.Image, frame: Path) -> tuple[Detection, ...]:
+        width, height = self.size
+        source_width, source_height = image.size
+        scale = min(width / source_width, height / source_height)
+        resized = max(1, round(source_width * scale)), max(1, round(source_height * scale))
+        x_pad, y_pad = (width - resized[0]) // 2, (height - resized[1]) // 2
+        canvas = np.full((height, width, 3), 114, dtype=np.uint8)
+        canvas[y_pad:y_pad + resized[1], x_pad:x_pad + resized[0]] = self.cv2.resize(
+            np.asarray(image), resized, interpolation=self.cv2.INTER_LINEAR,
+        )
+        tensor = np.ascontiguousarray(canvas.transpose(2, 0, 1)[None], dtype=np.float32) / 255.0
+        predictions, = self.model.run([self.output], {self.input: tensor})
+        detections = []
+        x_scale, y_scale = source_width / resized[0], source_height / resized[1]
+        for left, top, right, bottom, score, label in predictions[0]:
+            if label != 0 or not isfinite(score) or score < self.threshold:
+                continue
+            xywh = [
+                (float(left) - x_pad) * x_scale,
+                (float(top) - y_pad) * y_scale,
+                float(right - left) * x_scale,
+                float(bottom - top) * y_scale,
+            ]
+            box = box_from_xywh(xywh, image.size, normalized=False)
+            if box is not None:
+                detections.append(Detection(box, float(score)))
+        return tuple(sorted(detections, key=lambda det: (-det.score, det.box)))
+
+
 class CachedMegaDetector:
     """Read standard MegaDetector JSON with paths relative to --prediction-root."""
 

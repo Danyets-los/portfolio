@@ -1,8 +1,10 @@
 import itertools
 import json
 import random
+import tarfile
 import tempfile
 import unittest
+from io import BytesIO
 from pathlib import Path
 
 import numpy as np
@@ -11,7 +13,9 @@ from PIL import Image
 from trapcount.benchmark import clip_metrics, identity_metrics, summarize
 from trapcount.cli import main
 from trapcount.core import Clip, Detection, Object, assign, sample_indices
-from trapcount.dataset import check_disjoint, load_clips, relative_path, select_clips
+from trapcount.dataset import (
+    UNKNOWN_LOCATION, _AnnotationJSON, check_disjoint, extract_frames, load_clips, relative_path, select_clips,
+)
 from trapcount.detectors import CachedMegaDetector
 from trapcount.tracking import Result, TrackerConfig, count
 
@@ -82,6 +86,51 @@ class TrackingTests(unittest.TestCase):
 
 
 class DataTests(unittest.TestCase):
+    def test_extract_frames_copies_only_requested_image_members(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            archive = root / "frames.tar.gz"
+            source = BytesIO()
+            Image.new("RGB", (4, 3), "red").save(source, format="JPEG")
+            jpeg = source.getvalue()
+            with tarfile.open(archive, "w:gz") as bundle:
+                for name in ("../outside.jpg", "clip/extra.jpg", "./clip/001.jpg"):
+                    member = tarfile.TarInfo(name)
+                    member.size = len(jpeg)
+                    bundle.addfile(member, BytesIO(jpeg))
+            base = root / "frames"
+            wanted = base / "clip" / "001.jpg"
+            extract_frames(archive, base, [wanted])
+            self.assertEqual(list(base.rglob("*.jpg")), [wanted])
+            self.assertEqual(wanted.read_bytes(), jpeg)
+            self.assertFalse((root / "outside.jpg").exists())
+
+    def test_streaming_annotation_reader_normalizes_missing_metadata_across_chunks(self):
+        key = b'"video_creation_datetime": '
+        prefix = b'{"note":"NaN","spacing":"'
+        for offset in (1, len(key) - 1, len(key) + 1):
+            filler = b" " * (128 * 1024 - len(prefix) - len(b'",') - offset)
+            payload = prefix + filler + b'",' + key + b'NaN,"Kingdom":NaN,"location_id":NaN}'
+            with _AnnotationJSON(BytesIO(payload)) as source:
+                result = json.loads(source.read(), parse_constant=self.fail)
+            self.assertEqual(result["note"], "NaN")
+            self.assertIsNone(result["video_creation_datetime"])
+            self.assertIsNone(result["Kingdom"])
+            self.assertIsNone(result["location_id"])
+
+    def test_unknown_camera_locations_do_not_imply_train_test_overlap(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            annotations = root / "labels.json"
+            annotations.write_text(json.dumps({
+                "videos": [{"id": 4, "video_name": "clip", "location_id": float("nan"), "file_names": ["1.jpg"]}],
+                "annotations": [],
+            }), encoding="utf-8")
+            train = load_clips(root, "train", annotations)
+            test = load_clips(root, "test", annotations)
+            self.assertEqual(test[0].site, UNKNOWN_LOCATION)
+            check_disjoint(train, test)
+
     def test_dataset_layout_and_site_integrity(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

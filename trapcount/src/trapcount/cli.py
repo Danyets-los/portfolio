@@ -13,8 +13,12 @@ from time import perf_counter
 from . import __version__
 from .benchmark import evaluate, summarize
 from .core import sample_indices
-from .dataset import annotation_path, audit, check_disjoint, fetch, load_clips, select_clips, write_manifest
-from .detectors import CachedMegaDetector, FixtureDetector, MegaDetector, read_image, with_appearance
+from .dataset import (
+    UNKNOWN_LOCATION, annotation_path, audit, check_disjoint, fetch, load_clips, select_clips, write_manifest,
+)
+from .detectors import (
+    CachedMegaDetector, FixtureDetector, MegaDetector, OnnxMegaDetector, read_image, with_appearance,
+)
 from .fixture import generate
 from .media import decoded_frame, image_sequence, render_preview, video_frames
 from .report import write_benchmark, write_inference, write_json
@@ -52,7 +56,7 @@ def _dataset_options(parser, annotations=True) -> None:
 
 
 def _detector_options(parser) -> None:
-    parser.add_argument("--detector", choices=("megadetector", "cached", "fixture"), default="megadetector")
+    parser.add_argument("--detector", choices=("megadetector", "onnx", "cached", "fixture"), default="megadetector")
     parser.add_argument("--model", default="MDV5A", help="MegaDetector model alias or trusted local weights path.")
     parser.add_argument("--threshold", type=_probability, default=0.30)
     parser.add_argument("--image-size", type=_positive)
@@ -81,6 +85,7 @@ def _cli() -> argparse.ArgumentParser:
     _dataset_options(download, annotations=False)
     download.add_argument("--workers", type=_positive, default=8)
     download.add_argument("--revision", default="main", help="Hugging Face branch or exact revision.")
+    download.add_argument("--frame-archive", type=Path, help="Read frames from a local SA-FARI JPEG archive.")
 
     inspect = commands.add_parser("audit", help="Audit annotation coverage, location splits and frame files.")
     _dataset_options(inspect)
@@ -93,6 +98,7 @@ def _cli() -> argparse.ArgumentParser:
     benchmark.add_argument("--fps", type=_rate, nargs="+", default=(6, 3, 1))
     benchmark.add_argument("--bootstrap", type=int, default=2000)
     benchmark.add_argument("--examples", type=int, default=6)
+    benchmark.add_argument("--jobs", type=_positive, default=1, help="Evaluate clips concurrently with the ONNX backend.")
     benchmark.add_argument("--out", type=Path, required=True)
 
     infer = commands.add_parser("infer", help="Count animals in a video or directory of ordered frames.")
@@ -110,6 +116,10 @@ def _cli() -> argparse.ArgumentParser:
 def _detector(args):
     if args.detector == "fixture":
         return FixtureDetector()
+    if args.detector == "onnx":
+        if args.image_size is not None or not Path(args.model).is_file():
+            raise ValueError("ONNX requires --model pointing to a local .onnx file and uses its fixed input size.")
+        return OnnxMegaDetector(args.model, args.threshold)
     if args.detector == "cached":
         if args.predictions is None or args.prediction_root is None:
             raise ValueError("The cached detector requires --predictions and --prediction-root.")
@@ -136,7 +146,9 @@ def _separate_locations(root: Path, split: str, clips) -> bool:
 
 def _versions() -> dict:
     packages = {}
-    for library in ("numpy", "Pillow", "megadetector", "torch", "opencv-python"):
+    for library in (
+        "numpy", "Pillow", "megadetector", "torch", "opencv-python", "onnxruntime", "opencv-python-headless", "ijson",
+    ):
         try:
             packages[library] = version(library)
         except PackageNotFoundError:
@@ -147,6 +159,8 @@ def _versions() -> dict:
 def _benchmark(args) -> None:
     if args.examples < 0 or args.bootstrap < 0 or args.seed < 0:
         raise ValueError("Examples, bootstrap repeats and seed must be nonnegative.")
+    if args.jobs > 1 and args.detector != "onnx":
+        raise ValueError("Concurrent evaluation requires the ONNX detector.")
     annotations = args.annotations or annotation_path(args.root, args.split)
     all_clips = load_clips(args.root, args.split, annotations)
     disjoint = _separate_locations(args.root, args.split, all_clips)
@@ -164,18 +178,25 @@ def _benchmark(args) -> None:
         raise ValueError("Benchmark requires clips and rates between zero and the annotated FPS.")
     detector = _detector(args)
     config = _tracking(args)
-    rows, examples = evaluate(clips, detector, rates, config, args.examples, _progress)
+    rows, examples = evaluate(clips, detector, rates, config, args.examples, _progress, jobs=args.jobs)
     stats, paired, slices = summarize(rows, args.seed, args.bootstrap)
     with annotations.open("rb") as file:
         digest = hashlib.file_digest(file, "sha256").hexdigest()
+    model_digest = None
+    if args.detector == "onnx":
+        with Path(args.model).open("rb") as file:
+            model_digest = hashlib.file_digest(file, "sha256").hexdigest()
     metadata = {
         "trapcount": __version__,
         "created_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "dataset": clips[0].source, "split": args.split, "annotations_sha256": digest,
+        "clips_without_location": sum(clip.site == UNKNOWN_LOCATION for clip in clips),
         "location_overlap_checked": disjoint, "detector": detector.name,
-        "detector_threshold": args.threshold, "detector_image_size": args.image_size,
+        "detector_threshold": args.threshold,
+        "detector_image_size": detector.size if args.detector == "onnx" else args.image_size,
+        "onnx_model_sha256": model_digest,
         "device": detector.device, "detector_mode": args.detector,
-        "fps": rates, "seed": args.seed, "bootstrap": args.bootstrap,
+        "fps": rates, "seed": args.seed, "bootstrap": args.bootstrap, "jobs": args.jobs,
         "clip_ids": [clip.id for clip in clips], "tracker": asdict(config),
         "timing": "decode + detector call + optional appearance extraction + association; one warmup",
         "platform": platform.platform(), "python": platform.python_version(),
@@ -228,7 +249,8 @@ def _infer(args) -> None:
     write_inference(args.out, {
         "input": args.input.name, "detector": detector.name, "device": detector.device,
         "method": args.method, "fps": args.fps, "tracker": asdict(config),
-        "detector_threshold": args.threshold, "detector_image_size": args.image_size,
+        "detector_threshold": args.threshold,
+        "detector_image_size": detector.size if args.detector == "onnx" else args.image_size,
         "count": result.count, "has_track_ids": result.track_ids,
         "sampled_frames": len(frames), "preview_frames": len(preview), "elapsed_ms": duration,
         "frames": [
@@ -253,7 +275,7 @@ def main(argv=None) -> int:
             generate(args.root, args.sites)
             print(args.root)
         elif args.command == "fetch":
-            clips = fetch(args.root, args.split, args.limit, args.seed, args.workers, args.revision)
+            clips = fetch(args.root, args.split, args.limit, args.seed, args.workers, args.revision, args.frame_archive)
             manifest = args.root / f"fetch-{args.split}-{args.limit or 'all'}-{args.seed}.csv"
             write_manifest(manifest, clips, args.root)
             print(manifest)

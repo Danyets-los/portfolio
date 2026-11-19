@@ -1,11 +1,14 @@
 import csv
 import json
 import random
+import re
 import shutil
+import tarfile
 import tempfile
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from itertools import combinations
+from io import RawIOBase
 from math import isfinite
 from pathlib import Path, PurePosixPath
 from urllib.parse import quote
@@ -17,6 +20,41 @@ from .core import Clip, Object, iou
 
 SA_FARI = "facebook/SA-FARI"
 GCS = "https://storage.googleapis.com/cxl-public-camera-trap/sa_fari"
+UNKNOWN_LOCATION = "(unknown location)"
+
+_MISSING_METADATA = re.compile(
+    rb'("(?:video_creation_datetime|location_id|Kingdom|Phylum|Class|Order|Family|Genus|Species)":\s*)NaN\b'
+)
+
+
+class _AnnotationJSON(RawIOBase):
+    """Normalize the release's bare NaN metadata values for the streaming parser."""
+
+    def __init__(self, source) -> None:
+        self.source = source
+        self.pending = b""
+        self.ready = b""
+
+    def readable(self) -> bool:
+        return True
+
+    def readinto(self, buffer) -> int:
+        while not self.ready:
+            chunk = self.source.read(128 * 1024)
+            data = self.pending + chunk
+            end = max(0, len(data) - 64) if chunk else len(data)
+            for match in _MISSING_METADATA.finditer(data, max(0, end - 64)):
+                if match.start() < end < match.end():
+                    end = match.start()
+                    break
+            self.ready = _MISSING_METADATA.sub(rb"\g<1>null", data[:end])
+            self.pending = data[end:]
+            if not chunk:
+                break
+        length = min(len(buffer), len(self.ready))
+        buffer[:length] = self.ready[:length]
+        self.ready = self.ready[length:]
+        return length
 
 
 def annotation_path(root: Path, split: str) -> Path:
@@ -49,12 +87,12 @@ def _records(annotations: Path):
             from ijson import items
         except ImportError as error:
             raise RuntimeError("Install trapcount[real] to stream large annotation files.") from error
-        with annotations.open("rb") as file:
-            info = next(items(file, "info", use_float=True), {})
-            file.seek(0)
-            videos = list(items(file, "videos.item", use_float=True))
-            file.seek(0)
-            for track in items(file, "annotations.item", use_float=True):
+        with annotations.open("rb") as source:
+            info = next(items(_AnnotationJSON(source), "info", use_float=True), {})
+            source.seek(0)
+            videos = list(items(_AnnotationJSON(source), "videos.item", use_float=True))
+            source.seek(0)
+            for track in items(_AnnotationJSON(source), "annotations.item", use_float=True):
                 yield "track", {key: track[key] for key in ("video_id", "bboxes", "iscrowd") if key in track}
         yield "videos", videos
         yield "info", info
@@ -86,9 +124,11 @@ def load_clips(root: Path, split: str, annotations: Path | None = None) -> list[
 
     clips: list[Clip] = []
     for key, video in videos.items():
-        location = video.get("location_id")
-        if location is None or location == "":
+        if "location_id" not in video:
             raise ValueError(f"Missing location_id in {key}. Use the *_ext.json annotation file.")
+        location = video["location_id"]
+        if location is None or location == "" or (isinstance(location, float) and not isfinite(location)):
+            location = UNKNOWN_LOCATION
         name = str(video["video_name"])
         names = [_frame_name(value, name) for value in video["file_names"]]
         if not names or len(names) != len(set(names)):
@@ -147,7 +187,7 @@ def select_clips(clips: list[Clip], limit: int | None, seed: int) -> list[Clip]:
 
 
 def check_disjoint(train: list[Clip], test: list[Clip]) -> None:
-    shared = {clip.site for clip in train} & {clip.site for clip in test}
+    shared = ({clip.site for clip in train} & {clip.site for clip in test}) - {UNKNOWN_LOCATION}
     if shared:
         raise ValueError(f"Training and evaluation share {len(shared)} location(s).")
 
@@ -167,7 +207,8 @@ def audit(clips: list[Clip], decode: bool = False) -> dict:
                     unreadable.append(str(path))
     return {
         "clips": len(clips),
-        "locations": len({clip.site for clip in clips}),
+        "locations": len({clip.site for clip in clips} - {UNKNOWN_LOCATION}),
+        "clips_without_location": sum(clip.site == UNKNOWN_LOCATION for clip in clips),
         "frames": sum(len(clip.images) for clip in clips),
         "slices": dict(sorted(Counter(tag for clip in clips for tag in clip.slices).items())),
         "missing": len(missing),
@@ -195,7 +236,42 @@ def _download(url: str, path: Path) -> None:
             temporary.unlink(missing_ok=True)
 
 
-def fetch(root: Path, split: str, limit: int | None, seed: int, workers: int, revision: str) -> list[Clip]:
+def extract_frames(archive: Path, base: Path, frames: list[Path]) -> None:
+    pending = {
+        frame.relative_to(base).as_posix(): frame
+        for frame in frames if not frame.is_file() or frame.stat().st_size == 0
+    }
+    if not pending:
+        return
+    with tarfile.open(archive, "r|*") as stream:
+        for member in stream:
+            name = member.name.removeprefix("./")
+            if not member.isfile() or name not in pending:
+                continue
+            frame = pending.pop(name)
+            frame.parent.mkdir(parents=True, exist_ok=True)
+            temporary = None
+            try:
+                with stream.extractfile(member) as source, tempfile.NamedTemporaryFile(
+                    dir=frame.parent, prefix=".extract-", delete=False
+                ) as target:
+                    temporary = Path(target.name)
+                    shutil.copyfileobj(source, target)
+                with Image.open(temporary) as image:
+                    image.verify()
+                temporary.replace(frame)
+            finally:
+                if temporary is not None:
+                    temporary.unlink(missing_ok=True)
+            if not pending:
+                return
+    raise ValueError(f"Archive lacks {len(pending)} requested frame(s), including {next(iter(pending))}.")
+
+
+def fetch(
+    root: Path, split: str, limit: int | None, seed: int, workers: int, revision: str,
+    frame_archive: Path | None = None,
+) -> list[Clip]:
     path = annotation_path(root, split)
     if not path.is_file():
         try:
@@ -222,6 +298,9 @@ def fetch(root: Path, split: str, limit: int | None, seed: int, workers: int, re
     clips = select_clips(load_clips(root, split), limit, seed)
     base = root / "frames" / split
     files = sorted({frame for clip in clips for frame in clip.images})
+    if frame_archive is not None:
+        extract_frames(frame_archive, base, files)
+        return clips
 
     def download_frame(frame: Path) -> None:
         if frame.is_file() and frame.stat().st_size:
